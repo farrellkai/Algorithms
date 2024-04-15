@@ -39,3 +39,10 @@ const uncompress = (s) => {
   }
   return outputString;
 };
+
+//test cases
+console.log(uncompress('2c3a1t'));
+console.log(uncompress('4s2b'));
+console.log(uncompress('2p1o5p'));
+console.log(uncompress('3n12e2z'));
+console.log(uncompress('127y'));
