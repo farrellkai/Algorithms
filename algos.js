@@ -24,7 +24,13 @@ const uncompress = (s) => {
       //reassign numString to current value of i
       numString = s[i];
       //check values of further characters in nested loop
-      for (let j = i + 1; j < s.length; j++) {}
+      for (let j = i + 1; j < s.length; j++) {
+        //if current value of j is number digit
+        if (numCache[s[j]]) {
+          //concatenate to numString
+          numString += s[j];
+        }
+      }
     }
   }
 };
