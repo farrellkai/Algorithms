@@ -18,5 +18,11 @@ const uncompress = (s) => {
   let outputString = '';
 
   //iterate through characters in input string
-  for (let i = 0; i < s.length; i++) {}
+  for (let i = 0; i < s.length; i++) {
+    //check if current character is a number digit
+    if (numCache[s[i]] && !numCache[s[i - 1]]) {
+      //reassign numString to current value of i
+      numString = s[i];
+    }
+  }
 };
