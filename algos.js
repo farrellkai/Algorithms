@@ -37,4 +37,5 @@ const uncompress = (s) => {
       }
     }
   }
+  return outputString;
 };
