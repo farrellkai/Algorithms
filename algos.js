@@ -23,6 +23,8 @@ const uncompress = (s) => {
     if (numCache[s[i]] && !numCache[s[i - 1]]) {
       //reassign numString to current value of i
       numString = s[i];
+      //check values of further characters in nested loop
+      for (let j = i + 1; j < s.length; j++) {}
     }
   }
 };
