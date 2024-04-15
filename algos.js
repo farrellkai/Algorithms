@@ -12,4 +12,7 @@ const uncompress = (s) => {
     8: 8,
     9: 9,
   };
+  //declare let variable for number string and output string
+  let numString = '';
+  let outputString = '';
 };
