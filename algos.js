@@ -29,6 +29,10 @@ const uncompress = (s) => {
         if (numCache[s[j]]) {
           //concatenate to numString
           numString += s[j];
+        } else {
+          //concatenate value to outputString as many times as number value of numString
+          outputString += s[j].repeat(+numString);
+          break;
         }
       }
     }
