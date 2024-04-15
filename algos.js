@@ -12,7 +12,11 @@ const uncompress = (s) => {
     8: 8,
     9: 9,
   };
+
   //declare let variable for number string and output string
   let numString = '';
   let outputString = '';
+
+  //iterate through characters in input string
+  for (let i = 0; i < s.length; i++) {}
 };
