@@ -61,7 +61,11 @@ const compress = (s) => {
     //if current value is different from previous value
     if (s[i] !== s[i - 1]) {
       //iterate through following characters in nested loop
-      for (let j = i + 1; j < s.length; j++) {}
+      for (let j = i + 1; j < s.length; j++) {
+        //if value of j pointer is same a i pointer increase value of count
+        if (s[j] === s[i]) count++;
+        //else break
+      }
     }
   }
 };
