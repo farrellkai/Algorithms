@@ -60,6 +60,8 @@ const compress = (s) => {
   for (let i = 0; i < s.length; i++) {
     //if current value is different from previous value
     if (s[i] !== s[i - 1]) {
+      //iterate through following characters in nested loop
+      for (let j = i + 1; j < s.length; j++) {}
     }
   }
 };
