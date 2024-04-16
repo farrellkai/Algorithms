@@ -65,6 +65,7 @@ const compress = (s) => {
         //if value of j pointer is same a i pointer increase value of count
         if (s[j] === s[i]) count++;
         //else break
+        else break;
       }
     }
   }
