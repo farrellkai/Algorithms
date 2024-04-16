@@ -57,5 +57,9 @@ const compress = (s) => {
   //assign to empty string
   let outputString = '';
   //iterate through characters of input string
-  for (let i = 0; i < s.length; i++) {}
+  for (let i = 0; i < s.length; i++) {
+    //if current value is different from previous value
+    if (s[i] !== s[i - 1]) {
+    }
+  }
 };
