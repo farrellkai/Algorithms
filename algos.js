@@ -53,4 +53,9 @@ const compress = (s) => {
   //declare let variable 'count'
   //assign to 1
   let count = 1;
+  //declare let variable 'outputString'
+  //assign to empty string
+  let outputString = '';
+  //iterate through characters of input string
+  for (let i = 0; i < s.length; i++) {}
 };
