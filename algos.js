@@ -1,3 +1,4 @@
+//uncompress function
 const uncompress = (s) => {
   //create number cache
   const numCache = {
@@ -46,3 +47,6 @@ console.log(uncompress('4s2b'));
 console.log(uncompress('2p1o5p'));
 console.log(uncompress('3n12e2z'));
 console.log(uncompress('127y'));
+
+//compress function
+const compress = (s) => {};
