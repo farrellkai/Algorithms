@@ -77,4 +77,5 @@ const compress = (s) => {
       }
     }
   }
+  return outputString;
 };
