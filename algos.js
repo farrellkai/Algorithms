@@ -49,4 +49,8 @@ console.log(uncompress('3n12e2z'));
 console.log(uncompress('127y'));
 
 //compress function
-const compress = (s) => {};
+const compress = (s) => {
+  //declare let variable 'count'
+  //assign to 1
+  let count = 1;
+};
