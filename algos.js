@@ -67,6 +67,8 @@ const compress = (s) => {
         //else break
         else break;
       }
+      //if count has value of 1 concatenate current character to outputString
+      if (count === 1) outputString += s[i];
     }
   }
 };
