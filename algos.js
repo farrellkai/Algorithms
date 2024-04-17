@@ -100,6 +100,8 @@ const compress2 = (s) => {
   for (let i = 0; i < s.length; i++) {
     //if current character is different from previous character
     if (s[i] !== s[i - 1]) {
+      //iterate through each subsequent character in nested loop
+      for (let j = i + 1; j < s.length; j++) {}
     }
   }
 };
