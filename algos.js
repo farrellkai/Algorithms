@@ -97,5 +97,9 @@ const compress2 = (s) => {
   //assign to empty string
   let output = '';
   //iterate through characters of input string
-  for (let i = 0; i < s.length; i++) {}
+  for (let i = 0; i < s.length; i++) {
+    //if current character is different from previous character
+    if (s[i] !== s[i - 1]) {
+    }
+  }
 };
