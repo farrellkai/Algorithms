@@ -112,4 +112,5 @@ const compress2 = (s) => {
       }
     }
   }
+  return output;
 };
