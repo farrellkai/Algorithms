@@ -107,6 +107,7 @@ const compress2 = (s) => {
           //if difference between j and i is 1 concatenate i character to output
           //else concatenate value of j - i and i character to output
           j - i === 1 ? (output += s[i]) : (output += j - i + s[i]);
+          break;
         }
       }
     }
