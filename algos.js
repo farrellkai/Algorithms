@@ -114,3 +114,14 @@ const compress2 = (s) => {
   }
   return output;
 };
+
+//test cases
+console.log(compress2('ccaaatsss'));
+console.log(compress2('ssssbbz'));
+console.log(compress2('ppoppppp'));
+console.log(compress2('nnneeeeeeeeeeeezz'));
+console.log(
+  compress2(
+    'yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy'
+  )
+);
