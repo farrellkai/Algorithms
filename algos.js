@@ -92,4 +92,8 @@ console.log(
 );
 
 //alternat compress function
-const compress2 = (s) => {};
+const compress2 = (s) => {
+  //define let variable 'output'
+  //assign to empty string
+  let output = '';
+};
