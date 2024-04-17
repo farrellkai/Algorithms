@@ -104,6 +104,9 @@ const compress2 = (s) => {
       for (let j = i + 1; j < s.length; j++) {
         //if j character is different from i character
         if (s[j] !== s[i]) {
+          //if difference between j and i is 1 concatenate i character to output
+          //else concatenate value of j - i and i character to output
+          j - i === 1 ? (output += s[i]) : (output += j - i + s[i]);
         }
       }
     }
