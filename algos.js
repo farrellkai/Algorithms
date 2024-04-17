@@ -96,4 +96,6 @@ const compress2 = (s) => {
   //define let variable 'output'
   //assign to empty string
   let output = '';
+  //iterate through characters of input string
+  for (let i = 0; i < s.length; i++) {}
 };
