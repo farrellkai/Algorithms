@@ -127,4 +127,7 @@ console.log(
 );
 
 //anagrams function
-const anagrams = (s1, s2) => {};
+const anagrams = (s1, s2) => {
+  //edge case: if input strings have different length return false
+  if (s1.length !== s2.length) return false;
+};
