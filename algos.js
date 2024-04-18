@@ -196,4 +196,6 @@ const pairSum = (nums, targetSum) => {
   const cache = {};
   //declare output variable assigned to empty array
   const output = [];
+  //iterate through nums array
+  for (let i = 0; i < nums.length; i++) {}
 };
