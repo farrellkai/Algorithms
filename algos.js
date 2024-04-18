@@ -199,14 +199,14 @@ const pairSum = (nums, targetSum) => {
   //iterate through nums array
   for (let i = 0; i < nums.length; i++) {
     //if difference between targetSum and current element in nums exists in cache...
-    if (cache[targetSum - nums[i]]) {
+    if (targetSum - nums[i] in cache) {
       //push value of that key minus 1 onto output array
-      output.push(cache[targetSum - nums[i]] - 1);
+      output.push(cache[targetSum - nums[i]]);
       //push value of i onto output array
       output.push(i);
     }
     //create current element as key in cache with value equal to i + 1
-    cache[nums[i]] = i + 1;
+    cache[nums[i]] = i;
   }
   return output;
 };
