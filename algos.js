@@ -148,3 +148,16 @@ const anagrams = (s1, s2) => {
   }
   return true;
 };
+
+//test cases
+console.log(anagrams('restful', 'fluster'));
+console.log(anagrams('cats', 'tocs'));
+console.log(anagrams('monkeyswrite', 'newyorktimes'));
+console.log(anagrams('paper', 'reapa'));
+console.log(anagrams('elbow', 'below'));
+console.log(anagrams('tax', 'taxi'));
+console.log(anagrams('taxi', 'tax'));
+console.log(anagrams('night', 'thing'));
+console.log(anagrams('abbc', 'aabc'));
+console.log(anagrams('po', 'popp'));
+console.log(anagrams('pp', 'oo'));
