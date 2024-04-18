@@ -135,5 +135,8 @@ const anagrams = (s1, s2) => {
   const cache1 = {};
   const cache2 = {};
   //iterate through characters in both strings
-  for (let i = 0; i < s1.length; i++) {}
+  for (let i = 0; i < s1.length; i++) {
+    //assign each character in s1 to key in cache1 with value equal to number of times it appears
+    !cache1[s1[i]] ? (cache1[s1[i]] = 1) : cache1[s1[i]]++;
+  }
 };
