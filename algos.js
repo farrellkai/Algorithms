@@ -168,4 +168,6 @@ const mostFrequentChar = (s) => {
   const cache = {};
   //declare let variable 'output'
   let output;
+  //iterate through characters in input string
+  for (let i = 0; i < s.length; i++) {}
 };
