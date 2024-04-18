@@ -134,4 +134,6 @@ const anagrams = (s1, s2) => {
   //assign both to empty objects
   const cache1 = {};
   const cache2 = {};
+  //iterate through characters in both strings
+  for (let i = 0; i < s1.length; i++) {}
 };
