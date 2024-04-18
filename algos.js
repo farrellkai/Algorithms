@@ -163,4 +163,7 @@ console.log(anagrams('po', 'popp'));
 console.log(anagrams('pp', 'oo'));
 
 //most frequent character function
-const mostFrequentChar = (s) => {};
+const mostFrequentChar = (s) => {
+  //declare variable 'cache' assign to empty object
+  const cache = {};
+};
