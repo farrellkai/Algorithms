@@ -200,6 +200,8 @@ const pairSum = (nums, targetSum) => {
   for (let i = 0; i < nums.length; i++) {
     //if difference between targetSum and current element in nums exists in cache...
     if (cache[targetSum - nums[i]]) {
+      //push value of that key minus 1 onto output array
+      output.push(cache[targetSum - nums[i]] - 1);
     }
   }
 };
