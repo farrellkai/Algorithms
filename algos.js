@@ -166,4 +166,6 @@ console.log(anagrams('pp', 'oo'));
 const mostFrequentChar = (s) => {
   //declare variable 'cache' assign to empty object
   const cache = {};
+  //declare let variable 'output'
+  let output;
 };
