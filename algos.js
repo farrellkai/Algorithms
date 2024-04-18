@@ -205,5 +205,7 @@ const pairSum = (nums, targetSum) => {
       //push value of i onto output array
       output.push(i);
     }
+    //create current element as key in cache with value equal to i + 1
+    cache[nums[i]] = i + 1;
   }
 };
