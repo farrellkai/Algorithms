@@ -194,4 +194,6 @@ console.log(mostFrequentChar('riverbed'));
 const pairSum = (nums, targetSum) => {
   //declare cache variable assigned to empty object
   const cache = {};
+  //declare output variable assigned to empty array
+  const output = [];
 };
