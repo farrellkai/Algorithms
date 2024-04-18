@@ -125,3 +125,6 @@ console.log(
     'yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy'
   )
 );
+
+//anagrams function
+const anagrams = (s1, s2) => {};
