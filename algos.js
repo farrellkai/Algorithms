@@ -141,4 +141,7 @@ const anagrams = (s1, s2) => {
     //do same thing for characters from s2 to cache2
     !cache2[s2[i]] ? (cache2[s2[i]] = 1) : cache2[s2[i]]++;
   }
+  //iterate through key/value pairs in cache1
+  for (let key in cache1) {
+  }
 };
