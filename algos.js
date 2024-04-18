@@ -130,4 +130,8 @@ console.log(
 const anagrams = (s1, s2) => {
   //edge case: if input strings have different length return false
   if (s1.length !== s2.length) return false;
+  //declare cache1 and cache2 variables
+  //assign both to empty objects
+  const cache1 = {};
+  const cache2 = {};
 };
