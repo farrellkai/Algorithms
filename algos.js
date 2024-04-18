@@ -178,4 +178,5 @@ const mostFrequentChar = (s) => {
     //if key value of current character in cache is greater than key value of output in cache reassign output to current character
     if (cache[s[i]] > cache[output]) output = s[i];
   }
+  return output;
 };
