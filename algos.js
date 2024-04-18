@@ -189,3 +189,6 @@ console.log(mostFrequentChar('mississippi'));
 console.log(mostFrequentChar('potato'));
 console.log(mostFrequentChar('eleventennine'));
 console.log(mostFrequentChar('riverbed'));
+
+//pairSum function
+const pairSum = (nums, targetSum) => {};
