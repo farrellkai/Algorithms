@@ -208,4 +208,5 @@ const pairSum = (nums, targetSum) => {
     //create current element as key in cache with value equal to i + 1
     cache[nums[i]] = i + 1;
   }
+  return output;
 };
