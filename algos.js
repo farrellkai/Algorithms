@@ -202,6 +202,8 @@ const pairSum = (nums, targetSum) => {
     if (cache[targetSum - nums[i]]) {
       //push value of that key minus 1 onto output array
       output.push(cache[targetSum - nums[i]] - 1);
+      //push value of i onto output array
+      output.push(i);
     }
   }
 };
