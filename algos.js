@@ -146,4 +146,5 @@ const anagrams = (s1, s2) => {
     //if current key does not exist in cache2 or the key/value pairs do not match in cache1 and cache2 return false
     if (!cache2[key] || cache1[key] !== cache2[key]) return false;
   }
+  return true;
 };
