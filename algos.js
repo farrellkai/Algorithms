@@ -180,3 +180,12 @@ const mostFrequentChar = (s) => {
   }
   return output;
 };
+
+//test cases
+console.log(mostFrequentChar('bookeeper'));
+console.log(mostFrequentChar('david'));
+console.log(mostFrequentChar('abby'));
+console.log(mostFrequentChar('mississippi'));
+console.log(mostFrequentChar('potato'));
+console.log(mostFrequentChar('eleventennine'));
+console.log(mostFrequentChar('riverbed'));
