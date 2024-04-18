@@ -169,5 +169,8 @@ const mostFrequentChar = (s) => {
   //declare let variable 'output'
   let output;
   //iterate through characters in input string
-  for (let i = 0; i < s.length; i++) {}
+  for (let i = 0; i < s.length; i++) {
+    //if current character is not a key in cache create it w/ value of 1, otherwise increment
+    !cache[s[i]] ? (cache[s[i]] = 1) : cache[s[i]]++;
+  }
 };
