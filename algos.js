@@ -197,5 +197,9 @@ const pairSum = (nums, targetSum) => {
   //declare output variable assigned to empty array
   const output = [];
   //iterate through nums array
-  for (let i = 0; i < nums.length; i++) {}
+  for (let i = 0; i < nums.length; i++) {
+    //if difference between targetSum and current element in nums exists in cache...
+    if (cache[targetSum - nums[i]]) {
+    }
+  }
 };
