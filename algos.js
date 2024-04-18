@@ -166,8 +166,8 @@ console.log(anagrams('pp', 'oo'));
 const mostFrequentChar = (s) => {
   //declare variable 'cache' assign to empty object
   const cache = {};
-  //declare let variable 'output'
-  let output;
+  //declare let variable 'output' assign to first character in input string
+  let output = s[0];
   //iterate through characters in input string
   for (let i = 0; i < s.length; i++) {
     //if current character is not a key in cache create it w/ value of 1, otherwise increment
