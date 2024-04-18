@@ -191,4 +191,7 @@ console.log(mostFrequentChar('eleventennine'));
 console.log(mostFrequentChar('riverbed'));
 
 //pairSum function
-const pairSum = (nums, targetSum) => {};
+const pairSum = (nums, targetSum) => {
+  //declare cache variable assigned to empty object
+  const cache = {};
+};
