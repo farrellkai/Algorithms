@@ -161,3 +161,6 @@ console.log(anagrams('night', 'thing'));
 console.log(anagrams('abbc', 'aabc'));
 console.log(anagrams('po', 'popp'));
 console.log(anagrams('pp', 'oo'));
+
+//most frequent character function
+const mostFrequentChar = (s) => {};
