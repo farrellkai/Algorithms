@@ -223,4 +223,6 @@ console.log(pairSum([6, 4, 2, 8], 12));
 const pairProduct = (nums, targetProd) => {
   //declare cache variable assigned to empty object
   const cache = {};
+  //iterate through nums array
+  for (let i = 0; i < nums.length; i++) {}
 };
