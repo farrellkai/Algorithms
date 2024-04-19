@@ -220,4 +220,7 @@ console.log(pairSum([9, 9], 18));
 console.log(pairSum([6, 4, 2, 8], 12));
 
 //pairProduct function
-const pairProduct = (nums, targetProd) => {};
+const pairProduct = (nums, targetProd) => {
+  //declare cache variable assigned to empty object
+  const cache = {};
+};
