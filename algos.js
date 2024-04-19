@@ -224,5 +224,8 @@ const pairProduct = (nums, targetProd) => {
   //declare cache variable assigned to empty object
   const cache = {};
   //iterate through nums array
-  for (let i = 0; i < nums.length; i++) {}
+  for (let i = 0; i < nums.length; i++) {
+    //if quotient of targetProd and current element is key in cache return array with that value pair and current value of i
+    if (targetProd / nums[i] in cache) return [cache[targetProd / nums[i]], i];
+  }
 };
