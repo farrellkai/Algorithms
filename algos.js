@@ -227,5 +227,7 @@ const pairProduct = (nums, targetProd) => {
   for (let i = 0; i < nums.length; i++) {
     //if quotient of targetProd and current element is key in cache return array with that value pair and current value of i
     if (targetProd / nums[i] in cache) return [cache[targetProd / nums[i]], i];
+    //create key/value pair in cache with current element and value of i
+    cache[nums[i]] = i;
   }
 };
