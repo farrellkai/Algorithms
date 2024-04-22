@@ -230,4 +230,7 @@ const intersection = (a, b) => {
     //assign key/value pairs to cache for each element with true value
     cache[a[el]] = true;
   }
+  //iterate through b
+  for (let el of b) {
+  }
 };
