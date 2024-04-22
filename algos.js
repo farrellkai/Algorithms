@@ -223,4 +223,6 @@ console.log(pairSum([6, 4, 2, 8], 12));
 const intersection = (a, b) => {
   //declare cache assigned to empty object
   const cache = {};
+  //declare output assigned to empty array
+  const output = [];
 };
