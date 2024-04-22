@@ -220,4 +220,7 @@ console.log(pairSum([9, 9], 18));
 console.log(pairSum([6, 4, 2, 8], 12));
 
 //intersection function
-const intersection = (a, b) => {};
+const intersection = (a, b) => {
+  //declare cache assigned to empty object
+  const cache = {};
+};
