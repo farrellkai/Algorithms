@@ -232,5 +232,7 @@ const intersection = (a, b) => {
   }
   //iterate through b
   for (let el of b) {
+    //if current element exists in cache push to output
+    if (cache[b[el]]) output.push(b[el]);
   }
 };
