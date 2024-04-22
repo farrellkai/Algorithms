@@ -228,12 +228,28 @@ const intersection = (a, b) => {
   //iterate through a
   for (let el of a) {
     //assign key/value pairs to cache for each element with true value
-    cache[a[el]] = true;
+    cache[el] = true;
   }
+  console.log(cache);
   //iterate through b
   for (let el of b) {
     //if current element exists in cache push to output
-    if (cache[b[el]]) output.push(b[el]);
+    if (cache[el]) output.push(el);
   }
   return output;
 };
+
+//test cases
+console.log(intersection([4, 2, 1, 6], [3, 6, 9, 2, 10]));
+console.log(intersection([2, 4, 6], [4, 2]));
+console.log(intersection([4, 2, 1], [1, 2, 4, 6]));
+console.log(intersection([0, 1, 2], [10, 11]));
+
+const a = [];
+const b = [];
+for (let i = 0; i < 50000; i += 1) {
+  a.push(i);
+  b.push(i);
+}
+
+console.log(intersection(a, b));
