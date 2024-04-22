@@ -225,4 +225,7 @@ const intersection = (a, b) => {
   const cache = {};
   //declare output assigned to empty array
   const output = [];
+  //iterate through a
+  for (let el of a) {
+  }
 };
