@@ -219,23 +219,5 @@ console.log(pairSum([1, 6, 7, 2], 13));
 console.log(pairSum([9, 9], 18));
 console.log(pairSum([6, 4, 2, 8], 12));
 
-//pairProduct function
-const pairProduct = (nums, targetProd) => {
-  //declare cache variable assigned to empty object
-  const cache = {};
-  //iterate through nums array
-  for (let i = 0; i < nums.length; i++) {
-    //if quotient of targetProd and current element is key in cache return array with that value pair and current value of i
-    if (targetProd / nums[i] in cache) return [cache[targetProd / nums[i]], i];
-    //create key/value pair in cache with current element and value of i
-    cache[nums[i]] = i;
-  }
-};
-
-//test cases
-console.log(pairProduct([3, 2, 5, 4, 1], 10));
-console.log(pairProduct([3, 2, 5, 4, 1], 8));
-console.log(pairProduct([4, 7, 9, 2, 5, 1], 5));
-console.log(pairProduct([4, 7, 9, 2, 5, 1], 35));
-console.log(pairProduct([3, 2, 5, 4, 1], 10));
-console.log(pairProduct([4, 6, 8, 2], 16));
+//intersection function
+const intersection = (a, b) => {};
