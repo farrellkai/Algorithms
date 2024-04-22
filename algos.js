@@ -235,4 +235,5 @@ const intersection = (a, b) => {
     //if current element exists in cache push to output
     if (cache[b[el]]) output.push(b[el]);
   }
+  return output;
 };
