@@ -274,6 +274,7 @@ const fiveSort = (arr) => {
       //increment value of i
       i++;
       //reassign value of j pointer element to 5
+      arr[j] = 5;
       //decrement value of j
     }
   }
