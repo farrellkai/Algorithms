@@ -267,5 +267,8 @@ const fiveSort = (arr) => {
       j--;
       continue;
     }
+    //if i pointer value is 5...
+    if (arr[i] === 5) {
+    }
   }
 };
