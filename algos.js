@@ -255,4 +255,7 @@ for (let i = 0; i < 50000; i += 1) {
 //console.log(intersection(a, b));
 
 //fiveSort function
-const fiveSort = (arr) => {};
+const fiveSort = (arr) => {
+  //declare let variable 'i' assign to 0
+  let i = 0;
+};
