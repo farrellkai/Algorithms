@@ -262,9 +262,10 @@ const fiveSort = (arr) => {
   let j = arr.length - 1;
   //iterate through array backwards and forwards until both pointers meet
   while (i < j) {
-    //if j pointer element is 5 decrement value of j
+    //if j pointer element is 5 decrement value of j and skip to next iteration
     if (arr[j] === 5) {
       j--;
+      continue;
     }
   }
 };
