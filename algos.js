@@ -272,6 +272,7 @@ const fiveSort = (arr) => {
       //reassign current element to value of j pointer
       arr[i] = arr[j];
       //increment value of i
+      i++;
       //reassign value of j pointer element to 5
       //decrement value of j
     }
