@@ -252,4 +252,7 @@ for (let i = 0; i < 50000; i += 1) {
   b.push(i);
 }
 
-console.log(intersection(a, b));
+//console.log(intersection(a, b));
+
+//fiveSort function
+const fiveSort = (arr) => {};
