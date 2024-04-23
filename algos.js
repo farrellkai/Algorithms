@@ -271,13 +271,26 @@ const fiveSort = (arr) => {
     if (arr[i] === 5) {
       //reassign current element to value of j pointer
       arr[i] = arr[j];
-      //increment value of i
-      i++;
       //reassign value of j pointer element to 5
       arr[j] = 5;
       //decrement value of j
       j--;
     }
+    //increment value of i
+    i++;
   }
   return arr;
 };
+
+//test cases
+console.log(fiveSort([12, 5, 1, 5, 12, 7]));
+console.log(fiveSort([5, 2, 5, 6, 5, 1, 10, 2, 5, 5]));
+console.log(fiveSort([5, 5, 5, 1, 1, 1, 4]));
+console.log(fiveSort([5, 5, 6, 5, 5, 5, 5]));
+console.log(fiveSort([5, 1, 2, 5, 5, 3, 2, 5, 1, 5, 5, 5, 4, 5]));
+
+const fives = new Array(20000).fill(5);
+const fours = new Array(20000).fill(4);
+const nums = [...fives, ...fours];
+
+console.log(fiveSort(nums));
