@@ -258,4 +258,6 @@ for (let i = 0; i < 50000; i += 1) {
 const fiveSort = (arr) => {
   //declare let variable 'i' assign to 0
   let i = 0;
+  //declare let variable 'j' assign to last index of input array
+  let j = arr.length - 1;
 };
