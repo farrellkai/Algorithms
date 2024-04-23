@@ -260,4 +260,6 @@ const fiveSort = (arr) => {
   let i = 0;
   //declare let variable 'j' assign to last index of input array
   let j = arr.length - 1;
+  //iterate through array backwards and forwards until both pointers meet
+  while (i < j) {}
 };
