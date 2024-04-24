@@ -342,4 +342,4 @@ console.log(llValues(q));
 console.log(llValues(null));
 
 //alternative linked list values function
-const llValues2 = (head) => {};
+const llValues2 = (head, output = []) => {};
