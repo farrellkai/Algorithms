@@ -287,7 +287,7 @@ console.log(fiveSort([12, 5, 1, 5, 12, 7]));
 console.log(fiveSort([5, 2, 5, 6, 5, 1, 10, 2, 5, 5]));
 console.log(fiveSort([5, 5, 5, 1, 1, 1, 4]));
 console.log(fiveSort([5, 5, 6, 5, 5, 5, 5]));
-console.log(fiveSort([5, 1, 2, 5, 5, 3, 2, 5, 1, 5, 5, 5, 4, 5]));
+//console.log(fiveSort([5, 1, 2, 5, 5, 3, 2, 5, 1, 5, 5, 5, 4, 5]));
 
 const fives = new Array(20000).fill(5);
 const fours = new Array(20000).fill(4);
@@ -316,3 +316,27 @@ const llValues = (head) => {
   }
   return output;
 };
+
+//test cases
+const a1 = new Node('a');
+const b1 = new Node('b');
+const c = new Node('c');
+const d = new Node('d');
+
+a1.next = b1;
+b1.next = c;
+c.next = d;
+
+console.log(llValues(a1));
+
+const x = new Node('x');
+const y = new Node('y');
+
+x.next = y;
+
+console.log(llValues(x));
+
+const q = new Node('q');
+
+console.log(llValues(q));
+console.log(llValues(null));
