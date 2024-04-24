@@ -347,4 +347,6 @@ const llValues2 = (head, output = []) => {
   if (!head) return output;
   //push head value onto output
   output.push(head.val);
+  //return function with next node as argument
+  return llValues2(head.next, output);
 };
