@@ -305,4 +305,6 @@ function Node(val) {
 const llValues = (head) => {
   //declare output variable assign to empty arry
   const output = [];
+  //declare let variable 'i' assign to zero
+  let i = 0;
 };
