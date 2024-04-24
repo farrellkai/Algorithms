@@ -345,4 +345,6 @@ console.log(llValues(null));
 const llValues2 = (head, output = []) => {
   //if head is null return output
   if (!head) return output;
+  //push head value onto output
+  output.push(head.val);
 };
