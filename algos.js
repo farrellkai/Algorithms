@@ -311,5 +311,7 @@ const llValues = (head) => {
   while (node !== null) {
     //push value of node to output
     output.push(node.val);
+    //reassign node to next node in list
+    node = node.next;
   }
 };
