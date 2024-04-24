@@ -318,6 +318,40 @@ const llValues = (head) => {
 };
 
 //test cases
+// const a1 = new Node('a');
+// const b1 = new Node('b');
+// const c = new Node('c');
+// const d = new Node('d');
+
+// a1.next = b1;
+// b1.next = c;
+// c.next = d;
+
+// console.log(llValues(a1));
+
+// const x = new Node('x');
+// const y = new Node('y');
+
+// x.next = y;
+
+// console.log(llValues(x));
+
+// const q = new Node('q');
+
+// console.log(llValues(q));
+// console.log(llValues(null));
+
+//alternative linked list values function
+const llValues2 = (head, output = []) => {
+  //if head is null return output
+  if (!head) return output;
+  //push head value onto output
+  output.push(head.val);
+  //return function with next node as argument
+  return llValues2(head.next, output);
+};
+
+//test cases
 const a1 = new Node('a');
 const b1 = new Node('b');
 const c = new Node('c');
@@ -340,13 +374,3 @@ const q = new Node('q');
 
 console.log(llValues(q));
 console.log(llValues(null));
-
-//alternative linked list values function
-const llValues2 = (head, output = []) => {
-  //if head is null return output
-  if (!head) return output;
-  //push head value onto output
-  output.push(head.val);
-  //return function with next node as argument
-  return llValues2(head.next, output);
-};
