@@ -340,3 +340,6 @@ const q = new Node('q');
 
 console.log(llValues(q));
 console.log(llValues(null));
+
+//alternative linked list values function
+const llValues2 = (head) => {};
