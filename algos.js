@@ -300,3 +300,6 @@ function Node(val) {
   this.val = val;
   this.next = null;
 }
+
+//linked list values function
+const llValues = (head) => {};
