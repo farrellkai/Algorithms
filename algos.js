@@ -294,3 +294,9 @@ const fours = new Array(20000).fill(4);
 const nums = [...fives, ...fours];
 
 console.log(fiveSort(nums));
+
+//Node generator
+function Node(val) {
+  this.val = val;
+  this.next = null;
+}
