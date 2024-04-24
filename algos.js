@@ -314,4 +314,5 @@ const llValues = (head) => {
     //reassign node to next node in list
     node = node.next;
   }
+  return output;
 };
