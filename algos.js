@@ -302,4 +302,7 @@ function Node(val) {
 }
 
 //linked list values function
-const llValues = (head) => {};
+const llValues = (head) => {
+  //declare output variable assign to empty arry
+  const output = [];
+};
