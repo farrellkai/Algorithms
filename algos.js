@@ -308,4 +308,5 @@ const llValues = (head) => {
   //declare let variable 'node' assign to head
   let node = head;
   //iterate through each node in list
+  while (node !== null) {}
 };
