@@ -385,5 +385,7 @@ const sumList = (head) => {
   while (node !== null) {
     //add current value to sum
     sum += node.val;
+    //reassign node to next node in list
+    node = node.next;
   }
 };
