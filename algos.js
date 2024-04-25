@@ -390,3 +390,30 @@ const sumList = (head) => {
   }
   return sum;
 };
+
+//test cases
+const a1 = new Node(2);
+const b1 = new Node(8);
+const c = new Node(3);
+const d = new Node(-1);
+const e = new Node(7);
+
+a1.next = b1;
+b1.next = c;
+c.next = d;
+d.next = e;
+
+console.log(sumList(a1));
+
+const x = new Node(38);
+const y = new Node(4);
+
+x.next = y;
+
+console.log(sumList(x));
+
+const z = new Node(100);
+
+console.log(sumList(z));
+
+console.log(sumList(null));
