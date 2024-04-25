@@ -376,4 +376,7 @@ const llValues2 = (head, output = []) => {
 // console.log(llValues2(null));
 
 //sumList function
-const sumList = (head) => {};
+const sumList = (head) => {
+  //declare let variable 'sum' assign to zero
+  let sum = 0;
+};
