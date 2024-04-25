@@ -392,6 +392,41 @@ const sumList = (head) => {
 };
 
 //test cases
+// const a1 = new Node(2);
+// const b1 = new Node(8);
+// const c = new Node(3);
+// const d = new Node(-1);
+// const e = new Node(7);
+
+// a1.next = b1;
+// b1.next = c;
+// c.next = d;
+// d.next = e;
+
+// console.log(sumList(a1));
+
+// const x = new Node(38);
+// const y = new Node(4);
+
+// x.next = y;
+
+// console.log(sumList(x));
+
+// const z = new Node(100);
+
+// console.log(sumList(z));
+
+// console.log(sumList(null));
+
+//alternative sumList function
+const sumList2 = (head, sum = 0) => {
+  //base case: if head is null return sum
+  if (!head) return sum;
+  //recursive case: return function with next node as argument and head value plus sum as next argument
+  return sumList2(head.next, sum + head.val);
+};
+
+//test cases
 const a1 = new Node(2);
 const b1 = new Node(8);
 const c = new Node(3);
@@ -403,25 +438,17 @@ b1.next = c;
 c.next = d;
 d.next = e;
 
-console.log(sumList(a1));
+console.log(sumList2(a1));
 
 const x = new Node(38);
 const y = new Node(4);
 
 x.next = y;
 
-console.log(sumList(x));
+console.log(sumList2(x));
 
 const z = new Node(100);
 
-console.log(sumList(z));
+console.log(sumList2(z));
 
-console.log(sumList(null));
-
-//alternative sumList function
-const sumList2 = (head, sum = 0) => {
-  //base case: if head is null return sum
-  if (!head) return sum;
-  //recursive case: return function with next node as argument and head value plus sum as next argument
-  return sumList2(head.next, sum + head.val);
-};
+console.log(sumList2(null));
