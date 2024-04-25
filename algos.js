@@ -352,25 +352,28 @@ const llValues2 = (head, output = []) => {
 };
 
 //test cases
-const a1 = new Node('a');
-const b1 = new Node('b');
-const c = new Node('c');
-const d = new Node('d');
+// const a1 = new Node('a');
+// const b1 = new Node('b');
+// const c = new Node('c');
+// const d = new Node('d');
 
-a1.next = b1;
-b1.next = c;
-c.next = d;
+// a1.next = b1;
+// b1.next = c;
+// c.next = d;
 
-console.log(llValues2(a1));
+// console.log(llValues2(a1));
 
-const x = new Node('x');
-const y = new Node('y');
+// const x = new Node('x');
+// const y = new Node('y');
 
-x.next = y;
+// x.next = y;
 
-console.log(llValues2(x));
+// console.log(llValues2(x));
 
-const q = new Node('q');
+// const q = new Node('q');
 
-console.log(llValues2(q));
-console.log(llValues2(null));
+// console.log(llValues2(q));
+// console.log(llValues2(null));
+
+//sumList function
+const sumList = (head) => {};
