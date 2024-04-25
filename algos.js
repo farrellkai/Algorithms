@@ -379,4 +379,6 @@ const llValues2 = (head, output = []) => {
 const sumList = (head) => {
   //declare let variable 'sum' assign to zero
   let sum = 0;
+  //declare let variable 'node' assign to head
+  let node = head;
 };
