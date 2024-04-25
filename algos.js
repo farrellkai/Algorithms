@@ -419,4 +419,4 @@ console.log(sumList(z));
 console.log(sumList(null));
 
 //alternative sumList function
-const sumList2 = (head) => {};
+const sumList2 = (head, sum = 0) => {};
