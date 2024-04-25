@@ -417,3 +417,6 @@ const z = new Node(100);
 console.log(sumList(z));
 
 console.log(sumList(null));
+
+//alternative sumList function
+const sumList2 = (head) => {};
