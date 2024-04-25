@@ -424,4 +424,6 @@ const sumList2 = (head, sum = 0) => {
   if (!head) return sum;
   //add current node valuse to sum
   sum += head.val;
+  //recursive case: return function with next node as argument
+  return sumList2(head.next, sum);
 };
