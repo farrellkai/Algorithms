@@ -422,8 +422,6 @@ console.log(sumList(null));
 const sumList2 = (head, sum = 0) => {
   //base case: if head is null return sum
   if (!head) return sum;
-  //add current node valuse to sum
-  sum += head.val;
-  //recursive case: return function with next node as argument
-  return sumList2(head.next, sum);
+  //recursive case: return function with next node as argument and head value plus sum as next argument
+  return sumList2(head.next, sum + head.val);
 };
