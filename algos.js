@@ -382,5 +382,8 @@ const sumList = (head) => {
   //declare let variable 'node' assign to head
   let node = head;
   //iterate through list
-  while (node !== null) {}
+  while (node !== null) {
+    //add current value to sum
+    sum += node.val;
+  }
 };
