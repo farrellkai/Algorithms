@@ -381,4 +381,6 @@ const sumList = (head) => {
   let sum = 0;
   //declare let variable 'node' assign to head
   let node = head;
+  //iterate through list
+  while (node !== null) {}
 };
