@@ -422,4 +422,6 @@ console.log(sumList(null));
 const sumList2 = (head, sum = 0) => {
   //base case: if head is null return sum
   if (!head) return sum;
+  //add current node valuse to sum
+  sum += head.val;
 };
