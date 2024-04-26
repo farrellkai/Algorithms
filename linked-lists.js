@@ -167,4 +167,5 @@ const llFind = (head, tar) => {
     //move to next node in list
     node = node.next;
   }
+  return false;
 };
