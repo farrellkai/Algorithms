@@ -130,31 +130,31 @@ const sumList2 = (head, sum = 0) => {
 };
 
 //test cases
-const a1 = new Node(2);
-const b1 = new Node(8);
-const c = new Node(3);
-const d = new Node(-1);
-const e = new Node(7);
+// const a1 = new Node(2);
+// const b1 = new Node(8);
+// const c = new Node(3);
+// const d = new Node(-1);
+// const e = new Node(7);
 
-a1.next = b1;
-b1.next = c;
-c.next = d;
-d.next = e;
+// a1.next = b1;
+// b1.next = c;
+// c.next = d;
+// d.next = e;
 
-console.log(sumList2(a1));
+// console.log(sumList2(a1));
 
-const x = new Node(38);
-const y = new Node(4);
+// const x = new Node(38);
+// const y = new Node(4);
 
-x.next = y;
+// x.next = y;
 
-console.log(sumList2(x));
+// console.log(sumList2(x));
 
-const z = new Node(100);
+// const z = new Node(100);
 
-console.log(sumList2(z));
+// console.log(sumList2(z));
 
-console.log(sumList2(null));
+// console.log(sumList2(null));
 
 //linked list find function
 const llFind = (head, tar) => {
@@ -169,3 +169,29 @@ const llFind = (head, tar) => {
   }
   return false;
 };
+
+//test cases
+const a = new Node('a');
+const b = new Node('b');
+const c = new Node('c');
+const d = new Node('d');
+
+a.next = b;
+b.next = c;
+c.next = d;
+
+console.log(llFind(a, 'c'));
+console.log(llFind(a, 'd'));
+console.log(llFind(a, 'q'));
+
+const node1 = new Node('jason');
+const node2 = new Node('leneli');
+
+node1.next = node2;
+
+console.log(llFind(node1, 'jason'));
+
+const node3 = new Node(42);
+
+console.log(llFind(node3, 42));
+console.log(llFind(node3, 100));
