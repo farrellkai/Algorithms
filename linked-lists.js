@@ -195,3 +195,6 @@ const node3 = new Node(42);
 
 console.log(llFind(node3, 42));
 console.log(llFind(node3, 100));
+
+//alternate linked list find function
+const llFind2 = (head, tar) => {};
