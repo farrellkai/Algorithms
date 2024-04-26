@@ -161,5 +161,8 @@ const llFind = (head, tar) => {
   //declare let variable 'node' assign to head
   let node = head;
   //iterate through nodes in list
-  while (node !== null) {}
+  while (node !== null) {
+    //if node value is target value return true
+    if (node.val === tar) return true;
+  }
 };
