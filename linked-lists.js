@@ -164,5 +164,7 @@ const llFind = (head, tar) => {
   while (node !== null) {
     //if node value is target value return true
     if (node.val === tar) return true;
+    //move to next node in list
+    node = node.next;
   }
 };
