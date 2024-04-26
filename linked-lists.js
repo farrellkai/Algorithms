@@ -157,4 +157,7 @@ console.log(sumList2(z));
 console.log(sumList2(null));
 
 //linked list find function
-const llFind = (head, tar) => {};
+const llFind = (head, tar) => {
+  //declare let variable 'node' assign to head
+  let node = head;
+};
