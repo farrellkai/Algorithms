@@ -205,3 +205,11 @@ const llFind2 = (head, tar) => {
   //recursive case: return llFind2 w/ next node as argument
   return llFind2(head.next, tar);
 };
+
+//test cases
+console.log(llFind2(a, 'c'));
+console.log(llFind2(a, 'd'));
+console.log(llFind2(a, 'q'));
+console.log(llFind2(node1, 'jason'));
+console.log(llFind2(node3, 42));
+console.log(llFind2(node3, 100));
