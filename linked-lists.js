@@ -202,4 +202,6 @@ const llFind2 = (head, tar) => {
   if (!head) return false;
   //edge case 2: if node value is target return true
   if (head.val === tar) return true;
+  //recursive case: return llFind2 w/ next node as argument
+  return llFind2(head.next, tar);
 };
