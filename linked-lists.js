@@ -160,4 +160,6 @@ console.log(sumList2(null));
 const llFind = (head, tar) => {
   //declare let variable 'node' assign to head
   let node = head;
+  //iterate through nodes in list
+  while (node !== null) {}
 };
