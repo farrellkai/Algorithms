@@ -155,3 +155,6 @@ const z = new Node(100);
 console.log(sumList2(z));
 
 console.log(sumList2(null));
+
+//linked list find function
+const llFind = (head, tar) => {};
