@@ -197,4 +197,7 @@ console.log(llFind(node3, 42));
 console.log(llFind(node3, 100));
 
 //alternate linked list find function
-const llFind2 = (head, tar) => {};
+const llFind2 = (head, tar) => {
+  //edge case: if head does not exist return false
+  if (!head) return false;
+};
