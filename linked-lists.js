@@ -200,4 +200,6 @@ console.log(llFind(node3, 100));
 const llFind2 = (head, tar) => {
   //edge case: if head does not exist return false
   if (!head) return false;
+  //edge case 2: if node value is target return true
+  if (head.val === tar) return true;
 };
