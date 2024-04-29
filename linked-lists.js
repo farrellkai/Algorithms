@@ -229,6 +229,8 @@ const getNodeVal = (head, index) => {
     //move to next node
     node = node.next;
   }
+  //if loop is broken return null;
+  return null;
 };
 
 //test cases
