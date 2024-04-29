@@ -247,3 +247,10 @@ const getNodeVal2 = (head, index) => {
   //return function with next node and index minus 1 as arguments
   return getNodeVal2(head.next, --index);
 };
+
+//test cases
+console.log(getNodeVal2(a, 2));
+console.log(getNodeVal2(a, 3));
+console.log(getNodeVal2(a, 7));
+console.log(getNodeVal2(node1, 0));
+console.log(getNodeVal2(node1, 1));
