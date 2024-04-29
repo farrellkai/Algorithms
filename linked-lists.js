@@ -218,4 +218,6 @@ console.log(llFind2(node3, 100));
 const getNodeVal = (head, index) => {
   //declare let variable 'i' assign to 0
   let i = 0;
+  //declare let variable 'node' assign to head
+  let node = head;
 };
