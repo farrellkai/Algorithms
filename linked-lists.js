@@ -220,4 +220,6 @@ const getNodeVal = (head, index) => {
   let i = 0;
   //declare let variable 'node' assign to head
   let node = head;
+  //iterate through ndoes in list
+  while (node !== null) {}
 };
