@@ -230,3 +230,10 @@ const getNodeVal = (head, index) => {
     node = node.next;
   }
 };
+
+//test cases
+console.log(getNodeVal(a, 2));
+console.log(getNodeVal(a, 3));
+console.log(getNodeVal(a, 7));
+console.log(getNodeVal(node1, 0));
+console.log(getNodeVal(node1, 1));
