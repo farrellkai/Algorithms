@@ -226,5 +226,7 @@ const getNodeVal = (head, index) => {
     if (i === index) return node.val;
     //increment i
     i++;
+    //move to next node
+    node = node.next;
   }
 };
