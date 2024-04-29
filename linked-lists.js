@@ -224,5 +224,7 @@ const getNodeVal = (head, index) => {
   while (node !== null) {
     //if i equates to index return current node's value
     if (i === index) return node.val;
+    //increment i
+    i++;
   }
 };
