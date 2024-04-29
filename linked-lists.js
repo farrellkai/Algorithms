@@ -221,5 +221,8 @@ const getNodeVal = (head, index) => {
   //declare let variable 'node' assign to head
   let node = head;
   //iterate through ndoes in list
-  while (node !== null) {}
+  while (node !== null) {
+    //if i equates to index return current node's value
+    if (i === index) return node.val;
+  }
 };
