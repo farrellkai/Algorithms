@@ -215,4 +215,7 @@ console.log(llFind2(node3, 42));
 console.log(llFind2(node3, 100));
 
 //get node value function
-const getNodeVal = (head, index) => {};
+const getNodeVal = (head, index) => {
+  //declare let variable 'i' assign to 0
+  let i = 0;
+};
