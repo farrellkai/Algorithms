@@ -242,6 +242,8 @@ console.log(getNodeVal(node1, 1));
 
 //alternate get node value funtion
 const getNodeVal2 = (head, index) => {
+  //base case: if head does not exist return null
+  if (!head) return null;
   //base case: if index is 0 return head value
   if (index === 0) return head.val;
   //return function with next node and index minus 1 as arguments
