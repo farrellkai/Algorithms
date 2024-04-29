@@ -239,3 +239,6 @@ console.log(getNodeVal(a, 3));
 console.log(getNodeVal(a, 7));
 console.log(getNodeVal(node1, 0));
 console.log(getNodeVal(node1, 1));
+
+//alternate get node value funtion
+const getNodeVal2 = (head, index) => {};
