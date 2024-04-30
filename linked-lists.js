@@ -285,7 +285,10 @@ const reverseList = (head) => {
 // console.log(reverseList(node3));
 
 //alternate reverse linked list function
-const reverseList2 = (head, next = head.next, prev = null) => {};
+const reverseList2 = (head, next = head.next, prev = null) => {
+  //assign head's next property to prev
+  head.next = prev;
+};
 
 //test cases
 console.log(reverseList2(a));
