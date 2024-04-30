@@ -277,3 +277,8 @@ const reverseList = (head) => {
   }
   return prev;
 };
+
+//test cases
+console.log(reverseList(a));
+console.log(reverseList(node1));
+console.log(reverseList(node3));
