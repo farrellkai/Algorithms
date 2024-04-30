@@ -288,6 +288,8 @@ const reverseList = (head) => {
 const reverseList2 = (head, next = head.next, prev = null) => {
   //assign head's next property to prev
   head.next = prev;
+  //base case: if next is null return head
+  if (!next) return head;
 };
 
 //test cases
