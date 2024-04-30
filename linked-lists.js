@@ -257,4 +257,7 @@ console.log(getNodeVal2(a, 7));
 console.log(getNodeVal2(node1, 0));
 console.log(getNodeVal2(node1, 1));
 
-const reverseList = (head) => {};
+const reverseList = (head) => {
+  //declare let variable 'prev'
+  let prev;
+};
