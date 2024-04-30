@@ -262,4 +262,6 @@ const reverseList = (head) => {
   let prev;
   //declare let variable 'cur' assign to head
   let cur = head;
+  //declare let variable 'next' assign to head.next
+  let next = head.next;
 };
