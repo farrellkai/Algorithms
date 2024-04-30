@@ -285,26 +285,7 @@ const reverseList = (head) => {
 // console.log(reverseList(node3));
 
 //alternate reverse linked list function
-const reverseList2 = (head) => {
-  //declare let variable 'prev'
-  let prev;
-  //declare let variable 'cur' assign to head
-  let cur = head;
-  //declare let variable 'next' assign to head
-  let next = head;
-  //iterate thorugh nodes in list
-  while (cur !== null) {
-    //reassign next to next.next
-    next = next.next;
-    //assign cur.next to value of prev
-    cur.next = prev;
-    //reassign prev to cur
-    prev = cur;
-    //reassign cur to next
-    cur = next;
-  }
-  return prev;
-};
+const reverseList2 = (head, next = head.next, prev = null) => {};
 
 //test cases
 console.log(reverseList2(a));
