@@ -251,12 +251,13 @@ const getNodeVal2 = (head, index) => {
 };
 
 //test cases
-console.log(getNodeVal2(a, 2));
-console.log(getNodeVal2(a, 3));
-console.log(getNodeVal2(a, 7));
-console.log(getNodeVal2(node1, 0));
-console.log(getNodeVal2(node1, 1));
+// console.log(getNodeVal2(a, 2));
+// console.log(getNodeVal2(a, 3));
+// console.log(getNodeVal2(a, 7));
+// console.log(getNodeVal2(node1, 0));
+// console.log(getNodeVal2(node1, 1));
 
+//reverse linked list function
 const reverseList = (head) => {
   //declare let variable 'prev'
   let prev;
@@ -279,6 +280,33 @@ const reverseList = (head) => {
 };
 
 //test cases
-console.log(reverseList(a));
-console.log(reverseList(node1));
-console.log(reverseList(node3));
+// console.log(reverseList(a));
+// console.log(reverseList(node1));
+// console.log(reverseList(node3));
+
+//alternate reverse linked list function
+const reverseList2 = (head) => {
+  //declare let variable 'prev'
+  let prev;
+  //declare let variable 'cur' assign to head
+  let cur = head;
+  //declare let variable 'next' assign to head
+  let next = head;
+  //iterate thorugh nodes in list
+  while (cur !== null) {
+    //reassign next to next.next
+    next = next.next;
+    //assign cur.next to value of prev
+    cur.next = prev;
+    //reassign prev to cur
+    prev = cur;
+    //reassign cur to next
+    cur = next;
+  }
+  return prev;
+};
+
+//test cases
+console.log(reverseList2(a));
+console.log(reverseList2(node1));
+console.log(reverseList2(node3));
