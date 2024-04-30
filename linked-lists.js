@@ -262,11 +262,15 @@ const reverseList = (head) => {
   let prev;
   //declare let variable 'cur' assign to head
   let cur = head;
-  //declare let variable 'next' assign to head.next
-  let next = head.next;
+  //declare let variable 'next' assign to head
+  let next = head;
   //iterate thorugh nodes in list
   while (cur !== null) {
     //assign cur.next to value of prev
     cur.next = prev;
+    //reassign prev to cur
+    prev = cur;
+    //reassign cur to next
+    cur = next;
   }
 };
