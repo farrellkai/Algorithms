@@ -266,6 +266,8 @@ const reverseList = (head) => {
   let next = head;
   //iterate thorugh nodes in list
   while (cur !== null) {
+    //reassign next to next.next
+    next = next.next;
     //assign cur.next to value of prev
     cur.next = prev;
     //reassign prev to cur
