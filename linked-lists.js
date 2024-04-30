@@ -256,3 +256,5 @@ console.log(getNodeVal2(a, 3));
 console.log(getNodeVal2(a, 7));
 console.log(getNodeVal2(node1, 0));
 console.log(getNodeVal2(node1, 1));
+
+const reverseList = (head) => {};
