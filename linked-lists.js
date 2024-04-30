@@ -275,4 +275,5 @@ const reverseList = (head) => {
     //reassign cur to next
     cur = next;
   }
+  return prev;
 };
