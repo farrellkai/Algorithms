@@ -260,4 +260,6 @@ console.log(getNodeVal2(node1, 1));
 const reverseList = (head) => {
   //declare let variable 'prev'
   let prev;
+  //declare let variable 'cur' assign to head
+  let cur = head;
 };
