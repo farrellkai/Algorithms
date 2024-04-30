@@ -290,6 +290,8 @@ const reverseList2 = (head, next = head.next, prev = null) => {
   head.next = prev;
   //base case: if next is null return head
   if (!next) return head;
+  //recursive case: return function with next, next.next, and head as arguments respectivley
+  return reverseList2(next, next.next, head);
 };
 
 //test cases
