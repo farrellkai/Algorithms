@@ -319,4 +319,5 @@ const zipperList = (head1, head2) => {
     }
     tail = tail.next;
   }
+  return dummy.next;
 };
