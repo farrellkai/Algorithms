@@ -303,4 +303,9 @@ const reverseList2 = (head, next = head.next, prev = null) => {
 const zipperList = (head1, head2) => {
   //declare variable 'dummy' assign to new node instance
   const dummy = new Node('dummy');
+  //declare let variable 'tail' assign to dummy
+  let tail = dummy;
+  //declare let variables 'cur1' & 'cur2' assign to head1 & head2 respectively
+  let cur1 = head1;
+  let cur2 = head2;
 };
