@@ -310,10 +310,12 @@ const zipperList = (head1, head2) => {
   let next2 = head2;
   //iterate through nodes on both lists
   while (next1 !== null || next2 !== null) {
-    if (count % 2 !== 0 && next2 !== null) {
+    if (count % 2 !== 0) {
+      if (!next2) break;
       tail.next = next2;
       next2 = next2.next;
     } else {
+      if (!next1) break;
       tail.next = next1;
       next1 = next1.next;
     }
