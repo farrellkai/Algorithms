@@ -300,4 +300,7 @@ const reverseList2 = (head, next = head.next, prev = null) => {
 // console.log(reverseList2(node3));
 
 //zipper list function
-const zipperList = (head1, head2) => {};
+const zipperList = (head1, head2) => {
+  //declare variable 'dummy' assign to new node instance
+  const dummy = new Node('dummy');
+};
