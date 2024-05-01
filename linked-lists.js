@@ -308,4 +308,6 @@ const zipperList = (head1, head2) => {
   //declare let variables 'cur1' & 'cur2' assign to head1 & head2 respectively
   let cur1 = head1;
   let cur2 = head2;
+  //iterate through nodes on both lists
+  while (tail !== null) {}
 };
