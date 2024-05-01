@@ -295,6 +295,9 @@ const reverseList2 = (head, next = head.next, prev = null) => {
 };
 
 //test cases
-console.log(reverseList2(a));
-console.log(reverseList2(node1));
-console.log(reverseList2(node3));
+// console.log(reverseList2(a));
+// console.log(reverseList2(node1));
+// console.log(reverseList2(node3));
+
+//zipper list function
+const zipperList = (head1, head2) => {};
