@@ -313,15 +313,14 @@ const zipperList = (head1, head2) => {
     if (count % 2 !== 0 && next2 !== null) {
       tail.next = next2;
       next2 = next2.next;
-    }
-    else {
+    } else {
       tail.next = next1;
       next1 = next1.next;
     }
     tail = tail.next;
-    count++
+    count++;
+  }
 };
-
 //test cases
 const a = new Node('a');
 const b = new Node('b');
