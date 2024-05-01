@@ -320,6 +320,7 @@ const zipperList = (head1, head2) => {
     tail = tail.next;
     count++;
   }
+  return head1;
 };
 //test cases
 const a = new Node('a');
