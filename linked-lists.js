@@ -309,5 +309,13 @@ const zipperList = (head1, head2) => {
   let cur1 = head1;
   let cur2 = head2;
   //iterate through nodes on both lists
-  while (tail !== null) {}
+  while (tail !== null) {
+    if (!cur2 || cur1.val < cur2.val) {
+      tail.next = cur1;
+      cur1 = cur1.next;
+    } else if (!cur1 || cur2.val < cur1.val) {
+      tail.next = cur2;
+      cur2 = cur2.next;
+    }
+  }
 };
