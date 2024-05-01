@@ -317,5 +317,6 @@ const zipperList = (head1, head2) => {
       tail.next = cur2;
       cur2 = cur2.next;
     }
+    tail = tail.next;
   }
 };
