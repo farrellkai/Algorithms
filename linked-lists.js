@@ -171,30 +171,30 @@ const llFind = (head, tar) => {
 };
 
 //test cases
-const a = new Node('a');
-const b = new Node('b');
-const c = new Node('c');
-const d = new Node('d');
+// const a = new Node('a');
+// const b = new Node('b');
+// const c = new Node('c');
+// const d = new Node('d');
 
-a.next = b;
-b.next = c;
-c.next = d;
+// a.next = b;
+// b.next = c;
+// c.next = d;
 
-console.log(llFind(a, 'c'));
-console.log(llFind(a, 'd'));
-console.log(llFind(a, 'q'));
+// console.log(llFind(a, 'c'));
+// console.log(llFind(a, 'd'));
+// console.log(llFind(a, 'q'));
 
-const node1 = new Node('jason');
-const node2 = new Node('leneli');
+// const node1 = new Node('jason');
+// const node2 = new Node('leneli');
 
-node1.next = node2;
+// node1.next = node2;
 
-console.log(llFind(node1, 'jason'));
+// console.log(llFind(node1, 'jason'));
 
-const node3 = new Node(42);
+// const node3 = new Node(42);
 
-console.log(llFind(node3, 42));
-console.log(llFind(node3, 100));
+// console.log(llFind(node3, 42));
+// console.log(llFind(node3, 100));
 
 //alternate linked list find function
 const llFind2 = (head, tar) => {
@@ -207,12 +207,12 @@ const llFind2 = (head, tar) => {
 };
 
 //test cases
-console.log(llFind2(a, 'c'));
-console.log(llFind2(a, 'd'));
-console.log(llFind2(a, 'q'));
-console.log(llFind2(node1, 'jason'));
-console.log(llFind2(node3, 42));
-console.log(llFind2(node3, 100));
+// console.log(llFind2(a, 'c'));
+// console.log(llFind2(a, 'd'));
+// console.log(llFind2(a, 'q'));
+// console.log(llFind2(node1, 'jason'));
+// console.log(llFind2(node3, 42));
+// console.log(llFind2(node3, 100));
 
 //get node value function
 const getNodeVal = (head, index) => {
@@ -234,11 +234,11 @@ const getNodeVal = (head, index) => {
 };
 
 //test cases
-console.log(getNodeVal(a, 2));
-console.log(getNodeVal(a, 3));
-console.log(getNodeVal(a, 7));
-console.log(getNodeVal(node1, 0));
-console.log(getNodeVal(node1, 1));
+// console.log(getNodeVal(a, 2));
+// console.log(getNodeVal(a, 3));
+// console.log(getNodeVal(a, 7));
+// console.log(getNodeVal(node1, 0));
+// console.log(getNodeVal(node1, 1));
 
 //alternate get node value funtion
 const getNodeVal2 = (head, index) => {
@@ -321,3 +321,22 @@ const zipperList = (head1, head2) => {
   }
   return dummy.next;
 };
+
+//test cases
+const a = new Node('a');
+const b = new Node('b');
+const c = new Node('c');
+a.next = b;
+b.next = c;
+
+const x = new Node('x');
+const y = new Node('y');
+const z = new Node('z');
+x.next = y;
+y.next = z;
+
+console.log(zipperList(a, x));
+console.log(zipperList());
+console.log(zipperList());
+console.log(zipperList());
+console.log(zipperList());
