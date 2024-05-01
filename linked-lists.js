@@ -301,14 +301,23 @@ const reverseList2 = (head, next = head.next, prev = null) => {
 
 //zipper list function
 const zipperList = (head1, head2) => {
-  //declare let variable 'tail' assign to dummy
+  //declare let variable 'count' assign to 1
+  let count = 1;
+  //declare let variable 'tail' assign to head1
   let tail = head1;
-  //declare let variables 'cur1' & 'cur2' assign to head1 & head2 respectively
-  let cur1 = head1;
-  let cur2 = head2;
+  //declare let variables 'next1' & 'next2' assign to head1.next & head2 respectively
+  let next1 = head1;
+  let next2 = head2;
   //iterate through nodes on both lists
-  while (cur1 !== null || cur2 !== null) {
-
+  while (nex1 !== null || next2 !== null) {
+    if (count % 2 !== 0 && next2 !== null) {
+      tail.next = next2;
+      next2 = next2.next;
+    }
+    else {
+      tail.next = next1;
+      next1 = next1.next;
+    }
 };
 
 //test cases
