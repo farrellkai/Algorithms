@@ -356,5 +356,8 @@ const mergeList = (head1, head2) => {
   //declare let variable 'tail' assign to dummy
   let tail = dummy;
   //iterate through nodes in both lists
-  while (cur1 !== null || cur2 !== null) {}
+  while (cur1 !== null || cur2 !== null) {
+    if (cur1 && cur2) {
+    }
+  }
 };
