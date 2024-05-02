@@ -344,4 +344,7 @@ const zipperList = (head1, head2) => {
 // console.log(zipperList());
 
 //merge lists function
-const mergeList = (head1, head2) => {};
+const mergeList = (head1, head2) => {
+  //declare variable 'dummy' assign to new Node instance
+  const dummy = new Node('dummy');
+};
