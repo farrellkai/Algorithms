@@ -325,20 +325,23 @@ const zipperList = (head1, head2) => {
   return head1;
 };
 //test cases
-const a = new Node('a');
-const b = new Node('b');
-const c = new Node('c');
-a.next = b;
-b.next = c;
+// const a = new Node('a');
+// const b = new Node('b');
+// const c = new Node('c');
+// a.next = b;
+// b.next = c;
 
-const x = new Node('x');
-const y = new Node('y');
-const z = new Node('z');
-x.next = y;
-y.next = z;
+// const x = new Node('x');
+// const y = new Node('y');
+// const z = new Node('z');
+// x.next = y;
+// y.next = z;
 
-console.log(zipperList(a, x));
-console.log(zipperList());
-console.log(zipperList());
-console.log(zipperList());
-console.log(zipperList());
+// console.log(zipperList(a, x));
+// console.log(zipperList());
+// console.log(zipperList());
+// console.log(zipperList());
+// console.log(zipperList());
+
+//merge lists function
+const mergeList = (head1, head2) => {};
