@@ -347,4 +347,7 @@ const zipperList = (head1, head2) => {
 const mergeList = (head1, head2) => {
   //declare variable 'dummy' assign to new Node instance
   const dummy = new Node('dummy');
+  //declare let variables 'cur1' & 'cur2' assign to head1 & head2 respectively
+  let cur1 = head1;
+  let cur2 = head2;
 };
