@@ -357,7 +357,15 @@ const mergeList = (head1, head2) => {
   let tail = dummy;
   //iterate through nodes in both lists
   while (cur1 !== null || cur2 !== null) {
+    //if cur1 & cur2 exist
     if (cur1 && cur2) {
+      //if cur1 value is less than cur2 value
+      if (cur1.val < cur2.val) {
+        //assign next property of tail to cur1
+        tail.next = cur1;
+        //reassign cur1 to next node
+        cur1 = cur1.next;
+      }
     }
   }
 };
