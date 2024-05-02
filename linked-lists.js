@@ -366,6 +366,9 @@ const mergeList = (head1, head2) => {
         //reassign cur1 to next node
         cur1 = cur1.next;
       }
+      //else if cur2 value is less than cur1 value
+      else if (cur2.val < cur1.val) {
+      }
     }
   }
 };
