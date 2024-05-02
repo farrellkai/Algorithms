@@ -370,6 +370,8 @@ const mergeList = (head1, head2) => {
       else if (cur2.val < cur1.val) {
         //assign next property of tail to cur2
         tail.next = cur2;
+        //reassign cur2 to next node
+        cur2 = cur2.next;
       }
     }
   }
