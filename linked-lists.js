@@ -353,4 +353,6 @@ const mergeList = (head1, head2) => {
   //declare let variables 'next1' & 'next2' assign to head1.next & head2.next respectively
   let next1 = head1.next;
   let next2 = head2.next;
+  //declare let variable 'tail' assign to dummy
+  let tail = dummy;
 };
