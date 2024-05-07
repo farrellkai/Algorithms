@@ -25,5 +25,13 @@ const factorial = (n) => {
   //base case: if n is 0 return 1
   if (!n) return 1;
   //recursive case: return factorial with n minus 1 as argument multiplied by n
-  return factorial(--n) * n;
+  return n * factorial(--n);
 };
+
+//test cases
+console.log(factorial(3));
+console.log(factorial(6));
+console.log(factorial(18));
+console.log(factorial(1));
+console.log(factorial(13));
+console.log(factorial(0));
