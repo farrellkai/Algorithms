@@ -21,4 +21,6 @@ console.log(
 );
 
 //factorial function
-const factorial = (n) => {};
+const factorial = (n) => {
+  //if n is 0
+};
