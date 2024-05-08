@@ -37,4 +37,7 @@ console.log(factorial(13));
 console.log(factorial(0));
 
 //sum of lengths function
-const sumOfLengths = (arr) => {};
+const sumOfLengths = (arr, sum = 0) => {
+  //base case: if arr is empty return sum
+  if (!arr.length) return sum;
+};
