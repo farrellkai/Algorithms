@@ -35,3 +35,6 @@ console.log(factorial(18));
 console.log(factorial(1));
 console.log(factorial(13));
 console.log(factorial(0));
+
+//sum of lengths function
+const sumOfLengths = (arr) => {};
