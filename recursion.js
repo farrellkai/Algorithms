@@ -42,4 +42,6 @@ const sumOfLengths = (arr, sum = 0) => {
   if (!arr.length) return sum;
   //add to sum value of last element length in arr and remove
   sum += arr.pop().length;
+  //recursive case: call same fuction with modified arguments
+  return sumOfLengths(arr, sum);
 };
