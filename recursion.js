@@ -45,3 +45,10 @@ const sumOfLengths = (arr, sum = 0) => {
   //recursive case: call same fuction with modified arguments
   return sumOfLengths(arr, sum);
 };
+
+//test cases
+console.log(sumOfLengths(['goat', 'cat', 'purple']));
+console.log(sumOfLengths(['bike', 'at', 'pencils', 'phone']));
+console.log(sumOfLengths([]));
+console.log(sumOfLengths(['', ' ', '  ', '   ', '    ', '     ']));
+console.log(sumOfLengths(['0', '313', '1234567890']));
