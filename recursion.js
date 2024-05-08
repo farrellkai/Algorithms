@@ -40,4 +40,6 @@ console.log(factorial(0));
 const sumOfLengths = (arr, sum = 0) => {
   //base case: if arr is empty return sum
   if (!arr.length) return sum;
+  //add to sum value of last element length in arr and remove
+  sum += arr.pop().length;
 };
