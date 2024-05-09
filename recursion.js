@@ -60,3 +60,10 @@ const reverseString = (string) => {
   //recursive case: call function removing first character as string and concatenate that char to result
   return reverseString(string.slice(1)) + string[0];
 };
+
+//test cases
+console.log(reverseString('hello'));
+console.log(reverseString('abcdefg'));
+console.log(reverseString('stopwatch'));
+console.log(reverseString(''));
+console.log(reverseString('racecar'));
