@@ -57,4 +57,6 @@ console.log(sumOfLengths(['0', '313', '1234567890']));
 const reverseString = (string) => {
   //base case: if string is empty return empty string
   if (string === '') return string;
+  //recursive case: call function removing first character as string and concatenate that char to result
+  return reverseString(string.slice(1)) + string[0];
 };
