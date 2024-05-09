@@ -52,3 +52,6 @@ console.log(sumOfLengths(['bike', 'at', 'pencils', 'phone']));
 console.log(sumOfLengths([]));
 console.log(sumOfLengths(['', ' ', '  ', '   ', '    ', '     ']));
 console.log(sumOfLengths(['0', '313', '1234567890']));
+
+//reverse string function
+const reverseString = (string) => {};
