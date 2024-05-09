@@ -54,4 +54,7 @@ console.log(sumOfLengths(['', ' ', '  ', '   ', '    ', '     ']));
 console.log(sumOfLengths(['0', '313', '1234567890']));
 
 //reverse string function
-const reverseString = (string) => {};
+const reverseString = (string) => {
+  //base case: if string is empty return empty string
+  if (string === '') return string;
+};
