@@ -67,3 +67,6 @@ console.log(reverseString('abcdefg'));
 console.log(reverseString('stopwatch'));
 console.log(reverseString(''));
 console.log(reverseString('racecar'));
+
+//palindrome function
+const palindrome = (string) => {};
