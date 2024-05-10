@@ -69,4 +69,7 @@ console.log(reverseString(''));
 console.log(reverseString('racecar'));
 
 //palindrome function
-const palindrome = (string) => {};
+const palindrome = (string) => {
+  //base case: if first and last characters do not match return false
+  if (strirng[0] !== string[string.length - 1]) return false;
+};
