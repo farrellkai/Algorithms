@@ -77,3 +77,12 @@ const palindrome = (string) => {
   //recursive case: return function with string as argument without first and last characters
   return palindrome(string.slice(1, string.length - 1));
 };
+
+//test cases
+console.log(palindrome('pop'));
+console.log(palindrome('kayak'));
+console.log(palindrome('pops'));
+console.log(palindrome('boot'));
+console.log(palindrome('rotator'));
+console.log(palindrome('abcbca'));
+console.log(palindrome(''));
