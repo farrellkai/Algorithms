@@ -74,4 +74,6 @@ const palindrome = (string) => {
   if (string[0] !== string[string.length - 1]) return false;
   //base case: if string has 1 or fewer characters return true
   if (string.length <= 1) return true;
+  //recursive case: return function with string as argument without first and last characters
+  return palindrome(string.slice(1, string.length - 1));
 };
