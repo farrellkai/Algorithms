@@ -91,4 +91,6 @@ console.log(palindrome(''));
 const fib = (num) => {
   //edge case: if number is less that 0 throw error
   if (num < 0) throw new Error('please input positive integer');
+  //base case: if number is 0 return 0
+  if (num === 0) return 0;
 };
