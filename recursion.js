@@ -88,4 +88,7 @@ console.log(palindrome('abcbca'));
 console.log(palindrome(''));
 
 //fib function
-const fib = (num) => {};
+const fib = (num) => {
+  //edge case: if number is less that 0 throw error
+  if (num < 0) throw new Error('please input positive integer');
+};
