@@ -95,4 +95,6 @@ const fib = (num) => {
   if (num === 0) return 0;
   //base case: if number is 1 return 1
   if (num === 1) return 1;
+  //recursive case: return sum of results of function with num -2 as argument and function with num -1 as argument
+  return fib(num - 2) + fib(num - 1);
 };
