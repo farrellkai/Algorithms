@@ -98,3 +98,13 @@ const fib = (num) => {
   //recursive case: return sum of results of function with num -2 as argument and function with num -1 as argument
   return fib(num - 2) + fib(num - 1);
 };
+
+//test cases
+console.log(fib(0));
+console.log(fib(1));
+console.log(fib(2));
+console.log(fib(3));
+console.log(fib(4));
+console.log(fib(5));
+console.log(fib(8));
+console.log(fib(-3));
