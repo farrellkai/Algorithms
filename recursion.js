@@ -93,4 +93,6 @@ const fib = (num) => {
   if (num < 0) throw new Error('please input positive integer');
   //base case: if number is 0 return 0
   if (num === 0) return 0;
+  //base case: if number is 1 return 1
+  if (num === 1) return 1;
 };
