@@ -86,3 +86,6 @@ console.log(palindrome('boot'));
 console.log(palindrome('rotator'));
 console.log(palindrome('abcbca'));
 console.log(palindrome(''));
+
+//fib function
+const fib = (num) => {};
