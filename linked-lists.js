@@ -449,3 +449,6 @@ const univalue = (head) => {
 // w.next = x;
 // x.next = y;
 // console.log(univalue(u));
+
+//alternate univalue function
+const univalue2 = (head) => {};
