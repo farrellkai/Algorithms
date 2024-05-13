@@ -383,4 +383,6 @@ const univalue = (head) => {
   const headVal = head.val;
   //declare let variable 'node' assign to next node after head
   let node = head.next;
+  //iterate through nodes in list
+  while (node) {}
 };
