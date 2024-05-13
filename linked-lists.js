@@ -381,4 +381,6 @@ const mergeList = (head1, head2) => {
 const univalue = (head) => {
   //declare variable 'headVal' assign to head node's value property
   const headVal = head.val;
+  //declare let variable 'node' assign to next node after head
+  let node = head.next;
 };
