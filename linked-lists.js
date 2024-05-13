@@ -378,4 +378,7 @@ const mergeList = (head1, head2) => {
 };
 
 //univalue list function
-const univalue = (head) => {};
+const univalue = (head) => {
+  //declare variable 'headVal' assign to head node's value property
+  const headVal = head.val;
+};
