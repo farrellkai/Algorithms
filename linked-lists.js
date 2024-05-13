@@ -384,5 +384,8 @@ const univalue = (head) => {
   //declare let variable 'node' assign to next node after head
   let node = head.next;
   //iterate through nodes in list
-  while (node) {}
+  while (node) {
+    //if current node value is different from headVal return false
+    if (node.val !== headVal) return false;
+  }
 };
