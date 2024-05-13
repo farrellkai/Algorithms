@@ -376,3 +376,6 @@ const mergeList = (head1, head2) => {
     }
   }
 };
+
+//univalue list function
+const univalue = (head) => {};
