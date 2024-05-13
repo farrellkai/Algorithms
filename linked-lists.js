@@ -451,4 +451,7 @@ const univalue = (head) => {
 // console.log(univalue(u));
 
 //alternate univalue function
-const univalue2 = (head) => {};
+const univalue2 = (head) => {
+  //if next property is null return true
+  if (head.next === null) return true;
+};
