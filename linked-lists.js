@@ -452,6 +452,8 @@ const univalue = (head) => {
 
 //alternate univalue function
 const univalue2 = (head) => {
-  //if next property is null return true
+  //base case: if next property is null return true
   if (head.next === null) return true;
+  //base case: if value property does not match value property on next node return false
+  if (head.val !== head.next.val) return false;
 };
