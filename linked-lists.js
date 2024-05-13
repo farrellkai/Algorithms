@@ -387,5 +387,7 @@ const univalue = (head) => {
   while (node) {
     //if current node value is different from headVal return false
     if (node.val !== headVal) return false;
+    //reassign node to next node in list
+    node = node.next;
   }
 };
