@@ -390,4 +390,6 @@ const univalue = (head) => {
     //reassign node to next node in list
     node = node.next;
   }
+  //if algo made it this far return true
+  return true;
 };
