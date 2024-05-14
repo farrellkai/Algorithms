@@ -616,5 +616,7 @@ const removeNode = (head, target) => {
       //return next property on dummy node
       return dummy.next;
     }
+    //reassign prev to cur
+    prev = cur;
   }
 };
