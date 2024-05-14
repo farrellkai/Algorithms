@@ -598,3 +598,6 @@ console.log(longestStreak(null));
 // d.next = e;
 // e.next = f;
 // console.log(longestStreak(a));
+
+//remove node function
+const removeNode = (head, target) => {};
