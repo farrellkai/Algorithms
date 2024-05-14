@@ -613,6 +613,8 @@ const removeNode = (head, target) => {
     if (cur.val === target) {
       //assign next property of previous node to next node in list
       prev.next = cur.next;
+      //return next property on dummy node
+      return dummy.next;
     }
   }
 };
