@@ -527,5 +527,8 @@ const longestStreak = (head) => {
   //devlare let variable 'node' assign to head
   let node = head;
   //iterate through nodes on list
-  while (node) {}
+  while (node) {
+    if (node.val !== preVal) {
+    }
+  }
 };
