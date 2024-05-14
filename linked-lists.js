@@ -544,3 +544,57 @@ const longestStreak = (head) => {
   }
   return best;
 };
+
+//test cases
+// const a = new Node(9);
+// const b = new Node(9);
+// const c = new Node(1);
+// const d = new Node(9);
+// const e = new Node(9);
+// const f = new Node(9);
+
+// a.next = b;
+// b.next = c;
+// c.next = d;
+// d.next = e;
+// e.next = f;
+// console.log(longestStreak(a));
+
+// const a = new Node(5);
+// const b = new Node(5);
+
+// a.next = b;
+// console.log(longestStreak(a));
+
+// const a = new Node(4);
+// console.log(longestStreak(a));
+
+console.log(longestStreak(null));
+
+// const a = new Node(5);
+// const b = new Node(5);
+// const c = new Node(7);
+// const d = new Node(7);
+// const e = new Node(7);
+// const f = new Node(6);
+
+// a.next = b;
+// b.next = c;
+// c.next = d;
+// d.next = e;
+// e.next = f;
+// console.log(longestStreak(a));
+
+// const a = new Node(3);
+// const b = new Node(3);
+// const c = new Node(3);
+// const d = new Node(3);
+// const e = new Node(9);
+// const f = new Node(9);
+
+// a.next = b;
+// b.next = c;
+// c.next = d;
+// d.next = e;
+// e.next = f;
+// console.log(longestStreak(a));
