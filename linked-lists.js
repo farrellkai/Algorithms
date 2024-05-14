@@ -677,4 +677,5 @@ const removeNode2 = (head, target) => {
   if (head.val === target) return head.next;
   //recursive case: reassign next property on head to evaluted result of function with next node as argument
   head.next = removeNode2(head.next, target);
+  return head;
 };
