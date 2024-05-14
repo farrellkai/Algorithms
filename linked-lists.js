@@ -626,6 +626,61 @@ const removeNode = (head, target) => {
 };
 
 //test cases
+// const a = new Node('a');
+// const b = new Node('b');
+// const c = new Node('c');
+// const d = new Node('d');
+// const e = new Node('e');
+// const f = new Node('f');
+
+// a.next = b;
+// b.next = c;
+// c.next = d;
+// d.next = e;
+// e.next = f;
+// console.log(removeNode(a, 'c'));
+
+// const x = new Node('x');
+// const y = new Node('y');
+// const z = new Node('z');
+
+// x.next = y;
+// y.next = z;
+// console.log(removeNode(x, 'z'));
+
+// const q = new Node('q');
+// const r = new Node('r');
+// const s = new Node('s');
+
+// q.next = r;
+// r.next = s;
+// console.log(removeNode(q, 'q'));
+
+// const node1 = new Node('h');
+// const node2 = new Node('i');
+// const node3 = new Node('j');
+// const node4 = new Node('i');
+
+// node1.next = node2;
+// node2.next = node3;
+// node3.next = node4;
+// console.log(removeNode(node1, 'i'));
+
+// const t = new Node('t');
+// console.log(removeNode(t, 't'));
+
+//alternate remove node function
+const removeNode2 = (head, target) => {
+  //base case: if head does not exist return null
+  if (!head) return null;
+  //base case: if head value matches target return next node
+  if (head.val === target) return head.next;
+  //recursive case: reassign next property on head to evaluted result of function with next node as argument
+  head.next = removeNode2(head.next, target);
+  return head;
+};
+
+//test cases
 const a = new Node('a');
 const b = new Node('b');
 const c = new Node('c');
@@ -638,7 +693,7 @@ b.next = c;
 c.next = d;
 d.next = e;
 e.next = f;
-console.log(removeNode(a, 'c'));
+console.log(removeNode2(a, 'c'));
 
 const x = new Node('x');
 const y = new Node('y');
@@ -646,7 +701,7 @@ const z = new Node('z');
 
 x.next = y;
 y.next = z;
-console.log(removeNode(x, 'z'));
+console.log(removeNode2(x, 'z'));
 
 const q = new Node('q');
 const r = new Node('r');
@@ -654,7 +709,7 @@ const s = new Node('s');
 
 q.next = r;
 r.next = s;
-console.log(removeNode(q, 'q'));
+console.log(removeNode2(q, 'q'));
 
 const node1 = new Node('h');
 const node2 = new Node('i');
@@ -664,18 +719,7 @@ const node4 = new Node('i');
 node1.next = node2;
 node2.next = node3;
 node3.next = node4;
-console.log(removeNode(node1, 'i'));
+console.log(removeNode2(node1, 'i'));
 
 const t = new Node('t');
-console.log(removeNode(t, 't'));
-
-//alternate remove node function
-const removeNode2 = (head, target) => {
-  //base case: if head does not exist return null
-  if (!head) return null;
-  //base case: if head value matches target return next node
-  if (head.val === target) return head.next;
-  //recursive case: reassign next property on head to evaluted result of function with next node as argument
-  head.next = removeNode2(head.next, target);
-  return head;
-};
+console.log(removeNode2(t, 't'));
