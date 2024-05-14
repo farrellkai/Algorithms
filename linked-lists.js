@@ -608,5 +608,9 @@ const removeNode = (head, target) => {
   //declare let variable 'cur' assign to head
   let cur = head;
   //iterate through nodes in list
-  while (cur) {}
+  while (cur) {
+    //if value of current node is target...
+    if (cur.val === target) {
+    }
+  }
 };
