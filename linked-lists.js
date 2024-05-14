@@ -532,6 +532,8 @@ const longestStreak = (head) => {
     if (node.val !== preVal) {
       //reassign streak to 1
       streak = 1;
+      //reassign preVal to current node value
+      preVal = node.val;
     }
   }
 };
