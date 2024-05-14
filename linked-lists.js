@@ -618,5 +618,7 @@ const removeNode = (head, target) => {
     }
     //reassign prev to cur
     prev = cur;
+    //reassign cur to next node in list
+    cur = cur.next;
   }
 };
