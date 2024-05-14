@@ -611,6 +611,8 @@ const removeNode = (head, target) => {
   while (cur) {
     //if value of current node is target...
     if (cur.val === target) {
+      //assign next property of previous node to next node in list
+      prev.next = cur.next;
     }
   }
 };
