@@ -515,3 +515,6 @@ const univalue2 = (head) => {
 // w.next = x;
 // x.next = y;
 // console.log(univalue(u));
+
+//longest streak function
+const longestStreak = (head) => {};
