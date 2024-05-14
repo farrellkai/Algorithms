@@ -528,7 +528,10 @@ const longestStreak = (head) => {
   let node = head;
   //iterate through nodes on list
   while (node) {
+    //if current node value does not match previous node value
     if (node.val !== preVal) {
+      //reassign streak to 1
+      streak = 1;
     }
   }
 };
