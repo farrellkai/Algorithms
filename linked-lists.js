@@ -542,4 +542,5 @@ const longestStreak = (head) => {
     //reassign node to next in list
     node = node.next;
   }
+  return best;
 };
