@@ -603,6 +603,8 @@ console.log(longestStreak(null));
 const removeNode = (head, target) => {
   //declare variable 'dummy' assign to new node with value 'dummy'
   const dummy = new Node('dummy');
+  //assign next property on dummy node to head
+  dummy.next = head;
   //declare let variable 'prev' assign to dummy
   let prev = dummy;
   //declare let variable 'cur' assign to head
@@ -622,3 +624,22 @@ const removeNode = (head, target) => {
     cur = cur.next;
   }
 };
+
+//test cases
+const a = new Node('a');
+const b = new Node('b');
+const c = new Node('c');
+const d = new Node('d');
+const e = new Node('e');
+const f = new Node('f');
+
+a.next = b;
+b.next = c;
+c.next = d;
+d.next = e;
+e.next = f;
+console.log(removeNode(a, 'c'));
+console.log(removeNode());
+console.log(removeNode());
+console.log(removeNode());
+console.log(removeNode());
