@@ -639,7 +639,32 @@ c.next = d;
 d.next = e;
 e.next = f;
 console.log(removeNode(a, 'c'));
-console.log(removeNode());
-console.log(removeNode());
-console.log(removeNode());
-console.log(removeNode());
+
+const x = new Node('x');
+const y = new Node('y');
+const z = new Node('z');
+
+x.next = y;
+y.next = z;
+console.log(removeNode(x, 'z'));
+
+const q = new Node('q');
+const r = new Node('r');
+const s = new Node('s');
+
+q.next = r;
+r.next = s;
+console.log(removeNode(q, 'q'));
+
+const node1 = new Node('h');
+const node2 = new Node('i');
+const node3 = new Node('j');
+const node4 = new Node('i');
+
+node1.next = node2;
+node2.next = node3;
+node3.next = node4;
+console.log(removeNode(node1, 'i'));
+
+const t = new Node('t');
+console.log(removeNode(t, 't'));
