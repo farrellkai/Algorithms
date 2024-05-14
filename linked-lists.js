@@ -603,4 +603,6 @@ console.log(longestStreak(null));
 const removeNode = (head, target) => {
   //declare variable 'dummy' assign to new node with value 'dummy'
   const dummy = new Node('dummy');
+  //declare let variable 'prev' assign to dummy
+  let prev = dummy;
 };
