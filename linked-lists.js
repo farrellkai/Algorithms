@@ -517,4 +517,7 @@ const univalue2 = (head) => {
 // console.log(univalue(u));
 
 //longest streak function
-const longestStreak = (head) => {};
+const longestStreak = (head) => {
+  //declare let variable 'best' assign to negative infinity
+  let best = -Infinity;
+};
