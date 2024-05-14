@@ -520,4 +520,8 @@ const univalue2 = (head) => {
 const longestStreak = (head) => {
   //declare let variable 'best' assign to negative infinity
   let best = -Infinity;
+  //declare let variable 'streak' assign to 0
+  let streak = 0;
+  //declare let variable 'preVal'
+  let preVal;
 };
