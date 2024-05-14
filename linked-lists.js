@@ -673,4 +673,6 @@ console.log(removeNode(t, 't'));
 const removeNode2 = (head, target) => {
   //base case: if head does not exist return null
   if (!head) return null;
+  //base case: if head value matches target return next node
+  if (head.val === target) return head.next;
 };
