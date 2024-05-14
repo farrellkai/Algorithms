@@ -524,4 +524,6 @@ const longestStreak = (head) => {
   let streak = 0;
   //declare let variable 'preVal'
   let preVal;
+  //devlare let variable 'node' assign to head
+  let node = head;
 };
