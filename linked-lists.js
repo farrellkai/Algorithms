@@ -670,4 +670,7 @@ const t = new Node('t');
 console.log(removeNode(t, 't'));
 
 //alternate remove node function
-const removeNode2 = (head, target) => {};
+const removeNode2 = (head, target) => {
+  //base case: if head does not exist return null
+  if (!head) return null;
+};
