@@ -605,4 +605,6 @@ const removeNode = (head, target) => {
   const dummy = new Node('dummy');
   //declare let variable 'prev' assign to dummy
   let prev = dummy;
+  //declare let variable 'cur' assign to head
+  let cur = head;
 };
