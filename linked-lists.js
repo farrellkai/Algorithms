@@ -600,4 +600,7 @@ console.log(longestStreak(null));
 // console.log(longestStreak(a));
 
 //remove node function
-const removeNode = (head, target) => {};
+const removeNode = (head, target) => {
+  //declare variable 'dummy' assign to new node with value 'dummy'
+  const dummy = new Node('dummy');
+};
