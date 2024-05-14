@@ -539,5 +539,7 @@ const longestStreak = (head) => {
     }
     //if streak is greater than best reassign best to streak
     if (streak > best) best = streak;
+    //reassign node to next in list
+    node = node.next;
   }
 };
