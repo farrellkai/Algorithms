@@ -668,3 +668,6 @@ console.log(removeNode(node1, 'i'));
 
 const t = new Node('t');
 console.log(removeNode(t, 't'));
+
+//alternate remove node function
+const removeNode2 = (head, target) => {};
