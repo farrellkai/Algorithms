@@ -725,4 +725,7 @@ const t = new Node('t');
 console.log(removeNode2(t, 't'));
 
 //insert node function
-const insertNode = (head, value, index) => {};
+const insertNode = (head, value, index) => {
+  //declare variable 'dummy' assign to new node with value 'dummy'
+  const dummy = new Node('dummy');
+};
