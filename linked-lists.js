@@ -777,4 +777,6 @@ const insertNode2 = (head, value, index) => {
   }
   //recursive case: assign next property on head to evaluated result of function with head.next and index -1 as input
   head.next = insertNode2(head.next, value, --index);
+  //return head
+  return head;
 };
