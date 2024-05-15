@@ -730,4 +730,6 @@ const insertNode = (head, value, index) => {
   const dummy = new Node('dummy');
   //assign next property to head
   dummy.next = head;
+  //declare let variable 'count' assign to 0
+  let count = 0;
 };
