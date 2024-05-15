@@ -738,6 +738,8 @@ const insertNode = (head, value, index) => {
   while (node) {
     //if count matches index...
     if (count === index) {
+      //declare variable 'newNode' assign to new node with value argument
+      const newNode = new Node(value);
     }
   }
 };
