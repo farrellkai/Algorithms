@@ -681,48 +681,48 @@ const removeNode2 = (head, target) => {
 };
 
 //test cases
-const a = new Node('a');
-const b = new Node('b');
-const c = new Node('c');
-const d = new Node('d');
-const e = new Node('e');
-const f = new Node('f');
+// const a = new Node('a');
+// const b = new Node('b');
+// const c = new Node('c');
+// const d = new Node('d');
+// const e = new Node('e');
+// const f = new Node('f');
 
-a.next = b;
-b.next = c;
-c.next = d;
-d.next = e;
-e.next = f;
-console.log(removeNode2(a, 'c'));
+// a.next = b;
+// b.next = c;
+// c.next = d;
+// d.next = e;
+// e.next = f;
+// console.log(removeNode2(a, 'c'));
 
-const x = new Node('x');
-const y = new Node('y');
-const z = new Node('z');
+// const x = new Node('x');
+// const y = new Node('y');
+// const z = new Node('z');
 
-x.next = y;
-y.next = z;
-console.log(removeNode2(x, 'z'));
+// x.next = y;
+// y.next = z;
+// console.log(removeNode2(x, 'z'));
 
-const q = new Node('q');
-const r = new Node('r');
-const s = new Node('s');
+// const q = new Node('q');
+// const r = new Node('r');
+// const s = new Node('s');
 
-q.next = r;
-r.next = s;
-console.log(removeNode2(q, 'q'));
+// q.next = r;
+// r.next = s;
+// console.log(removeNode2(q, 'q'));
 
-const node1 = new Node('h');
-const node2 = new Node('i');
-const node3 = new Node('j');
-const node4 = new Node('i');
+// const node1 = new Node('h');
+// const node2 = new Node('i');
+// const node3 = new Node('j');
+// const node4 = new Node('i');
 
-node1.next = node2;
-node2.next = node3;
-node3.next = node4;
-console.log(removeNode2(node1, 'i'));
+// node1.next = node2;
+// node2.next = node3;
+// node3.next = node4;
+// console.log(removeNode2(node1, 'i'));
 
-const t = new Node('t');
-console.log(removeNode2(t, 't'));
+// const t = new Node('t');
+// console.log(removeNode2(t, 't'));
 
 //insert node function
 const insertNode = (head, value, index) => {
@@ -752,3 +752,17 @@ const insertNode = (head, value, index) => {
     node = node.next;
   }
 };
+
+//test cases
+const a = new Node('a');
+const b = new Node('b');
+const c = new Node('c');
+const d = new Node('d');
+
+a.next = b;
+b.next = c;
+c.next = d;
+//console.log(insertNode(a, 'x', 2));
+//console.log(insertNode(a, 'v', 3));
+//console.log(insertNode(a, 'm', 4));
+//console.log(insertNode(a, 'z', 0));
