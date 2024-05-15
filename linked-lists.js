@@ -728,4 +728,6 @@ console.log(removeNode2(t, 't'));
 const insertNode = (head, value, index) => {
   //declare variable 'dummy' assign to new node with value 'dummy'
   const dummy = new Node('dummy');
+  //assign next property to head
+  dummy.next = head;
 };
