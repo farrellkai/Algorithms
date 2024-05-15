@@ -768,4 +768,11 @@ c.next = d;
 //console.log(insertNode(a, 'z', 0));
 
 //alternate insert node function
-const insertNode2 = (head, value, index) => {};
+const insertNode2 = (head, value, index) => {
+  //base case: if index is 0 return new node with value as input and head as next property
+  if (index === 0) {
+    const newNode = new Node(value);
+    newNode.next = head;
+    return newNode;
+  }
+};
