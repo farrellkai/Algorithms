@@ -780,3 +780,9 @@ const insertNode2 = (head, value, index) => {
   //return head
   return head;
 };
+
+//test cases
+//console.log(insertNode2(a, 'x', 2));
+//console.log(insertNode2(a, 'v', 3));
+//console.log(insertNode2(a, 'm', 4));
+//console.log(insertNode2(a, 'z', 0));
