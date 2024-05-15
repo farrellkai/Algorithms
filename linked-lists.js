@@ -766,3 +766,6 @@ c.next = d;
 //console.log(insertNode(a, 'v', 3));
 //console.log(insertNode(a, 'm', 4));
 //console.log(insertNode(a, 'z', 0));
+
+//alternate insert node function
+const insertNode2 = (head, value, index) => {};
