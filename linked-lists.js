@@ -740,6 +740,8 @@ const insertNode = (head, value, index) => {
     if (count === index) {
       //declare variable 'newNode' assign to new node with value argument
       const newNode = new Node(value);
+      //assign next property to next node in list
+      newNode.next = node.next;
     }
   }
 };
