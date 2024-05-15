@@ -735,5 +735,9 @@ const insertNode = (head, value, index) => {
   //declare let variable 'node' assign to dummy
   let node = dummy;
   //iterate through nodes on list
-  while (node) {}
+  while (node) {
+    //if count matches index...
+    if (count === index) {
+    }
+  }
 };
