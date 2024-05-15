@@ -748,5 +748,7 @@ const insertNode = (head, value, index) => {
     }
     //increment count
     count++;
+    //move to next node in list
+    node = node.next;
   }
 };
