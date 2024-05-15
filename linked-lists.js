@@ -742,6 +742,8 @@ const insertNode = (head, value, index) => {
       const newNode = new Node(value);
       //assign next property to next node in list
       newNode.next = node.next;
+      //assign next property on current node to newNode
+      node.next = newNode;
     }
   }
 };
