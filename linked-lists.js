@@ -732,4 +732,6 @@ const insertNode = (head, value, index) => {
   dummy.next = head;
   //declare let variable 'count' assign to 0
   let count = 0;
+  //declare let variable 'node' assign to dummy
+  let node = dummy;
 };
