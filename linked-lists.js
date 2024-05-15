@@ -746,5 +746,7 @@ const insertNode = (head, value, index) => {
       node.next = newNode;
       return dummy.next;
     }
+    //increment count
+    count++;
   }
 };
