@@ -723,3 +723,6 @@ console.log(removeNode2(node1, 'i'));
 
 const t = new Node('t');
 console.log(removeNode2(t, 't'));
+
+//insert node function
+const insertNode = (head, value, index) => {};
