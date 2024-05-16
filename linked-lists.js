@@ -793,4 +793,6 @@ const createLL = (arr) => {
   const head = new Node(arr[0]);
   //declare let variable 'node' assign to head
   let node = head;
+  //iterate through elements in arr starting w/ second element
+  for (let i = 1; i < arr.length; i++) {}
 };
