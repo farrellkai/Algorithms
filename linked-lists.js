@@ -820,3 +820,9 @@ const createLL2 = (arr) => {
   head.next = createLL2(arr.slice(1));
   return head;
 };
+
+//test cases
+console.log(createLL2(['h', 'e', 'y']));
+console.log(createLL2([1, 7, 1, 8]));
+console.log(createLL2(['a']));
+console.log(createLL2([]));
