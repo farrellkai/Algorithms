@@ -789,6 +789,7 @@ const insertNode2 = (head, value, index) => {
 
 //create linked list function
 const createLL = (arr) => {
+  if (!arr.length) return null;
   //declare variable 'head' assign to new node with fist arr element as value
   const head = new Node(arr[0]);
   //declare let variable 'node' assign to head
@@ -807,4 +808,4 @@ const createLL = (arr) => {
 console.log(createLL(['h', 'e', 'y']));
 console.log(createLL([1, 7, 1, 8]));
 console.log(createLL(['a']));
-console.log(createLL());
+console.log(createLL([]));
