@@ -811,4 +811,7 @@ console.log(createLL(['a']));
 console.log(createLL([]));
 
 //alternate create linked list function
-const createLL2 = (arr) => {};
+const createLL2 = (arr) => {
+  //base case: if arr is empty return null
+  if (!arr.length) return null;
+};
