@@ -814,4 +814,6 @@ console.log(createLL([]));
 const createLL2 = (arr) => {
   //base case: if arr is empty return null
   if (!arr.length) return null;
+  //declare variable 'head' assign to new node with first arr element as value
+  const head = new Node(arr[0]);
 };
