@@ -791,4 +791,6 @@ const insertNode2 = (head, value, index) => {
 const createLL = (arr) => {
   //declare variable 'head' assign to new node with fist arr element as value
   const head = new Node(arr[0]);
+  //declare let variable 'node' assign to head
+  let node = head;
 };
