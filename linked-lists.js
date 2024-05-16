@@ -800,4 +800,5 @@ const createLL = (arr) => {
     //reassign node to newly created node
     node = node.next;
   }
+  return head;
 };
