@@ -809,3 +809,6 @@ console.log(createLL(['h', 'e', 'y']));
 console.log(createLL([1, 7, 1, 8]));
 console.log(createLL(['a']));
 console.log(createLL([]));
+
+//alternate create linked list function
+const createLL2 = (arr) => {};
