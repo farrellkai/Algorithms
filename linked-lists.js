@@ -797,5 +797,7 @@ const createLL = (arr) => {
   for (let i = 1; i < arr.length; i++) {
     //assign next property of node to new node instance w/ current arr element as value
     node.next = new Node(arr[i]);
+    //reassign node to newly created node
+    node = node.next;
   }
 };
