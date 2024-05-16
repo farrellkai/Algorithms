@@ -788,4 +788,7 @@ const insertNode2 = (head, value, index) => {
 //console.log(insertNode2(a, 'z', 0));
 
 //create linked list function
-const createLL = (arr) => {};
+const createLL = (arr) => {
+  //declare variable 'head' assign to new node with fist arr element as value
+  const head = new Node(arr[0]);
+};
