@@ -818,4 +818,5 @@ const createLL2 = (arr) => {
   const head = new Node(arr[0]);
   //recursive case: assign head's next property to evaluated result of function with arr from index 1 on as input
   head.next = createLL2(arr.slice(1));
+  return head;
 };
