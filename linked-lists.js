@@ -826,3 +826,6 @@ console.log(createLL2(['h', 'e', 'y']));
 console.log(createLL2([1, 7, 1, 8]));
 console.log(createLL2(['a']));
 console.log(createLL2([]));
+
+//add lists function
+const addList = (head1, head2) => {};
