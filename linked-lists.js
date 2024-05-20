@@ -840,5 +840,9 @@ const addList = (head1, head2) => {
   //declare let variable 'cur2' assign to head2
   let cur2 = head2;
   //iterate through nodes on lists
-  while (cur1 || cur2 || carry) {}
+  while (cur1 || cur2 || carry) {
+    //declare 'val1'
+    //if cur1 is null assign to 0 else assign to cur1 value
+    const val1 = !cur1 ? 0 : cur1.val;
+  }
 };
