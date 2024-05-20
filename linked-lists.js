@@ -866,3 +866,53 @@ const addList = (head1, head2) => {
   }
   return dummy.next;
 };
+
+//test cases
+// const a1 = new Node(1);
+// const a2 = new Node(2);
+// const a3 = new Node(6);
+// a1.next = a2;
+// a2.next = a3;
+
+// const b1 = new Node(4);
+// const b2 = new Node(5);
+// const b3 = new Node(3);
+// b1.next = b2;
+// b2.next = b3;
+// console.log(addList(a1, b1));
+// const a1 = new Node(1);
+// const a2 = new Node(4);
+// const a3 = new Node(5);
+// const a4 = new Node(7);
+// a1.next = a2;
+// a2.next = a3;
+// a3.next = a4;
+
+// const b1 = new Node(2);
+// const b2 = new Node(3);
+// b1.next = b2;
+// console.log(addList(a1, b1));
+// const a1 = new Node(9);
+// const a2 = new Node(3);
+// a1.next = a2;
+
+// const b1 = new Node(7);
+// const b2 = new Node(4);
+// b1.next = b2;
+// console.log(addList(a1, b1));
+// const a1 = new Node(9);
+// const a2 = new Node(8);
+// a1.next = a2;
+
+// const b1 = new Node(7);
+// const b2 = new Node(4);
+// b1.next = b2;
+// console.log(addList(a1, b1));
+// const a1 = new Node(9);
+// const a2 = new Node(9);
+// const a3 = new Node(9);
+// a1.next = a2;
+// a2.next = a3;
+
+// const b1 = new Node(6);
+// console.log(addList(a1, b1));
