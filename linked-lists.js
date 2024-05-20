@@ -864,4 +864,5 @@ const addList = (head1, head2) => {
     //reassign tail to next node
     tail = tail.next;
   }
+  return dummy.next;
 };
