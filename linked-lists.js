@@ -854,5 +854,7 @@ const addList = (head1, head2) => {
     carry = sum > 9 ? 1 : 0;
     //declare variable 'digit' assign to remainder of sum divided by 10
     const digit = sum % 10;
+    //if cur1 is not null reassign to next node
+    if (cur1) cur1 = cur1.next;
   }
 };
