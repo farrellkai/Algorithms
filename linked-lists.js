@@ -835,4 +835,6 @@ const addList = (head1, head2) => {
   let tail = dummy;
   //declare let variable 'carry' assign to 0
   let carry = 0;
+  //declare let variable 'cur1' assign to head1
+  let cur1 = head1;
 };
