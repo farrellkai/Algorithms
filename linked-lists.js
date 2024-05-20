@@ -839,4 +839,6 @@ const addList = (head1, head2) => {
   let cur1 = head1;
   //declare let variable 'cur2' assign to head2
   let cur2 = head2;
+  //iterate through nodes on lists
+  while (cur1 || cur2 || carry) {}
 };
