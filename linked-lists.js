@@ -833,4 +833,6 @@ const addList = (head1, head2) => {
   const dummy = new Node('dummy');
   //declare let variable 'tail' assign to dummy
   let tail = dummy;
+  //declare let variable 'carry' assign to 0
+  let carry = 0;
 };
