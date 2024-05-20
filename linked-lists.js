@@ -858,5 +858,8 @@ const addList = (head1, head2) => {
     if (cur1) cur1 = cur1.next;
     //if cur2 is not null reassign to next node
     if (cur2) cur2 = cur2.next;
+
+    //tail's next property is assigned to new node with digit as input
+    tail.next = new Node(digit);
   }
 };
