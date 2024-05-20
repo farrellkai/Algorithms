@@ -844,5 +844,8 @@ const addList = (head1, head2) => {
     //declare 'val1'
     //if cur1 is null assign to 0 else assign to cur1 value
     const val1 = !cur1 ? 0 : cur1.val;
+    //declare 'val2'
+    //if cur2 is null assign to 0 else assign to cur2 value
+    const val2 = !cur2 ? 0 : cur2.val;
   }
 };
