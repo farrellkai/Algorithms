@@ -828,4 +828,7 @@ console.log(createLL2(['a']));
 console.log(createLL2([]));
 
 //add lists function
-const addList = (head1, head2) => {};
+const addList = (head1, head2) => {
+  //declare variable 'dummy' assign to new node
+  const dummy = new Node('dummy');
+};
