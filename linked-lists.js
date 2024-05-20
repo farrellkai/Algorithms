@@ -852,5 +852,7 @@ const addList = (head1, head2) => {
     //reassign carry
     //if sum is greater than 9 assign to 1 else assign to 0
     carry = sum > 9 ? 1 : 0;
+    //declare variable 'digit' assign to remainder of sum divided by 10
+    const digit = sum % 10;
   }
 };
