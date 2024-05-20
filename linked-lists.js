@@ -849,5 +849,8 @@ const addList = (head1, head2) => {
     const val2 = !cur2 ? 0 : cur2.val;
     //declare variable 'sum' assign to sum of val1, val2, and carry
     const sum = val1 + val2 + carry;
+    //reassign carry
+    //if sum is greater than 9 assign to 1 else assign to 0
+    carry = sum > 9 ? 1 : 0;
   }
 };
