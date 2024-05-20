@@ -856,5 +856,7 @@ const addList = (head1, head2) => {
     const digit = sum % 10;
     //if cur1 is not null reassign to next node
     if (cur1) cur1 = cur1.next;
+    //if cur2 is not null reassign to next node
+    if (cur2) cur2 = cur2.next;
   }
 };
