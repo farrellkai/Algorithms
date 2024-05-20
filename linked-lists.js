@@ -831,4 +831,6 @@ console.log(createLL2([]));
 const addList = (head1, head2) => {
   //declare variable 'dummy' assign to new node
   const dummy = new Node('dummy');
+  //declare let variable 'tail' assign to dummy
+  let tail = dummy;
 };
