@@ -861,5 +861,7 @@ const addList = (head1, head2) => {
 
     //tail's next property is assigned to new node with digit as input
     tail.next = new Node(digit);
+    //reassign tail to next node
+    tail = tail.next;
   }
 };
