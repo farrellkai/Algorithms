@@ -83,4 +83,5 @@ const depthFirstValues2 = (root) => {
   output.concat(depthFirstValues(root.left));
   //recursive case: concatenate output with result of function passing in right node
   output.concat(depthFirstValues(root.right));
+  return output;
 };
