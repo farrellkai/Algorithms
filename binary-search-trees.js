@@ -9,7 +9,7 @@ class Node {
 
 //depth first values function
 const depthFirstValues = (root) => {
-  //base case: if root is null return empty array
+  //if root is null return empty array
   if (!root) return [];
   //declare variable 'values' assign to empty array
   const values = [];
@@ -72,3 +72,6 @@ const depthFirstValues = (root) => {
 // d.right = e;
 // console.log(depthFirstValues(a));
 //console.log(depthFirstValues(null));
+
+//alternate depth first values function
+const depthFirstValues2 = (root) => {};
