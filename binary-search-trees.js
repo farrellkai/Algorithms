@@ -26,6 +26,7 @@ const depthFirstValues = (root) => {
     //if node has child on left property push onto stack array
     if (node.left) stack.push(node.left);
   }
+  return values;
 };
 
 //test cases
