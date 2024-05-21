@@ -13,6 +13,8 @@ const depthFirstValues = (root) => {
   if (!root) return [];
   //declare variable 'values' assign to empty array
   const values = [];
+  //declare variable 'stack' assign to array containing root
+  const stack = [root];
 };
 
 //test cases
