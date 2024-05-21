@@ -77,4 +77,6 @@ const depthFirstValues = (root) => {
 const depthFirstValues2 = (root) => {
   //base case: if root is null return empty array
   if (!root) return [];
+  //declare variable 'output' assign to array containing root's value
+  const output = [root.val];
 };
