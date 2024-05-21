@@ -6,3 +6,6 @@ class Node {
     this.right = null;
   }
 }
+
+//depth first values function
+const depthFirstValues = (root) => {};
