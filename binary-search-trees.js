@@ -19,6 +19,12 @@ const depthFirstValues = (root) => {
   while (stack.length) {
     //declare variable 'node' assign to first element in stack and remove
     const node = stack.pop();
+    //push node value onto values array
+    values.push(node.val);
+    //if node has child on right property push onto stack array
+    if (node.right) stack.push(node.right);
+    //if node has child on left property push onto stack array
+    if (node.left) stack.push(node.left);
   }
 };
 
