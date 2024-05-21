@@ -30,20 +30,45 @@ const depthFirstValues = (root) => {
 };
 
 //test cases
-const a = new Node('a');
-const b = new Node('b');
-const c = new Node('c');
-const d = new Node('d');
-const e = new Node('e');
-const f = new Node('f');
+// const a = new Node('a');
+// const b = new Node('b');
+// const c = new Node('c');
+// const d = new Node('d');
+// const e = new Node('e');
+// const f = new Node('f');
 
-a.left = b;
-a.right = c;
-b.left = d;
-b.right = e;
-c.right = f;
-console.log(depthFirstValues(a));
-console.log(depthFirstValues());
-console.log(depthFirstValues());
-console.log(depthFirstValues());
-console.log(depthFirstValues());
+// a.left = b;
+// a.right = c;
+// b.left = d;
+// b.right = e;
+// c.right = f;
+// console.log(depthFirstValues(a));
+// const a = new Node('a');
+// const b = new Node('b');
+// const c = new Node('c');
+// const d = new Node('d');
+// const e = new Node('e');
+// const f = new Node('f');
+// const g = new Node('g');
+
+// a.left = b;
+// a.right = c;
+// b.left = d;
+// b.right = e;
+// c.right = f;
+// e.left = g;
+// console.log(depthFirstValues(a));
+// const a = new Node('a');
+// console.log(depthFirstValues(a));
+// const a = new Node('a');
+// const b = new Node('b');
+// const c = new Node('c');
+// const d = new Node('d');
+// const e = new Node('e');
+
+// a.right = b;
+// b.left = c;
+// c.right = d;
+// d.right = e;
+// console.log(depthFirstValues(a));
+//console.log(depthFirstValues(null));
