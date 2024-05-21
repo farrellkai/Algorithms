@@ -15,6 +15,8 @@ const depthFirstValues = (root) => {
   const values = [];
   //declare variable 'stack' assign to array containing root
   const stack = [root];
+  //iterate through elements in stack
+  while (stack.length) {}
 };
 
 //test cases
