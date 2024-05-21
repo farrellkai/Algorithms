@@ -77,11 +77,51 @@ const depthFirstValues = (root) => {
 const depthFirstValues2 = (root) => {
   //base case: if root is null return empty array
   if (!root) return [];
-  //declare variable 'output' assign to array containing root's value
-  const output = [root.val];
-  //recursive case: concatenate output with result of function passing in left node
-  output.concat(depthFirstValues(root.left));
-  //recursive case: concatenate output with result of function passing in right node
-  output.concat(depthFirstValues(root.right));
-  return output;
+  const leftValues = depthFirstValues(root.left);
+  const rightValues = depthFirstValues(root.right);
+  return [root.val, ...leftValues, ...rightValues];
 };
+
+//test cases
+// const a = new Node('a');
+// const b = new Node('b');
+// const c = new Node('c');
+// const d = new Node('d');
+// const e = new Node('e');
+// const f = new Node('f');
+
+// a.left = b;
+// a.right = c;
+// b.left = d;
+// b.right = e;
+// c.right = f;
+// console.log(depthFirstValues2(a));
+// const a = new Node('a');
+// const b = new Node('b');
+// const c = new Node('c');
+// const d = new Node('d');
+// const e = new Node('e');
+// const f = new Node('f');
+// const g = new Node('g');
+
+// a.left = b;
+// a.right = c;
+// b.left = d;
+// b.right = e;
+// c.right = f;
+// e.left = g;
+// console.log(depthFirstValues(a));
+// const a = new Node('a');
+// console.log(depthFirstValues(a));
+// const a = new Node('a');
+// const b = new Node('b');
+// const c = new Node('c');
+// const d = new Node('d');
+// const e = new Node('e');
+
+// a.right = b;
+// b.left = c;
+// c.right = d;
+// d.right = e;
+// console.log(depthFirstValues(a));
+//console.log(depthFirstValues(null));
