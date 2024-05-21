@@ -11,8 +11,25 @@ class Node {
 const depthFirstValues = (root) => {
   //base case: if root is null return empty array
   if (!root) return [];
-  //base case: if root has no children return array containing root value
-  if (!root.left && root.right) return [root.val];
-  //recursive case: return concatination of result of function on left node and right node
-  return depthFirstValues(root.left).concat(depthFirstValues(root.right));
+  //declare variable 'values' assign to empty array
+  const values = [];
 };
+
+//test cases
+const a = new Node('a');
+const b = new Node('b');
+const c = new Node('c');
+const d = new Node('d');
+const e = new Node('e');
+const f = new Node('f');
+
+a.left = b;
+a.right = c;
+b.left = d;
+b.right = e;
+c.right = f;
+console.log(depthFirstValues(a));
+console.log(depthFirstValues());
+console.log(depthFirstValues());
+console.log(depthFirstValues());
+console.log(depthFirstValues());
