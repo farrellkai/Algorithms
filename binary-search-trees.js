@@ -74,4 +74,7 @@ const depthFirstValues = (root) => {
 //console.log(depthFirstValues(null));
 
 //alternate depth first values function
-const depthFirstValues2 = (root) => {};
+const depthFirstValues2 = (root) => {
+  //base case: if root is null return empty array
+  if (!root) return [];
+};
