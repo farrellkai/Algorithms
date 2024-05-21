@@ -8,4 +8,7 @@ class Node {
 }
 
 //depth first values function
-const depthFirstValues = (root) => {};
+const depthFirstValues = (root) => {
+  //base case: if root is null return empty array
+  if (!root) return [];
+};
