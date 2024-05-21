@@ -16,7 +16,10 @@ const depthFirstValues = (root) => {
   //declare variable 'stack' assign to array containing root
   const stack = [root];
   //iterate through elements in stack
-  while (stack.length) {}
+  while (stack.length) {
+    //declare variable 'node' assign to first element in stack and remove
+    const node = stack.pop();
+  }
 };
 
 //test cases
