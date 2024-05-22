@@ -142,5 +142,7 @@ const bredthFirstValues = (root) => {
     output.push(node.val);
     //push left child onto trees if it exists
     if (node.left) trees.push(node.left);
+    //push right child onto trees if it exists
+    if (node.right) trees.push(node.right);
   }
 };
