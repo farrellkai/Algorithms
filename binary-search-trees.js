@@ -145,4 +145,5 @@ const bredthFirstValues = (root) => {
     //push right child onto trees if it exists
     if (node.right) trees.push(node.right);
   }
+  return output;
 };
