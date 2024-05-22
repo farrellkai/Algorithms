@@ -127,4 +127,7 @@ const depthFirstValues2 = (root) => {
 //console.log(depthFirstValues(null));
 
 //bredth first values function
-const bredthFirstValues = (root) => {};
+const bredthFirstValues = (root) => {
+  //if root is null return empty array
+  if (!root) return [];
+};
