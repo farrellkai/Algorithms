@@ -138,5 +138,7 @@ const bredthFirstValues = (root) => {
   while (trees.length) {
     //declare variable 'node' assign to first element in trees and remove
     const node = trees.pop();
+    //push node value onto output array
+    output.push(node.val);
   }
 };
