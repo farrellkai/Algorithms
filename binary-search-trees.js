@@ -125,3 +125,6 @@ const depthFirstValues2 = (root) => {
 // d.right = e;
 // console.log(depthFirstValues(a));
 //console.log(depthFirstValues(null));
+
+//bredth first values function
+const bredthFirstValues = (root) => {};
