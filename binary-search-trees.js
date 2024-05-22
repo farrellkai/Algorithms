@@ -134,4 +134,6 @@ const bredthFirstValues = (root) => {
   const trees = [root];
   //declare variable 'output' assign to empty array
   const output = [];
+  //iterate through the nodes
+  while (trees.length) {}
 };
