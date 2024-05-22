@@ -137,7 +137,7 @@ const bredthFirstValues = (root) => {
   //iterate through the nodes
   while (trees.length) {
     //declare variable 'node' assign to first element in trees and remove
-    const node = trees.pop();
+    const node = trees.shift();
     //push node value onto output array
     output.push(node.val);
     //push left child onto trees if it exists
@@ -147,3 +147,22 @@ const bredthFirstValues = (root) => {
   }
   return output;
 };
+
+//test cases
+const a = new Node('a');
+const b = new Node('b');
+const c = new Node('c');
+const d = new Node('d');
+const e = new Node('e');
+const f = new Node('f');
+
+a.left = b;
+a.right = c;
+b.left = d;
+b.right = e;
+c.right = f;
+console.log(bredthFirstValues(a));
+console.log(bredthFirstValues());
+console.log(bredthFirstValues());
+console.log(bredthFirstValues());
+console.log(bredthFirstValues());
