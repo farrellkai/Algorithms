@@ -149,20 +149,49 @@ const bredthFirstValues = (root) => {
 };
 
 //test cases
+// const a = new Node('a');
+// const b = new Node('b');
+// const c = new Node('c');
+// const d = new Node('d');
+// const e = new Node('e');
+// const f = new Node('f');
+
+// a.left = b;
+// a.right = c;
+// b.left = d;
+// b.right = e;
+// c.right = f;
+// console.log(bredthFirstValues(a));
+// const a = new Node('a');
+// const b = new Node('b');
+// const c = new Node('c');
+// const d = new Node('d');
+// const e = new Node('e');
+// const f = new Node('f');
+// const g = new Node('g');
+// const h = new Node('h');
+
+// a.left = b;
+// a.right = c;
+// b.left = d;
+// b.right = e;
+// c.right = f;
+// e.left = g;
+// f.right = h;
+// console.log(bredthFirstValues(a));
+// const a = new Node('a');
+// console.log(bredthFirstValues(a));
 const a = new Node('a');
 const b = new Node('b');
 const c = new Node('c');
 const d = new Node('d');
 const e = new Node('e');
-const f = new Node('f');
+const x = new Node('x');
 
-a.left = b;
-a.right = c;
-b.left = d;
-b.right = e;
-c.right = f;
-console.log(bredthFirstValues(a));
-console.log(bredthFirstValues());
-console.log(bredthFirstValues());
-console.log(bredthFirstValues());
-console.log(bredthFirstValues());
+// a.right = b;
+// b.left = c;
+// c.left = x;
+// c.right = d;
+// d.right = e;
+// console.log(bredthFirstValues(a));
+// console.log(bredthFirstValues(null));
