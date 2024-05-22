@@ -130,4 +130,6 @@ const depthFirstValues2 = (root) => {
 const bredthFirstValues = (root) => {
   //if root is null return empty array
   if (!root) return [];
+  //declare variable 'trees' assign to array containing root
+  const trees = [root];
 };
