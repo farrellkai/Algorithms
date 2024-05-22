@@ -132,4 +132,6 @@ const bredthFirstValues = (root) => {
   if (!root) return [];
   //declare variable 'trees' assign to array containing root
   const trees = [root];
+  //declare variable 'output' assign to empty array
+  const output = [];
 };
