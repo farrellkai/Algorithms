@@ -181,12 +181,12 @@ const bredthFirstValues = (root) => {
 // console.log(bredthFirstValues(a));
 // const a = new Node('a');
 // console.log(bredthFirstValues(a));
-const a = new Node('a');
-const b = new Node('b');
-const c = new Node('c');
-const d = new Node('d');
-const e = new Node('e');
-const x = new Node('x');
+// const a = new Node('a');
+// const b = new Node('b');
+// const c = new Node('c');
+// const d = new Node('d');
+// const e = new Node('e');
+// const x = new Node('x');
 
 // a.right = b;
 // b.left = c;
@@ -195,3 +195,6 @@ const x = new Node('x');
 // d.right = e;
 // console.log(bredthFirstValues(a));
 // console.log(bredthFirstValues(null));
+
+//tree sum function
+const treeSum = (root) => {};
