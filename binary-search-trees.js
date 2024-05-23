@@ -197,4 +197,7 @@ const bredthFirstValues = (root) => {
 // console.log(bredthFirstValues(null));
 
 //tree sum function
-const treeSum = (root) => {};
+const treeSum = (root) => {
+  //base case: if root is null return 0
+  if (!root) return 0;
+};
