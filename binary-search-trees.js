@@ -238,4 +238,7 @@ const treeSum = (root) => {
 //console.log(treeSum(null));
 
 //tree includes function
-const treeIncludes = (root, target) => {};
+const treeIncludes = (root, target) => {
+  //base case: if root is null return false
+  if (!root) return false;
+};
