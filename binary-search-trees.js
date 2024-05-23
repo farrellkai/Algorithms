@@ -330,4 +330,7 @@ const treeMinVal = (root) => {
 // console.log(treeMinVal(a));
 
 //max path sum function
-const maxPathSum = (root) => {};
+const maxPathSum = (root) => {
+  //base case: if root is null return 0
+  if (!root) return 0;
+};
