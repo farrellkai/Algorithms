@@ -241,4 +241,6 @@ const treeSum = (root) => {
 const treeIncludes = (root, target) => {
   //base case: if root is null return false
   if (!root) return false;
+  //base case: if root value matches target return true
+  if (root.val === target) return true;
 };
