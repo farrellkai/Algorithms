@@ -331,8 +331,8 @@ const treeMinVal = (root) => {
 
 //max path sum function
 const maxPathSum = (root) => {
-  //base case: if root is null return 0
-  if (!root) return 0;
+  //base case: if root is null return negative Infinity
+  if (!root) return -Infinity;
   //declare variable 'greater' assign to result of function with left child or right child depending on which result is greater
   const greater =
     maxPathSum(root.left) > maxPathSum(root.right)
