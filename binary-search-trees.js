@@ -338,4 +338,6 @@ const maxPathSum = (root) => {
     maxPathSum(root.left) > maxPathSum(root.right)
       ? maxPathSum(root.left)
       : maxPathSum(root.right);
+  //return sum of root value and greater variable
+  return root.val + greater;
 };
