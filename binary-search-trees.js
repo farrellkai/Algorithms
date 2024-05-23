@@ -276,6 +276,8 @@ const treeIncludes = (root, target) => {
 
 //tree min value function
 const treeMinVal = (root) => {
-  //if root is null return Infinity
+  //base case: if root is null return Infinity
   if (!root) return Infinity;
+  //recursive case: return smallest value between root value and result of function on left child and right child
+  return Math.min(root.val, treeMinVal(root.left), treeMinVal(root.right));
 };
