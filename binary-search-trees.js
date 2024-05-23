@@ -236,3 +236,6 @@ const treeSum = (root) => {
 // f.right = h;
 // console.log(treeSum(a));
 //console.log(treeSum(null));
+
+//tree includes function
+const treeIncludes = (root, target) => {};
