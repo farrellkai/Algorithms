@@ -281,3 +281,50 @@ const treeMinVal = (root) => {
   //recursive case: return smallest value between root value and result of function on left child and right child
   return Math.min(root.val, treeMinVal(root.left), treeMinVal(root.right));
 };
+
+//test cases
+// const a = new Node(3);
+// const b = new Node(11);
+// const c = new Node(4);
+// const d = new Node(4);
+// const e = new Node(-2);
+// const f = new Node(1);
+
+// a.left = b;
+// a.right = c;
+// b.left = d;
+// b.right = e;
+// c.right = f;
+// console.log(treeMinVal(a));
+// const a = new Node(5);
+// const b = new Node(11);
+// const c = new Node(3);
+// const d = new Node(4);
+// const e = new Node(14);
+// const f = new Node(12);
+
+// a.left = b;
+// a.right = c;
+// b.left = d;
+// b.right = e;
+// c.right = f;
+// console.log(treeMinVal(a));
+// const a = new Node(-1);
+// const b = new Node(-6);
+// const c = new Node(-5);
+// const d = new Node(-3);
+// const e = new Node(-4);
+// const f = new Node(-13);
+// const g = new Node(-2);
+// const h = new Node(-2);
+
+// a.left = b;
+// a.right = c;
+// b.left = d;
+// b.right = e;
+// c.right = f;
+// e.left = g;
+// f.right = h;
+// console.log(treeMinVal(a));
+// const a = new Node(42);
+// console.log(treeMinVal(a));
