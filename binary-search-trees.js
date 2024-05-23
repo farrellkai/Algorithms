@@ -275,4 +275,7 @@ const treeIncludes = (root, target) => {
 // console.log(treeIncludes(null, 'b'));
 
 //tree min value function
-const treeMinVal = (root) => {};
+const treeMinVal = (root) => {
+  //if root is null return Infinity
+  if (!root) return Infinity;
+};
