@@ -250,26 +250,29 @@ const treeIncludes = (root, target) => {
 };
 
 //test cases
-const a = new Node('a');
-const b = new Node('b');
-const c = new Node('c');
-const d = new Node('d');
-const e = new Node('e');
-const f = new Node('f');
+// const a = new Node('a');
+// const b = new Node('b');
+// const c = new Node('c');
+// const d = new Node('d');
+// const e = new Node('e');
+// const f = new Node('f');
 
-a.left = b;
-a.right = c;
-b.left = d;
-b.right = e;
-c.right = f;
-console.log(treeIncludes(a, 'e'));
-console.log(treeIncludes(a, 'a'));
-console.log(treeIncludes(a, 'n'));
-const g = new Node('g');
-const h = new Node('h');
+// a.left = b;
+// a.right = c;
+// b.left = d;
+// b.right = e;
+// c.right = f;
+// console.log(treeIncludes(a, 'e'));
+// console.log(treeIncludes(a, 'a'));
+// console.log(treeIncludes(a, 'n'));
+// const g = new Node('g');
+// const h = new Node('h');
 
-e.left = g;
-f.right = h;
-console.log(treeIncludes(a, 'f'));
-console.log(treeIncludes(a, 'p'));
-console.log(treeIncludes(null, 'b'));
+// e.left = g;
+// f.right = h;
+// console.log(treeIncludes(a, 'f'));
+// console.log(treeIncludes(a, 'p'));
+// console.log(treeIncludes(null, 'b'));
+
+//tree min value function
+const treeMinVal = (root) => {};
