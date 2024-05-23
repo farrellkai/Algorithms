@@ -243,4 +243,8 @@ const treeIncludes = (root, target) => {
   if (!root) return false;
   //base case: if root value matches target return true
   if (root.val === target) return true;
+  //recursive case: if result of function on left child or right child is true return true else return false
+  return treeIncludes(root.left, target) || treeIncludes(root.right, target)
+    ? true
+    : false;
 };
