@@ -328,3 +328,6 @@ const treeMinVal = (root) => {
 // console.log(treeMinVal(a));
 // const a = new Node(42);
 // console.log(treeMinVal(a));
+
+//max path sum function
+const maxPathSum = (root) => {};
