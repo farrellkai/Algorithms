@@ -200,4 +200,6 @@ const bredthFirstValues = (root) => {
 const treeSum = (root) => {
   //base case: if root is null return 0
   if (!root) return 0;
+  //recursive case: return sum of root value and result of function with left child and right child
+  return root.val + treeSum(root.left) + treeSum(root.right);
 };
