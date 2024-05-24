@@ -397,4 +397,6 @@ const maxPathSum = (root) => {
 const treePathFinder = (root, target) => {
   //base case: if root is null return null
   if (!root) return null;
+  //base case: if root value matches target return value in an array
+  if (root.val === target) return [root.val];
 };
