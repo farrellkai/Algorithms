@@ -399,4 +399,6 @@ const treePathFinder = (root, target) => {
   if (!root) return null;
   //base case: if root value matches target return value in an array
   if (root.val === target) return [root.val];
+  //recursive case: declare variable 'leftValues' assign to result of function with passed in left child
+  const leftValues = treePathFinder(root.left, target);
 };
