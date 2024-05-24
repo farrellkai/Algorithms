@@ -405,6 +405,8 @@ const treePathFinder = (root, target) => {
   if (leftValues) leftValues.unshift(root.val);
   //recursive case: declare variable 'rightValues' assign to result of function with passed in right child
   const rightValues = treePathFinder(root.right, target);
+  //if rightValues is not null place root's value at index 0
+  if (rightValues) rightValues.unshift(root.val);
   //if one of the variables is not null, return that variable, otherwise return null
   return leftValues ? leftValues : rightValues;
 };
