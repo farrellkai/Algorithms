@@ -394,4 +394,7 @@ const maxPathSum = (root) => {
 // console.log(maxPathSum(a));
 
 //tree path finder function
-const treePathFinder = (root, target) => {};
+const treePathFinder = (root, target) => {
+  //base case: if root is null return null
+  if (!root) return null;
+};
