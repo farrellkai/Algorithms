@@ -373,22 +373,25 @@ const maxPathSum = (root) => {
 // e.left = f;
 // e.right = g;
 // console.log(maxPathSum(a));
-const a = new Node(-1);
-const b = new Node(-6);
-const c = new Node(-5);
-const d = new Node(-3);
-const e = new Node(0);
-const f = new Node(-13);
-const g = new Node(-1);
-const h = new Node(-2);
+// const a = new Node(-1);
+// const b = new Node(-6);
+// const c = new Node(-5);
+// const d = new Node(-3);
+// const e = new Node(0);
+// const f = new Node(-13);
+// const g = new Node(-1);
+// const h = new Node(-2);
 
-a.left = b;
-a.right = c;
-b.left = d;
-b.right = e;
-c.right = f;
-e.left = g;
-f.right = h;
-console.log(maxPathSum(a));
+// a.left = b;
+// a.right = c;
+// b.left = d;
+// b.right = e;
+// c.right = f;
+// e.left = g;
+// f.right = h;
+// console.log(maxPathSum(a));
 // const a = new Node(42);
 // console.log(maxPathSum(a));
+
+//tree path finder function
+const treePathFinder = (root, target) => {};
