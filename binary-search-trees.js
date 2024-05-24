@@ -446,6 +446,9 @@ const treeValueCount = (root, target) => {
   //recursive case: if function called on left child is not null return sum of result and root value
   if (treeValueCount(root.left, target))
     return root.val + treeValueCount(root.left, target);
+  //recursive case: if function called on right child is not null return sum of result and root value
+  if (treeValueCount(root.right, target))
+    return root.val + treeValueCount(root.right, target);
 };
 
 //test cases
