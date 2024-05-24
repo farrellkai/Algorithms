@@ -410,3 +410,29 @@ const treePathFinder = (root, target) => {
   //if one of the variables is not null, return that variable, otherwise return null
   return leftValues ? leftValues : rightValues;
 };
+
+//test cases
+const a = new Node('a');
+const b = new Node('b');
+const c = new Node('c');
+const d = new Node('d');
+const e = new Node('e');
+const f = new Node('f');
+
+a.left = b;
+a.right = c;
+b.left = d;
+b.right = e;
+c.right = f;
+console.log(treePathFinder(a, 'e'));
+console.log(treePathFinder(a, 'p'));
+const g = new Node('g');
+const h = new Node('h');
+
+e.left = g;
+f.right = h;
+console.log(treePathFinder(a, 'c'));
+console.log(treePathFinder(a, 'h'));
+const x = new Node('x');
+console.log(treePathFinder(x, 'x'));
+console.log(treePathFinder(null, 'x'));
