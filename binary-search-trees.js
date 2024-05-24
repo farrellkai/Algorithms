@@ -438,9 +438,16 @@ const treePathFinder = (root, target) => {
 // console.log(treePathFinder(null, 'x'));
 
 //tree value count function
-const treeValueCount = (root) => {
+const treeValueCount = (root, target) => {
   //base case: if root is null return 0
   if (!root) return 0;
   //recursive case: return sum of root value and function on left child and right child
   return root.val + treeValueCount(root.left) + treeValueCount(root.right);
 };
+
+//test cases
+console.log(treeValueCount());
+console.log(treeValueCount());
+console.log(treeValueCount());
+console.log(treeValueCount());
+console.log(treeValueCount());
