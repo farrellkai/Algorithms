@@ -439,8 +439,8 @@ const treePathFinder = (root, target) => {
 
 //tree value count function
 const treeValueCount = (root, target) => {
-  //base case: if root is null return 0
-  if (!root) return 0;
+  //base case: if root is null return null
+  if (!root) return null;
   //base case: if root value matches target return value
   if (root.val === target) return root.val;
 };
