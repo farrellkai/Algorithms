@@ -441,6 +441,10 @@ const treePathFinder = (root, target) => {
 const treeValueCount = (root, target) => {
   //base case: if root is null return 0
   if (!root) return 0;
+  //recursive case: if root matches target return sum of function on left child and right child plus 1 otherwise just sum of two functions
+  return root.val === target
+    ? treeValueCount(root.left, target) + treeValueCount(root.right, target) + 1
+    : treeValueCount(root.left, target) + treeValueCount(root.right, target);
 };
 
 //test cases
