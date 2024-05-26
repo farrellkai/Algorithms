@@ -503,3 +503,26 @@ const howHigh = (root) => {
     ? howHigh(root.left) + 1
     : howHigh(root.right) + 1;
 };
+
+//test cases
+const a = new Node('a');
+console.log(howHigh(a));
+const c = new Node('c');
+
+a.right = c;
+console.log(howHigh(a));
+const b = new Node('b');
+const d = new Node('d');
+const e = new Node('e');
+const f = new Node('f');
+
+a.left = b;
+b.left = d;
+b.right = e;
+c.right = f;
+console.log(howHigh(a));
+const g = new Node('g');
+
+e.left = g;
+console.log(howHigh(a));
+console.log(howHigh(null));
