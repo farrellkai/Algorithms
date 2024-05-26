@@ -495,4 +495,7 @@ const treeValueCount = (root, target) => {
 //console.log(treeValueCount(null, 42));
 
 //how high function
-const howHigh = (root) => {};
+const howHigh = (root) => {
+  //base case: if root is null return -1
+  if (!root) return -1;
+};
