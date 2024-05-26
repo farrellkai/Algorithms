@@ -493,3 +493,6 @@ const treeValueCount = (root, target) => {
 // console.log(treeValueCount(a, 1));
 //console.log(treeValueCount(a, 9));
 //console.log(treeValueCount(null, 42));
+
+//how high function
+const howHigh = (root) => {};
