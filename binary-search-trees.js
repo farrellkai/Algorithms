@@ -498,4 +498,8 @@ const treeValueCount = (root, target) => {
 const howHigh = (root) => {
   //base case: if root is null return -1
   if (!root) return -1;
+  //recursive case: if result of function on left child is greater than right child return left result plus 1, otherwise return right result plus 1
+  return howHigh(root.left) > howHigh(root.right)
+    ? howHigh(root.left) + 1
+    : howHigh(root.right) + 1;
 };
