@@ -531,4 +531,6 @@ const howHigh = (root) => {
 const botRightValue = (root) => {
   //declare let variable 'cur'
   let cur;
+  //declare variable 'queue' assign to array containing root
+  const queue = [root];
 };
