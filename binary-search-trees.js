@@ -539,5 +539,7 @@ const botRightValue = (root) => {
     const node = queue.shift();
     //reassign cur to node value
     cur = node.val;
+    //if a left child exists push it onto queue
+    if (node.left) queue.push(node.left);
   }
 };
