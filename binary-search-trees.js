@@ -537,5 +537,7 @@ const botRightValue = (root) => {
   while (queue.length) {
     //declare variable 'node' assign to first element in queue and remove
     const node = queue.shift();
+    //reassign cur to node value
+    cur = node.val;
   }
 };
