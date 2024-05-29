@@ -544,4 +544,5 @@ const botRightValue = (root) => {
     //if a right child exists push it onto queue
     if (node.right) queue.push(node.right);
   }
+  return cur;
 };
