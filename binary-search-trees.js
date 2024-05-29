@@ -533,4 +533,6 @@ const botRightValue = (root) => {
   let cur;
   //declare variable 'queue' assign to array containing root
   const queue = [root];
+  //iterate through elements in queue
+  while (queue.length) {}
 };
