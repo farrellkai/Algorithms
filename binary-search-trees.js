@@ -528,4 +528,7 @@ const howHigh = (root) => {
 // console.log(howHigh(null));
 
 //bottom right value function
-const botRightValue = (root) => {};
+const botRightValue = (root) => {
+  //declare let variable 'cur'
+  let cur;
+};
