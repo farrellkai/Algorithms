@@ -628,4 +628,5 @@ const allTreePaths = (root) => {
   //declare let variable 'i' assign to 0
   let i = 0;
   //iterate through elements of bothSides
+  while (i < bothSides.length) {}
 };
