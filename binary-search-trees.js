@@ -625,4 +625,7 @@ const allTreePaths = (root) => {
   const rightSide = allTreePaths(root.right);
   //declare variable 'bothSides' assign to concatenated leftSide and rightSide
   const bothSides = leftSide.concat(rightSide);
+  //declare let variable 'i' assign to 0
+  let i = 0;
+  //iterate through elements of bothSides
 };
