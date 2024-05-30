@@ -623,4 +623,6 @@ const allTreePaths = (root) => {
   const leftSide = allTreePaths(root.left);
   //recursive case: declare variable 'rightSide' assign to result of function with right child
   const rightSide = allTreePaths(root.right);
+  //declare variable 'bothSides' assign to concatenated leftSide and rightSide
+  const bothSides = leftSide.concat(rightSide);
 };
