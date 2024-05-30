@@ -628,5 +628,8 @@ const allTreePaths = (root) => {
   //declare let variable 'i' assign to 0
   let i = 0;
   //iterate through elements of bothSides
-  while (i < bothSides.length) {}
+  while (i < bothSides.length) {
+    //unshift current element in bothSides w/ root value
+    bothSides[i].unshift(root.val);
+  }
 };
