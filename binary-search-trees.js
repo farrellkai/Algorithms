@@ -621,4 +621,6 @@ const allTreePaths = (root) => {
   if (!root.left && !root.right) return [[root.val]];
   //recursive case: declare variable 'leftSide' assign to result of function with left child
   const leftSide = allTreePaths(root.left);
+  //recursive case: declare variable 'rightSide' assign to result of function with right child
+  const rightSide = allTreePaths(root.right);
 };
