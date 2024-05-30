@@ -619,4 +619,6 @@ const allTreePaths = (root) => {
   if (!root) return [];
   //base case: if root has no children return array containing array containing root value
   if (!root.left && !root.right) return [[root.val]];
+  //recursive case: declare variable 'leftSide' assign to result of function with left child
+  const leftSide = allTreePaths(root.left);
 };
