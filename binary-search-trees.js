@@ -612,3 +612,6 @@ const botRightValue = (root) => {
 // console.log(botRightValue(a));
 // const a = new Node(42);
 // console.log(botRightValue(a));
+
+//all tree paths function
+const allTreePaths = (root) => {};
