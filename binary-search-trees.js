@@ -634,4 +634,5 @@ const allTreePaths = (root) => {
     //increment i
     i++;
   }
+  return bothSides;
 };
