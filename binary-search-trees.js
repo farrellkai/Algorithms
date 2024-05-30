@@ -617,4 +617,6 @@ const botRightValue = (root) => {
 const allTreePaths = (root) => {
   //base case: if root is null return empty array
   if (!root) return [];
+  //base case: if root has no children return array containing array containing root value
+  if (!root.left && !root.right) return [[root.val]];
 };
