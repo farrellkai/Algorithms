@@ -614,4 +614,7 @@ const botRightValue = (root) => {
 // console.log(botRightValue(a));
 
 //all tree paths function
-const allTreePaths = (root) => {};
+const allTreePaths = (root) => {
+  //base case: if root is null return empty array
+  if (!root) return [];
+};
