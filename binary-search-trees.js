@@ -688,3 +688,42 @@ const leafList = (root) => {
   //return result of concatenating leftValues and rightValues
   return leftValues.concat(rightValues);
 };
+
+//test cases
+// const a = new Node('a');
+// const b = new Node('b');
+// const c = new Node('c');
+// const d = new Node('d');
+// const e = new Node('e');
+// const f = new Node('f');
+
+// a.left = b;
+// a.right = c;
+// b.left = d;
+// b.right = e;
+// c.right = f;
+// console.log(leafList(a));
+// const g = new Node('g');
+// const h = new Node('h');
+
+// e.left = g;
+// f.right = h;
+// console.log(leafList(a));
+// const a = new Node(5);
+// const b = new Node(11);
+// const c = new Node(54);
+// const d = new Node(20);
+// const e = new Node(15);
+// const f = new Node(1);
+// const g = new Node(3);
+
+// a.left = b;
+// a.right = c;
+// b.left = d;
+// b.right = e;
+// e.left = f;
+// e.right = g;
+// console.log(leafList(a));
+// const x = new Node('x');
+// console.log(leafList(x));
+// console.log(leafList(null));
