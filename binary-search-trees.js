@@ -681,4 +681,6 @@ const leafList = (root) => {
   if (!root) return [];
   //base case: if root has no children return array with root value
   if (!root.left && !root.right) return [root.val];
+  //recursive case: declare variable 'leftValues' assign to function result with left child
+  const leftValues = leafList(root.left);
 };
