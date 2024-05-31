@@ -683,4 +683,6 @@ const leafList = (root) => {
   if (!root.left && !root.right) return [root.val];
   //recursive case: declare variable 'leftValues' assign to function result with left child
   const leftValues = leafList(root.left);
+  //recursive case: declare variable 'rightValues' assign to function result with right child
+  const rightValues = leafList(root.right);
 };
