@@ -679,4 +679,6 @@ const allTreePaths = (root) => {
 const leafList = (root) => {
   //base case: if root is null return empty array
   if (!root) return [];
+  //base case: if root has no children return array with root value
+  if (!root.left && !root.right) return [root.val];
 };
