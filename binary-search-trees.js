@@ -685,4 +685,6 @@ const leafList = (root) => {
   const leftValues = leafList(root.left);
   //recursive case: declare variable 'rightValues' assign to function result with right child
   const rightValues = leafList(root.right);
+  //return result of concatenating leftValues and rightValues
+  return leftValues.concat(rightValues);
 };
