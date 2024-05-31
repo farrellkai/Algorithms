@@ -676,4 +676,7 @@ const allTreePaths = (root) => {
 // console.log(allTreePaths(z));
 
 //leaf list function
-const leafList = (root) => {};
+const leafList = (root) => {
+  //base case: if root is null return empty array
+  if (!root) return [];
+};
