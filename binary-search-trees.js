@@ -727,3 +727,6 @@ const leafList = (root) => {
 // const x = new Node('x');
 // console.log(leafList(x));
 // console.log(leafList(null));
+
+//tree levels functioin
+const treeLevels = (root) => {};
