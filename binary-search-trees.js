@@ -738,5 +738,8 @@ const treeLevels = (root) => {
   //element should be object with property 'node' assigned to root and 'level' assigned to 0
   const stack = [{ node: root, level: 0 }];
   //iterate throught elements in stack
-  while (stack.length) {}
+  while (stack.length) {
+    //declare variable 'cur' assign to first element in stack and remove
+    const cur = stack.shift();
+  }
 };
