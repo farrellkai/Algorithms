@@ -746,5 +746,9 @@ const treeLevels = (root) => {
     //if cur node has right child push to queue with level one more than cur
     if (cur.node.right)
       queue.push({ node: cur.node.right, level: cur.level++ });
+    //push cur node value to output at appropriate index
+    !output[cur.level]
+      ? output.push([cur.node.val])
+      : output[cur.level].push(cur.node.val);
   }
 };
