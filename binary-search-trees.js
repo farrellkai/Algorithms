@@ -741,5 +741,7 @@ const treeLevels = (root) => {
   while (stack.length) {
     //declare variable 'cur' assign to first element in stack and remove
     const cur = stack.shift();
+    //if cur node has left child push to stack with level one more than cur
+    if (cur.node.left) stack.push({ node: cur.node.left, level: cur.level++ });
   }
 };
