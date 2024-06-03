@@ -734,14 +734,14 @@ const treeLevels = (root) => {
   const output = [];
   //if root is null return output
   if (!root) return output;
-  //declare variable 'stack' assign to array with single element
+  //declare variable 'queue' assign to array with single element
   //element should be object with property 'node' assigned to root and 'level' assigned to 0
-  const stack = [{ node: root, level: 0 }];
-  //iterate throught elements in stack
-  while (stack.length) {
-    //declare variable 'cur' assign to first element in stack and remove
-    const cur = stack.shift();
-    //if cur node has left child push to stack with level one more than cur
-    if (cur.node.left) stack.push({ node: cur.node.left, level: cur.level++ });
+  const queue = [{ node: root, level: 0 }];
+  //iterate throught elements in queue
+  while (queue.length) {
+    //declare variable 'cur' assign to first element in queue and remove
+    const cur = queue.shift();
+    //if cur node has left child push to queue with level one more than cur
+    if (cur.node.left) queue.push({ node: cur.node.left, level: cur.level++ });
   }
 };
