@@ -751,4 +751,5 @@ const treeLevels = (root) => {
       ? output.push([cur.node.val])
       : output[cur.level].push(cur.node.val);
   }
+  return output;
 };
