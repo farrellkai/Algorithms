@@ -729,4 +729,7 @@ const leafList = (root) => {
 // console.log(leafList(null));
 
 //tree levels functioin
-const treeLevels = (root) => {};
+const treeLevels = (root) => {
+  //declare variable 'output' assign to empty array
+  const output = [];
+};
