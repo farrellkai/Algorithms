@@ -734,4 +734,7 @@ const treeLevels = (root) => {
   const output = [];
   //if root is null return output
   if (!root) return output;
+  //declare variable 'stack' assign to array with single element
+  //element should be object with property 'node' assigned to root and 'level' assigned to 0
+  const stack = [{ node: root, level: 0 }];
 };
