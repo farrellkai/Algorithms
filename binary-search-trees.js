@@ -737,4 +737,6 @@ const treeLevels = (root) => {
   //declare variable 'stack' assign to array with single element
   //element should be object with property 'node' assigned to root and 'level' assigned to 0
   const stack = [{ node: root, level: 0 }];
+  //iterate throught elements in stack
+  while (stack.length) {}
 };
