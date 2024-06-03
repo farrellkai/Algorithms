@@ -742,10 +742,11 @@ const treeLevels = (root) => {
     //declare variable 'cur' assign to first element in queue and remove
     const cur = queue.shift();
     //if cur node has left child push to queue with level one more than cur
-    if (cur.node.left) queue.push({ node: cur.node.left, level: cur.level++ });
+    if (cur.node.left)
+      queue.push({ node: cur.node.left, level: cur.level + 1 });
     //if cur node has right child push to queue with level one more than cur
     if (cur.node.right)
-      queue.push({ node: cur.node.right, level: cur.level++ });
+      queue.push({ node: cur.node.right, level: cur.level + 1 });
     //push cur node value to output at appropriate index
     !output[cur.level]
       ? output.push([cur.node.val])
@@ -753,3 +754,40 @@ const treeLevels = (root) => {
   }
   return output;
 };
+
+//test cases
+const a = new Node('a');
+const b = new Node('b');
+const c = new Node('c');
+const d = new Node('d');
+const e = new Node('e');
+const f = new Node('f');
+
+a.left = b;
+a.right = c;
+b.left = d;
+b.right = e;
+c.right = f;
+console.log(treeLevels(a));
+const g = new Node('g');
+const h = new Node('h');
+const i = new Node('i');
+
+e.left = g;
+e.right = h;
+f.left = i;
+console.log(treeLevels(a));
+const q = new Node('q');
+const r = new Node('r');
+const s = new Node('s');
+const t = new Node('t');
+const u = new Node('u');
+const v = new Node('v');
+
+q.left = r;
+q.right = s;
+r.right = t;
+t.left = u;
+u.right = v;
+console.log(treeLevels(q));
+console.log(treeLevels(null));
