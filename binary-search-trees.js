@@ -756,38 +756,41 @@ const treeLevels = (root) => {
 };
 
 //test cases
-const a = new Node('a');
-const b = new Node('b');
-const c = new Node('c');
-const d = new Node('d');
-const e = new Node('e');
-const f = new Node('f');
+// const a = new Node('a');
+// const b = new Node('b');
+// const c = new Node('c');
+// const d = new Node('d');
+// const e = new Node('e');
+// const f = new Node('f');
 
-a.left = b;
-a.right = c;
-b.left = d;
-b.right = e;
-c.right = f;
-console.log(treeLevels(a));
-const g = new Node('g');
-const h = new Node('h');
-const i = new Node('i');
+// a.left = b;
+// a.right = c;
+// b.left = d;
+// b.right = e;
+// c.right = f;
+// console.log(treeLevels(a));
+// const g = new Node('g');
+// const h = new Node('h');
+// const i = new Node('i');
 
-e.left = g;
-e.right = h;
-f.left = i;
-console.log(treeLevels(a));
-const q = new Node('q');
-const r = new Node('r');
-const s = new Node('s');
-const t = new Node('t');
-const u = new Node('u');
-const v = new Node('v');
+// e.left = g;
+// e.right = h;
+// f.left = i;
+// console.log(treeLevels(a));
+// const q = new Node('q');
+// const r = new Node('r');
+// const s = new Node('s');
+// const t = new Node('t');
+// const u = new Node('u');
+// const v = new Node('v');
 
-q.left = r;
-q.right = s;
-r.right = t;
-t.left = u;
-u.right = v;
-console.log(treeLevels(q));
-console.log(treeLevels(null));
+// q.left = r;
+// q.right = s;
+// r.right = t;
+// t.left = u;
+// u.right = v;
+// console.log(treeLevels(q));
+// console.log(treeLevels(null));
+
+//level averages function
+const levelAvg = (root) => {};
