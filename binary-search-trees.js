@@ -820,4 +820,7 @@ const levelAvg = (root) => {
       cache[cur.level].denom++;
     }
   }
+  //itereate through key/value pairs in cache
+  for (let key in cache) {
+  }
 };
