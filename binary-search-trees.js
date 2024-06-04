@@ -817,6 +817,7 @@ const levelAvg = (root) => {
     //if key/value pair already exists add cur node value to sum and increment denom
     else {
       cache[cur.level].sum += cur.node.val;
+      cache[cur.level].denom++;
     }
   }
 };
