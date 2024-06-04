@@ -798,4 +798,6 @@ const levelAvg = (root) => {
   const output = [];
   //if root is null return output
   if (!root) return output;
+  //declare variable 'cache' assign to empty object
+  const cache = {};
 };
