@@ -803,5 +803,8 @@ const levelAvg = (root) => {
   //declare variable 'queue' assign to array with root and level 0
   const queue = [{ node: root, level: 0 }];
   //itereate through elements in queue
-  while (queue.length) {}
+  while (queue.length) {
+    //declare variable 'cur' assign to first element in queue and remove
+    const cur = queue.shift();
+  }
 };
