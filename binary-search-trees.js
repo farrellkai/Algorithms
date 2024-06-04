@@ -802,4 +802,6 @@ const levelAvg = (root) => {
   const cache = {};
   //declare variable 'queue' assign to array with root and level 0
   const queue = [{ node: root, level: 0 }];
+  //itereate through elements in queue
+  while (queue.length) {}
 };
