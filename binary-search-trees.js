@@ -812,5 +812,7 @@ const levelAvg = (root) => {
     //if cur node has a right child push onto queue with increased level
     if (cur.node.right)
       queue.push({ node: cur.node.right, level: cur.level + 1 });
+    //if cache does not have a key matching cur level create key/value pair
+    if (!cache[cur.level]) cache[cur.level] = { sum: cur.node.val, denom: 1 };
   }
 };
