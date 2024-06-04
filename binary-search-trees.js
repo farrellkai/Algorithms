@@ -809,5 +809,8 @@ const levelAvg = (root) => {
     //if cur node has a left child push onto queue with increased level
     if (cur.node.left)
       queue.push({ node: cur.node.left, level: cur.level + 1 });
+    //if cur node has a right child push onto queue with increased level
+    if (cur.node.right)
+      queue.push({ node: cur.node.right, level: cur.level + 1 });
   }
 };
