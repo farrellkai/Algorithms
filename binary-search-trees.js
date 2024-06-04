@@ -800,4 +800,6 @@ const levelAvg = (root) => {
   if (!root) return output;
   //declare variable 'cache' assign to empty object
   const cache = {};
+  //declare variable 'queue' assign to array with root and level 0
+  const queue = [{ node: root, level: 0 }];
 };
