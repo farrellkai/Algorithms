@@ -796,4 +796,6 @@ const treeLevels = (root) => {
 const levelAvg = (root) => {
   //declare variable 'output' assign to empty array
   const output = [];
+  //if root is null return output
+  if (!root) return output;
 };
