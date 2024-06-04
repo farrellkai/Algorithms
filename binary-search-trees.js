@@ -827,3 +827,64 @@ const levelAvg = (root) => {
   }
   return output;
 };
+
+//test cases
+// const a = new Node(3);
+// const b = new Node(11);
+// const c = new Node(4);
+// const d = new Node(4);
+// const e = new Node(-2);
+// const f = new Node(1);
+
+// a.left = b;
+// a.right = c;
+// b.left = d;
+// b.right = e;
+// c.right = f;
+// console.log(levelAvg(a));
+// const a = new Node(5);
+// const b = new Node(11);
+// const c = new Node(54);
+// const d = new Node(20);
+// const e = new Node(15);
+// const f = new Node(1);
+// const g = new Node(3);
+
+// a.left = b;
+// a.right = c;
+// b.left = d;
+// b.right = e;
+// e.left = f;
+// e.right = g;
+// console.log(levelAvg(a));
+// const a = new Node(-1);
+// const b = new Node(-6);
+// const c = new Node(-5);
+// const d = new Node(-3);
+// const e = new Node(0);
+// const f = new Node(45);
+// const g = new Node(-1);
+// const h = new Node(-2);
+
+// a.left = b;
+// a.right = c;
+// b.left = d;
+// b.right = e;
+// c.right = f;
+// e.left = g;
+// f.right = h;
+// console.log(levelAvg(a));
+// const q = new Node(13);
+// const r = new Node(4);
+// const s = new Node(2);
+// const t = new Node(9);
+// const u = new Node(2);
+// const v = new Node(42);
+
+// q.left = r;
+// q.right = s;
+// r.right = t;
+// t.left = u;
+// u.right = v;
+// console.log(levelAvg(q));
+// console.log(levelAvg(null));
