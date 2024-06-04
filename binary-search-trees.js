@@ -825,4 +825,5 @@ const levelAvg = (root) => {
     //assign output at index of key to value of sum divided by denom
     output[+key] = cache[key].sum / cache[key].denom;
   }
+  return output;
 };
