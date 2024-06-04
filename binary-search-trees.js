@@ -814,5 +814,9 @@ const levelAvg = (root) => {
       queue.push({ node: cur.node.right, level: cur.level + 1 });
     //if cache does not have a key matching cur level create key/value pair
     if (!cache[cur.level]) cache[cur.level] = { sum: cur.node.val, denom: 1 };
+    //if key/value pair already exists add cur node value to sum and increment denom
+    else {
+      cache[cur.level].sum += cur.node.val;
+    }
   }
 };
