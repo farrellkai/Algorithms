@@ -20,6 +20,8 @@ const hasPathBredth = (graph, start, fin) => {
     const cur = queue.shift();
     //iterate through elements in cur array
     for (let el of cur) {
+      //if el matches fin return true
+      if (el === fin) return true;
     }
   }
 };
