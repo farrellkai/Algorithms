@@ -2,4 +2,7 @@
 const hasPathDepth = (graph, start, fin) => {
   //base case: if start matches fin return true
   if (start === fin) return true;
+  //iterate through graph at index start
+  for (let el of graph[start]) {
+  }
 };
