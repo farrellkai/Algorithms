@@ -26,6 +26,7 @@ const hasPathBredth = (graph, start, fin) => {
       queue.push(graph[el]);
     }
   }
+  return false;
 };
 
 //test cases
