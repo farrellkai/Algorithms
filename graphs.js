@@ -9,3 +9,27 @@ const hasPathDepth = (graph, start, fin) => {
   }
   return false;
 };
+
+//test cases
+const graph1 = {
+  f: ['g', 'i'],
+  g: ['h'],
+  h: [],
+  i: ['g', 'k'],
+  j: ['i'],
+  k: [],
+};
+
+const graph2 = {
+  v: ['x', 'w'],
+  w: [],
+  x: [],
+  y: ['z'],
+  z: [],
+};
+
+console.log(hasPathDepth(graph1, 'f', 'k'));
+console.log(hasPathDepth(graph1, 'k', 'j'));
+console.log(hasPathDepth(graph1, 'i', 'h'));
+console.log(hasPathDepth(graph2, 'v', 'w'));
+console.log(hasPathDepth(graph2, 'v', 'z'));
