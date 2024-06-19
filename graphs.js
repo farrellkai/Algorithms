@@ -11,7 +11,10 @@ const hasPathDepth = (graph, start, fin) => {
 };
 
 //has path function bredth first
-const hasPathBredth = (graph, start, fin) => {};
+const hasPathBredth = (graph, start, fin) => {
+  //declare variable 'queue' assign to array containing value of graph at index of start
+  const queue = [graph[start]];
+};
 
 //test cases
 const graph1 = {
