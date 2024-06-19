@@ -10,6 +10,9 @@ const hasPathDepth = (graph, start, fin) => {
   return false;
 };
 
+//has path function bredth first
+const hasPathBredth = (graph, start, fin) => {};
+
 //test cases
 const graph1 = {
   f: ['g', 'i'],
