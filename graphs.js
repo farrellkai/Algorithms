@@ -7,4 +7,5 @@ const hasPathDepth = (graph, start, fin) => {
     //recursive case: if hasPathDepth with current element passed into start is true return true
     if (hasPathDepth(graph, el, fin) === true) return true;
   }
+  return false;
 };
