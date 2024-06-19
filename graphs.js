@@ -18,6 +18,9 @@ const hasPathBredth = (graph, start, fin) => {
   while (queue.length) {
     //declare variable 'cur' assign to first element in queue and remove
     const cur = queue.shift();
+    //iterate through elements in cur array
+    for (let el of cur) {
+    }
   }
 };
 
