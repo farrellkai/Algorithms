@@ -52,3 +52,9 @@ console.log(hasPathDepth(graph1, 'k', 'j'));
 console.log(hasPathDepth(graph1, 'i', 'h'));
 console.log(hasPathDepth(graph2, 'v', 'w'));
 console.log(hasPathDepth(graph2, 'v', 'z'));
+
+console.log(hasPathBredth(graph1, 'f', 'k'));
+console.log(hasPathBredth(graph1, 'k', 'j'));
+console.log(hasPathBredth(graph1, 'i', 'h'));
+console.log(hasPathBredth(graph2, 'v', 'w'));
+console.log(hasPathBredth(graph2, 'v', 'z'));
