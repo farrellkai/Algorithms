@@ -14,6 +14,8 @@ const hasPathDepth = (graph, start, fin) => {
 const hasPathBredth = (graph, start, fin) => {
   //declare variable 'queue' assign to array containing value of graph at index of start
   const queue = [graph[start]];
+  //itereate through elements in queue
+  while (queue.length) {}
 };
 
 //test cases
