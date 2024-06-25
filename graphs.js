@@ -70,5 +70,7 @@ const buildGraph = (edges) => {
   for (let el of edges) {
     //if first element in current array is not key in graph make it one w/ value: array containing next element otherwise push next element onto value
     !graph[el[0]] ? (graph[el[0]] = [el[1]]) : graph[el[0]].push(el[1]);
+    //if second element in current array is not key in graph make it one w/ value: array containing next element otherwise push next element onto value
+    !graph[el[1]] ? (graph[el[1]] = [el[0]]) : graph[el[1]].push(el[0]);
   }
 };
