@@ -66,4 +66,7 @@ const undirectedPathDepth = (edges, nodeA, nodeB) => {};
 const buildGraph = (edges) => {
   //declare variable 'graph' assign to empty object
   const graph = {};
+  //iterate through elements in edges argument
+  for (let el of edges) {
+  }
 };
