@@ -83,4 +83,6 @@ const buildGraph = (edges) => {
 const getPath = (graph, start, fin, visited) => {
   //base case: if start matches fin return true
   if (start === fin) return true;
+  //base case: if visited contains start as key return false
+  if (visited.has(start)) return false;
 };
