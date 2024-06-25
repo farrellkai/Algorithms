@@ -88,11 +88,47 @@ const getPath = (graph, start, fin, visited) => {
   //base case: if visited contains start as key return false
   if (visited.has(start)) return false;
   //iterate through variables of graph at index start
+  //make start a key in visited
+  visited.add(start);
   for (let el of graph[start]) {
     //recursive case: if result of function with el passed in as start argument is true return true
     if (getPath(graph, el, fin, visited) === true) return true;
-    //make el a key in visited
-    visited.add(el);
   }
   return false;
 };
+
+//test cases
+const edges = [
+  ['i', 'j'],
+  ['k', 'i'],
+  ['m', 'k'],
+  ['k', 'l'],
+  ['o', 'n'],
+];
+
+const edges2 = [
+  ['b', 'a'],
+  ['c', 'a'],
+  ['b', 'c'],
+  ['q', 'r'],
+  ['q', 's'],
+  ['q', 'u'],
+  ['q', 't'],
+];
+
+const edges3 = [
+  ['s', 'r'],
+  ['t', 'q'],
+  ['q', 'r'],
+];
+
+console.log(undirectedPathDepth(edges, 'j', 'm'));
+console.log(undirectedPathDepth(edges, 'm', 'j'));
+console.log(undirectedPathDepth(edges, 'l', 'j'));
+console.log(undirectedPathDepth(edges, 'k', 'o'));
+console.log(undirectedPathDepth(edges, 'i', 'o'));
+console.log(undirectedPathDepth(edges2, 'a', 'b'));
+console.log(undirectedPathDepth(edges2, 'a', 'c'));
+console.log(undirectedPathDepth(edges2, 'r', 't'));
+console.log(undirectedPathDepth(edges2, 'r', 'b'));
+console.log(undirectedPathDepth(edges3, 'r', 't'));
