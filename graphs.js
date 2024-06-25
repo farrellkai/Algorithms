@@ -89,5 +89,7 @@ const getPath = (graph, start, fin, visited) => {
   for (let el of graph[start]) {
     //recursive case: if result of function with el passed in as start argument is true return true
     if (getPath(graph, el, fin, visited) === true) return true;
+    //make el a key in visited
+    visited.add(el);
   }
 };
