@@ -92,4 +92,5 @@ const getPath = (graph, start, fin, visited) => {
     //make el a key in visited
     visited.add(el);
   }
+  return false;
 };
