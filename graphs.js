@@ -80,4 +80,7 @@ const buildGraph = (edges) => {
 };
 
 //get path function
-const getPath = (graph, start, fin, visited) => {};
+const getPath = (graph, start, fin, visited) => {
+  //base case: if start matches fin return true
+  if (start === fin) return true;
+};
