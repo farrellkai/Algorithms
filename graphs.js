@@ -87,5 +87,7 @@ const getPath = (graph, start, fin, visited) => {
   if (visited.has(start)) return false;
   //iterate through variables of graph at index start
   for (let el of graph[start]) {
+    //recursive case: if result of function with el passed in as start argument is true return true
+    if (getPath(graph, el, fin, visited) === true) return true;
   }
 };
