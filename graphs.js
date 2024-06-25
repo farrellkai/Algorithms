@@ -63,6 +63,8 @@ console.log(hasPathBredth(graph2, 'v', 'z'));
 const undirectedPathDepth = (edges, nodeA, nodeB) => {
   //declare variable 'graph' assign to evaluated result of buildGraph function w/ edges argument passed in
   const graph = buildGraph(edges);
+  //return reslut of getPath function passing in graph, nodeA, nodeB, and a new Set respectively
+  return getPath(graph, nodeA, nodeB, new Set());
 };
 
 //build graph function
