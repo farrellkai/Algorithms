@@ -47,5 +47,7 @@ const removeDuplicates = (arr) => {
   const output = [];
 
   let i = 0;
-  while (i < arr.length) {}
+  while (i < arr.length) {
+    i++;
+  }
 };
