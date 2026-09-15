@@ -43,5 +43,6 @@ const firstUniqueChar = (string) => {
 
 // Return an array with duplicate values removed, preserving their original order.
 const removeDuplicates = (arr) => {
+  const set = new Set();
   const output = [];
 };
