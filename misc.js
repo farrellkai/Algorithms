@@ -27,10 +27,16 @@ const firstUniqueChar = (string) => {
 
   let i = 0;
   while (i < string.length) {
-    map.has(arr[i]) ? map.set(arr[i], map.get(arr[i]) + 1) : map.set(arr[i], 1);
+    map.has(string[i])
+      ? map.set(string[i], map.get(string[i]) + 1)
+      : map.set(string[i], 1);
     i++;
   }
 
-  i = 0;
-  while (i < arr.length) {}
+  // i = 0;
+  // while (i < arr.length) {
+  //   if ()
+  // }
 };
+
+console.log(firstUniqueChar('farrell'));
