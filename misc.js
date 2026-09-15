@@ -56,3 +56,6 @@ const removeDuplicates = (arr) => {
   }
   return output;
 };
+
+// Return an object containing the count of each character in a string.
+const charFrequencies = (string) => {};
