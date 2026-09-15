@@ -18,5 +18,3 @@ const secondLargest = (arr) => {
   }
   return output;
 };
-
-console.log(secondLargest([2, 1]));
