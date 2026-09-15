@@ -6,5 +6,9 @@ const secondLargest = (arr) => {
   let output = -Infinity;
 
   let i = 0;
-  while (i < arr.length) {}
+  while (i < arr.length) {
+    if (arr[i] > largest) {
+      largest = arr[i];
+    }
+  }
 };
