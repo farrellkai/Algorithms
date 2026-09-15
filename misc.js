@@ -8,6 +8,7 @@ const secondLargest = (arr) => {
   let i = 0;
   while (i < arr.length) {
     if (arr[i] > largest) {
+      output = largest;
       largest = arr[i];
     }
     if (arr[i] > output && arr[i] < largest) {
@@ -18,4 +19,4 @@ const secondLargest = (arr) => {
   return output;
 };
 
-console.log(secondLargest([1, 2]));
+console.log(secondLargest([2, 1]));
