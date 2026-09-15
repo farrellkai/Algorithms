@@ -32,4 +32,5 @@ const firstUniqueChar = (string) => {
   }
 
   i = 0;
+  while (i < arr.length) {}
 };
