@@ -71,3 +71,5 @@ const charFrequencies = (string) => {
 
   return map;
 };
+
+const firstRepeatedValue = (arr) => {};
