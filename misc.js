@@ -4,4 +4,7 @@
 const secondLargest = (arr) => {
   let largest = -Infinity;
   let output = -Infinity;
+
+  let i = 0;
+  while (i < arr.length) {}
 };
