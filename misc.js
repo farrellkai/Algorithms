@@ -84,4 +84,5 @@ const firstRepeatedValue = (arr) => {
     set.add(arr[i]);
     i++;
   }
+  return null;
 };
