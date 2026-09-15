@@ -72,11 +72,15 @@ const charFrequencies = (string) => {
   return map;
 };
 
+// Return the first value you encounter that has already appeared earlier in the array.
+// Return null if none exists.
+
 const firstRepeatedValue = (arr) => {
   const set = new Set();
 
   let i = 0;
   while (i < arr.length) {
+    if (set.has(arr[i])) return arr[i];
     i++;
   }
 };
