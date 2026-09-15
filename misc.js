@@ -74,4 +74,9 @@ const charFrequencies = (string) => {
 
 const firstRepeatedValue = (arr) => {
   const set = new Set();
+
+  let i = 0;
+  while (i < arr.length) {
+    i++;
+  }
 };
