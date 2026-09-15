@@ -22,4 +22,6 @@ const secondLargest = (arr) => {
 // Return the first character that appears exactly once in a string.
 // Return null if none exists.
 
-const firstUniqueChar = (string) => {};
+const firstUniqueChar = (string) => {
+  const map = new Map();
+};
