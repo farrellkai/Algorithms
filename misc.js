@@ -24,4 +24,7 @@ const secondLargest = (arr) => {
 
 const firstUniqueChar = (string) => {
   const map = new Map();
+
+  let i = 0;
+  while (i < string.length) {}
 };
