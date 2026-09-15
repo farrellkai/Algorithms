@@ -45,4 +45,7 @@ const firstUniqueChar = (string) => {
 const removeDuplicates = (arr) => {
   const set = new Set();
   const output = [];
+
+  let i = 0;
+  while (i < arr.length) {}
 };
