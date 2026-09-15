@@ -19,4 +19,7 @@ const secondLargest = (arr) => {
   return output === -Infinity ? null : output;
 };
 
-console.log(secondLargest([2, 5]));
+// Return the first character that appears exactly once in a string.
+// Return null if none exists.
+
+const firstUniqueChar = (string) => {};
