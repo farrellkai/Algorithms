@@ -32,11 +32,13 @@ const firstUniqueChar = (string) => {
       : map.set(string[i], 1);
     i++;
   }
+  console.log(map);
   i = 0;
   while (i < string.length) {
     if (map.get(string[i]) === 1) return string[i];
+    i++;
   }
   return null;
 };
 
-console.log(firstUniqueChar('farrell'));
+console.log(firstUniqueChar('ffarrell'));
