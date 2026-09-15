@@ -36,6 +36,7 @@ const firstUniqueChar = (string) => {
   while (i < string.length) {
     if (map.get(string[i]) === 1) return string[i];
   }
+  return null;
 };
 
 console.log(firstUniqueChar('farrell'));
