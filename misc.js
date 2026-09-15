@@ -30,4 +30,6 @@ const firstUniqueChar = (string) => {
     map.has(arr[i]) ? map.set(arr[i], map.get(arr[i]) + 1) : map.set(arr[i], 1);
     i++;
   }
+
+  i = 0;
 };
