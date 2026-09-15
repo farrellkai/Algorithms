@@ -54,4 +54,5 @@ const removeDuplicates = (arr) => {
     }
     i++;
   }
+  return output;
 };
