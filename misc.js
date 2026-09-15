@@ -10,5 +10,8 @@ const secondLargest = (arr) => {
     if (arr[i] > largest) {
       largest = arr[i];
     }
+    if (arr[i] > output && arr[i] < largest) {
+      output = arr[i];
+    }
   }
 };
