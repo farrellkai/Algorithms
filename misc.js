@@ -26,5 +26,7 @@ const firstUniqueChar = (string) => {
   const map = new Map();
 
   let i = 0;
-  while (i < string.length) {}
+  while (i < string.length) {
+    map.has(arr[i]) ? map.set(arr[i], map.get(arr[i]) + 1) : map.set(arr[i], 1);
+  }
 };
