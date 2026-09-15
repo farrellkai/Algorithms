@@ -3,4 +3,5 @@
 
 const secondLargest = (arr) => {
   let largest = -Infinity;
+  let output = -Infinity;
 };
