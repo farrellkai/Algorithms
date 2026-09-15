@@ -41,4 +41,5 @@ const firstUniqueChar = (string) => {
   return null;
 };
 
-console.log(firstUniqueChar('ffarrell'));
+//Return an array with duplicate values removed, preserving their original order.
+const removeDuplicates = (arr) => {};
