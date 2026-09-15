@@ -63,6 +63,9 @@ const charFrequencies = (string) => {
 
   let i = 0;
   while (i < string.length) {
+    map.has(string[i])
+      ? map.set(string[i], map.get(string[i]) + 1)
+      : map.set(string[i], 1);
     i++;
   }
 };
