@@ -68,4 +68,6 @@ const charFrequencies = (string) => {
       : map.set(string[i], 1);
     i++;
   }
+
+  return map;
 };
