@@ -2,8 +2,8 @@
 //  Return null if there isn’t one.
 
 const secondLargest = (arr) => {
-  let largest = null;
-  let output = null;
+  let largest = -Infinity;
+  let output = -Infinity;
 
   let i = 0;
   while (i < arr.length) {
@@ -16,5 +16,7 @@ const secondLargest = (arr) => {
     }
     i++;
   }
-  return output;
+  return output === -Infinity ? null : output;
 };
+
+console.log(secondLargest([2, 5]));
