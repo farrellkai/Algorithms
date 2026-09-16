@@ -91,6 +91,7 @@ const firstRepeatedValue = (arr) => {
 //  Assume lowercase letters only.
 
 const anagrams = (str1, str2) => {
+  if (str1.length !== str2.length) return false;
   const map = new Map();
 
   let i = 0;
