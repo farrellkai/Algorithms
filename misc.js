@@ -120,4 +120,7 @@ const anagrams = (str1, str2) => {
 
 const palindrome = (str) => {
   const newStr = str.replace(/[^a-zA-Z]/g, '').toLowerCase();
+
+  let left = 0;
+  let right = newStr.length - 1;
 };
