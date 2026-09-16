@@ -92,4 +92,9 @@ const firstRepeatedValue = (arr) => {
 
 const anagrams = (str1, str2) => {
   const map = new Map();
+
+  let i = 0;
+  while (i < str1) {
+    i++;
+  }
 };
