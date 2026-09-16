@@ -139,7 +139,12 @@ const moveZeroes = (arr) => {
   let second = 1;
   let count = 0;
 
-  while (second < arr.length) {}
+  while (second < arr.length) {
+    if (arr[first] !== 0) {
+      first++;
+      second++;
+    }
+  }
 };
 
 const arr = [0, 0, 1, 0, 2, 3, 4];
