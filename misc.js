@@ -90,4 +90,6 @@ const firstRepeatedValue = (arr) => {
 // Determine whether two strings contain the same characters with the same frequencies.
 //  Assume lowercase letters only.
 
-const anagrams = (str1, str2) => {};
+const anagrams = (str1, str2) => {
+  const map = new Map();
+};
