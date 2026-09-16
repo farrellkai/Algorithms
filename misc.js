@@ -125,5 +125,7 @@ const palindrome = (str) => {
   let right = newStr.length - 1;
   while (left < right) {
     if (str[left] !== str[right]) return false;
+    left++;
+    right--;
   }
 };
