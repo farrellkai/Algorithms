@@ -128,4 +128,5 @@ const palindrome = (str) => {
     left++;
     right--;
   }
+  return true;
 };
