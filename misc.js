@@ -137,6 +137,7 @@ const palindrome = (str) => {
 const moveZeroes = (arr) => {
   let first = 0;
   let second = 1;
+  let count = 0;
 };
 
-const arr = [0, 1, 0, 2, 3, 4];
+const arr = [0, 0, 1, 0, 2, 3, 4];
