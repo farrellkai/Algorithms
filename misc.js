@@ -23,19 +23,19 @@ const secondLargest = (arr) => {
 // Return null if none exists.
 
 const firstUniqueChar = (string) => {
-  const map = new Map();
+  const map1 = new Map();
 
   let i = 0;
   while (i < string.length) {
-    map.has(string[i])
-      ? map.set(string[i], map.get(string[i]) + 1)
-      : map.set(string[i], 1);
+    map1.has(string[i])
+      ? map1.set(string[i], map1.get(string[i]) + 1)
+      : map1.set(string[i], 1);
     i++;
   }
-  console.log(map);
+  console.log(map1);
   i = 0;
   while (i < string.length) {
-    if (map.get(string[i]) === 1) return string[i];
+    if (map1.get(string[i]) === 1) return string[i];
     i++;
   }
   return null;
@@ -59,17 +59,17 @@ const removeDuplicates = (arr) => {
 
 // Return an object containing the count of each character in a string.
 const charFrequencies = (string) => {
-  const map = new Map();
+  const map1 = new Map();
 
   let i = 0;
   while (i < string.length) {
-    map.has(string[i])
-      ? map.set(string[i], map.get(string[i]) + 1)
-      : map.set(string[i], 1);
+    map1.has(string[i])
+      ? map1.set(string[i], map1.get(string[i]) + 1)
+      : map1.set(string[i], 1);
     i++;
   }
 
-  return map;
+  return map1;
 };
 
 // Return the first value you encounter that has already appeared earlier in the array.
@@ -92,18 +92,15 @@ const firstRepeatedValue = (arr) => {
 
 const anagrams = (str1, str2) => {
   if (str1.length !== str2.length) return false;
-  const map = new Map();
+
+  const map1 = new Map();
+  const map2 = new Map();
 
   let i = 0;
-  while (i < str1) {
-    map.has(str1[i])
-      ? map.set(str1[i], map.get(str1[i]) + 1)
-      : map.set(str1[i], 1);
-    i++;
-  }
-
-  i = 0;
-  while (i < str2.length) {
+  while (i < str1.length) {
+    map1.has(str1[i])
+      ? map1.set(str1[i], map1.get(str1[i]) + 1)
+      : map1.set(str1[i], 1);
     i++;
   }
 };
