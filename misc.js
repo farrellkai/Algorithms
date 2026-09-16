@@ -132,8 +132,11 @@ const palindrome = (str) => {
 };
 
 // Modify an array so all zeroes appear at the end while preserving the order of the other numbers.
-//  Don’t create another array.
+// Don’t create another array.
 
-const moveZeroes = (arr) => {};
+const moveZeroes = (arr) => {
+  let first = 0;
+  let second = 1;
+};
 
 const arr = [0, 1, 0, 2, 3, 4];
