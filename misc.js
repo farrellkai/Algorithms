@@ -101,4 +101,9 @@ const anagrams = (str1, str2) => {
       : map.set(str1[i], 1);
     i++;
   }
+
+  i = 0;
+  while (i < str2.length) {
+    i++;
+  }
 };
