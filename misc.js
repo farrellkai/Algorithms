@@ -115,4 +115,7 @@ const anagrams = (str1, str2) => {
   return true;
 };
 
-console.log(anagrams('listen', 'silent'));
+// Determine whether a string reads the same backward and forward.
+// Ignore capitalization, spaces, and punctuation.
+
+const palindrome = (str) => {};
