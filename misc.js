@@ -118,4 +118,6 @@ const anagrams = (str1, str2) => {
 // Determine whether a string reads the same backward and forward.
 // Ignore capitalization, spaces, and punctuation.
 
-const palindrome = (str) => {};
+const palindrome = (str) => {
+  const newStr = str.replace(/[^a-zA-Z]/g, '').toLowerCase();
+};
