@@ -96,6 +96,9 @@ const anagrams = (str1, str2) => {
 
   let i = 0;
   while (i < str1) {
+    map.has(str1[i])
+      ? map.set(str1[i], map.get(str1[i]) + 1)
+      : map.set(str1[i], 1);
     i++;
   }
 };
