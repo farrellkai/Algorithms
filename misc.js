@@ -106,4 +106,11 @@ const anagrams = (str1, str2) => {
       : map2.set(str2[i], 1);
     i++;
   }
+
+  for (const [key, value] of map1) {
+    if (!map2.has(key) || map2.get(key) !== value) {
+      return false;
+    }
+  }
+  return true;
 };
