@@ -280,22 +280,24 @@ const mergeSortedArrays = (arr1, arr2) => {
 
   let point1 = 0;
   let point2 = 0;
-  while (point1 < arr1.length && point2 < arr2.length) {
+  while (point1 < arr1.length || point2 < arr2.length) {
     if (
       arr1[point1] < arr2[point2] ||
       arr1[point1] === arr2[point2] ||
-      !arr2[point2]
+      arr2[point2] === undefined
     ) {
       output.push(arr1[point1]);
       point1++;
     }
-    if (
-      arr2[point2] < arr1[point1] ||
-      arr2[point2] === arr1[point1] ||
-      !arr1[point1]
-    ) {
-      output.push(arr2[point2]);
-      point2++;
+    if (arr2[point2] !== undefined) {
+      if (
+        arr2[point2] < arr1[point1] ||
+        arr2[point2] === arr1[point1] ||
+        !arr1[point1]
+      ) {
+        output.push(arr2[point2]);
+        point2++;
+      }
     }
   }
   return output;
