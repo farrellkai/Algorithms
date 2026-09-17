@@ -298,4 +298,5 @@ const mergeSortedArrays = (arr1, arr2) => {
       point2++;
     }
   }
+  return output;
 };
