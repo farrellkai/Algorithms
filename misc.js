@@ -302,3 +302,8 @@ const mergeSortedArrays = (arr1, arr2) => {
   }
   return output;
 };
+
+// Given an ascending array of distinct numbers and a target, return the target’s index or -1.
+// Use binary search.
+
+const binarySearch = (arr, target) => {};
