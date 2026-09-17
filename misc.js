@@ -310,4 +310,6 @@ const binarySearch = (arr, target) => {
   let left = 0;
   let right = arr.length - 1;
   let mid = Math.round((right - left) / 2);
+
+  while (left < right) {}
 };
