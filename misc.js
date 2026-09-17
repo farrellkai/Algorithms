@@ -167,5 +167,7 @@ const missingNum = (arr) => {
   let greatest = 0;
 
   let i = 0;
-  while (i < arr.length) {}
+  while (i < arr.length) {
+    if (arr[i] > greatest) greatest = arr[i];
+  }
 };
