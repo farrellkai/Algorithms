@@ -211,5 +211,9 @@ const arrIntersection = (arr1, arr2) => {
   }
 
   for (let el of arr1) {
+    if (set.has(el)) {
+      output.push(el);
+      set.delete(el);
+    }
   }
 };
