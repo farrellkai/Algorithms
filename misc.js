@@ -188,4 +188,7 @@ const twoSum = (arr, target) => {
     cache[arr[i]] = i;
     i++;
   }
+
+  for (let el of arr) {
+  }
 };
