@@ -172,6 +172,7 @@ const missingNum = (arr) => {
 
   i++;
   while (i > 0) {
+    if (!set.has(i)) return i;
     i--;
   }
 };
