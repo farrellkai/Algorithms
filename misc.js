@@ -136,6 +136,11 @@ const palindrome = (str) => {
 
 const moveZeroes = (arr) => {
   let insertPointer = 0;
+
+  let i = 0;
+  while (i < arr.length) {
+    i++;
+  }
 };
 
 const arr = [0, 0, 1, 0, 2, 3, 4];
