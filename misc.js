@@ -176,4 +176,8 @@ const missingNum = (arr) => {
   }
 };
 
-console.log(missingNum([3, 0, 1]));
+// Return the indices of two numbers that add up to a target.
+// You cannot use the same element twice.
+// Return null if no pair exists.
+
+const twoSum = (arr1, arr2) => {};
