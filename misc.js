@@ -309,9 +309,9 @@ const mergeSortedArrays = (arr1, arr2) => {
 const binarySearch = (arr, target) => {
   let left = 0;
   let right = arr.length - 1;
-  let mid = Math.round((right - left) / 2);
 
   while (left < right) {
+    const mid = Math.round((right - left) / 2);
     if (target < arr[left] || target > arr[right]) return -1;
     if (arr[left] === target) return left;
     if (arr[right] === target) return right;
@@ -320,3 +320,5 @@ const binarySearch = (arr, target) => {
     if (target > arr[mid]) left = mid;
   }
 };
+
+console.log(binarySearch([1, 4, 7, 9, 12], 9));
