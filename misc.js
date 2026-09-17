@@ -204,4 +204,7 @@ const twoSum = (arr, target) => {
 
 const arrIntersection = (arr1, arr2) => {
   const set = new Set();
+
+  for (let el of arr2) {
+  }
 };
