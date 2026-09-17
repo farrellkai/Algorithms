@@ -169,4 +169,6 @@ const missingNum = (arr) => {
     set.add(arr[i]);
     i++;
   }
+
+  i++;
 };
