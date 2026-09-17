@@ -289,5 +289,11 @@ const mergeSortedArrays = (arr1, arr2) => {
       output.push(arr1[point1]);
       point1++;
     }
+    if (
+      arr2[point2] < arr1[point1] ||
+      arr2[point2] === arr1[point1] ||
+      !arr1[point1]
+    ) {
+    }
   }
 };
