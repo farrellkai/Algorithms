@@ -273,4 +273,6 @@ const longestWord = (str) => {
   return word;
 };
 
-console.log(longestWord('I enjoy solving problems'));
+// Combine two ascending arrays into one ascending array without calling .sort().
+
+const mergeSortedArrays = (arr1, arr2) => {};
