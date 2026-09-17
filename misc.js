@@ -253,6 +253,7 @@ const mostFrequent = (arr) => {
 
 const longestWord = (str) => {
   let longestValue = 0;
+  let word;
   let cur = '';
 
   let i = 0;
