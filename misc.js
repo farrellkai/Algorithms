@@ -182,4 +182,7 @@ const missingNum = (arr) => {
 
 const twoSum = (arr, target) => {
   const cache = {};
+
+  for (let el of arr) {
+  }
 };
