@@ -216,4 +216,5 @@ const arrIntersection = (arr1, arr2) => {
       set.delete(el);
     }
   }
+  return output;
 };
