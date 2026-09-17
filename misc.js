@@ -189,7 +189,8 @@ const twoSum = (arr, target) => {
     i++;
   }
 
-  for (let el of arr) {
-    const diff = target - el;
+  i = 0;
+  while (i < arr.length) {
+    i++;
   }
 };
