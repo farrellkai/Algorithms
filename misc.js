@@ -311,5 +311,10 @@ const binarySearch = (arr, target) => {
   let right = arr.length - 1;
   let mid = Math.round((right - left) / 2);
 
-  while (left < right) {}
+  while (left < right) {
+    if (target < arr[left] || target > arr[right]) return -1;
+    if (arr[left] === target) return left;
+    if (arr[right] === target) return right;
+    if (arr[mid] === target) return mid;
+  }
 };
