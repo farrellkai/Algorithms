@@ -287,6 +287,7 @@ const mergeSortedArrays = (arr1, arr2) => {
       !arr2[point2]
     ) {
       output.push(arr1[point1]);
+      point1++;
     }
   }
 };
