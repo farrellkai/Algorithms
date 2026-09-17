@@ -238,4 +238,7 @@ const mostFrequent = (arr) => {
       singleValues.push(el);
     }
   }
+
+  for (let el of singleValues) {
+  }
 };
