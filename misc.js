@@ -185,6 +185,7 @@ const twoSum = (arr, target) => {
 
   let i = 0;
   while (i < arr.length) {
+    cache[arr[i]] = i;
     i++;
   }
 };
