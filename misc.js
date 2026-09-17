@@ -245,4 +245,5 @@ const mostFrequent = (arr) => {
       cur = el;
     }
   }
+  return cur;
 };
