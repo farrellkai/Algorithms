@@ -227,4 +227,7 @@ const mostFrequent = (arr) => {
   const map = new Map();
   let count = 0;
   let cur;
+
+  for (let el of arr) {
+  }
 };
