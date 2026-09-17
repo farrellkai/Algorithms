@@ -223,4 +223,6 @@ const arrIntersection = (arr1, arr2) => {
 // If tied, return the one that appears first.
 // Return null for an empty array.
 
-const mostFrequent = (arr) => {};
+const mostFrequent = (arr) => {
+  const map = new Map();
+};
