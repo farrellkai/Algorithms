@@ -233,6 +233,8 @@ const mostFrequent = (arr) => {
   for (let el of arr) {
     if (map.has(el)) {
       map.set(el, map.get(el) + 1);
+    } else {
+      map.set(el, 1);
     }
   }
 };
