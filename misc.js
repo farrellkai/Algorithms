@@ -198,3 +198,8 @@ const twoSum = (arr, target) => {
 
   return null;
 };
+
+// Return the distinct values found in both arrays,
+// in the order they appear in the first array.
+
+const arrIntersection = (arr1, arr2) => {};
