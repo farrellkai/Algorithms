@@ -167,5 +167,6 @@ const missingNum = (arr) => {
   let i = 0;
   while (i < arr.length) {
     set.add(arr[i]);
+    i++;
   }
 };
