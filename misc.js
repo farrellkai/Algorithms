@@ -240,5 +240,9 @@ const mostFrequent = (arr) => {
   }
 
   for (let el of singleValues) {
+    if (map.get(el) > count) {
+      count = map.get(el);
+      cur = el;
+    }
   }
 };
