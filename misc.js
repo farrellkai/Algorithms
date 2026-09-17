@@ -317,5 +317,6 @@ const binarySearch = (arr, target) => {
     if (arr[right] === target) return right;
     if (arr[mid] === target) return mid;
     if (target < arr[mid]) right = mid;
+    if (target > arr[mid]) left = mid;
   }
 };
