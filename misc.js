@@ -218,3 +218,5 @@ const arrIntersection = (arr1, arr2) => {
   }
   return output;
 };
+
+console.log(arrIntersection([7, 4, 2, 2, 1], [0, 10, 1]));
