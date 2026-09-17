@@ -228,6 +228,10 @@ const mostFrequent = (arr) => {
   let count = 0;
   let cur;
 
+  const singleValues = [];
+
   for (let el of arr) {
+    if (map.has(el)) {
+    }
   }
 };
