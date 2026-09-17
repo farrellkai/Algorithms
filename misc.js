@@ -260,6 +260,12 @@ const longestWord = (str) => {
   while (i < str.length) {
     if (str[i] !== ' ') {
       cur += str[i];
+    } else {
+      if (cur.length > longestValue) {
+        longestValue = cur.length;
+        word = cur;
+      }
+      cur = '';
     }
     i++;
   }
