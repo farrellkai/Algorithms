@@ -258,6 +258,9 @@ const longestWord = (str) => {
 
   let i = 0;
   while (i < str.length) {
+    if (str[i] !== ' ') {
+      cur += str[i];
+    }
     i++;
   }
 };
