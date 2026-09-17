@@ -235,6 +235,7 @@ const mostFrequent = (arr) => {
       map.set(el, map.get(el) + 1);
     } else {
       map.set(el, 1);
+      singleValues.push(el);
     }
   }
 };
