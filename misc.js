@@ -226,7 +226,7 @@ const arrIntersection = (arr1, arr2) => {
 const mostFrequent = (arr) => {
   const map = new Map();
   let count = 0;
-  let cur;
+  let cur = null;
 
   const singleValues = [];
 
@@ -247,3 +247,5 @@ const mostFrequent = (arr) => {
   }
   return cur;
 };
+
+console.log(mostFrequent([]));
