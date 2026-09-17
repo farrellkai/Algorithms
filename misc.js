@@ -252,5 +252,6 @@ const mostFrequent = (arr) => {
 // Assume words are separated by single spaces and contain no punctuation.
 
 const longestWord = (str) => {
-  const cache = {};
+  let longestValue = 0;
+  let cur = '';
 };
