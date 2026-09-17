@@ -155,5 +155,10 @@ const moveZeroes = (arr) => {
   return arr;
 };
 
-const arr = [0, 0, 1, 0, 2, 3, 4];
+const arr = [0, 0, 3, 0, 1, 0, 2, 0, 7, 3, 4, 0];
 console.log(moveZeroes(arr));
+
+// An array contains distinct integers from 0 through n, with exactly one missing.
+// Find it.
+
+const missingNum = (arr) => {};
