@@ -139,6 +139,10 @@ const moveZeroes = (arr) => {
 
   let i = 0;
   while (i < arr.length) {
+    if (arr[i] !== 0) {
+      arr[insertPointer] = arr[i];
+      insertPointer++;
+    }
     i++;
   }
 };
