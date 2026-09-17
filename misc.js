@@ -206,5 +206,6 @@ const arrIntersection = (arr1, arr2) => {
   const set = new Set();
 
   for (let el of arr2) {
+    if (!set.has(el)) set.add(el);
   }
 };
