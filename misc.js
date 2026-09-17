@@ -209,4 +209,7 @@ const arrIntersection = (arr1, arr2) => {
   for (let el of arr2) {
     if (!set.has(el)) set.add(el);
   }
+
+  for (let el of arr1) {
+  }
 };
