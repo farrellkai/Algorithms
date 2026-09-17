@@ -314,6 +314,7 @@ const binarySearch = (arr, target) => {
     let mid = Math.floor(left + (right - left) / 2);
     if (arr[left] === target) return left;
     if (arr[right] === target) return right;
+    if (arr[mid] === target) return mid;
     if (target < arr[mid]) {
       right = mid - 1;
     }
