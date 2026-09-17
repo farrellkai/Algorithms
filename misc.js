@@ -251,4 +251,6 @@ const mostFrequent = (arr) => {
 // Return the longest word in a sentence. If tied, return the first.
 // Assume words are separated by single spaces and contain no punctuation.
 
-const longestWord = (str) => {};
+const longestWord = (str) => {
+  const cache = {};
+};
