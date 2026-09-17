@@ -277,4 +277,7 @@ const longestWord = (str) => {
 
 const mergeSortedArrays = (arr1, arr2) => {
   const output = [];
+
+  let point1 = 0;
+  let point2 = 0;
 };
