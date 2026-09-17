@@ -180,4 +180,6 @@ const missingNum = (arr) => {
 // You cannot use the same element twice.
 // Return null if no pair exists.
 
-const twoSum = (arr1, arr2) => {};
+const twoSum = (arr, target) => {
+  const cache = {};
+};
