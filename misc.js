@@ -219,4 +219,8 @@ const arrIntersection = (arr1, arr2) => {
   return output;
 };
 
-console.log(arrIntersection([7, 4, 2, 2, 1], [0, 10, 1]));
+// Return the most frequent number in an array.
+// If tied, return the one that appears first.
+// Return null for an empty array.
+
+const mostFrequent = (arr) => {};
