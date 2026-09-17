@@ -170,9 +170,10 @@ const missingNum = (arr) => {
     i++;
   }
 
-  i++;
   while (i >= 0) {
     if (!set.has(i)) return i;
     i--;
   }
 };
+
+console.log(missingNum([3, 0, 1]));
