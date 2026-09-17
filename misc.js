@@ -171,4 +171,7 @@ const missingNum = (arr) => {
   }
 
   i++;
+  while (i > 0) {
+    i--;
+  }
 };
