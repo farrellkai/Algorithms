@@ -225,5 +225,6 @@ const arrIntersection = (arr1, arr2) => {
 
 const mostFrequent = (arr) => {
   const map = new Map();
-  let count;
+  let count = 0;
+  let cur;
 };
