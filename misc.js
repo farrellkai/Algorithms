@@ -164,10 +164,8 @@ console.log(moveZeroes(arr));
 const missingNum = (arr) => {
   const set = new Set();
 
-  let greatest = 0;
-
   let i = 0;
   while (i < arr.length) {
-    if (arr[i] > greatest) greatest = arr[i];
+    set.add(arr[i]);
   }
 };
