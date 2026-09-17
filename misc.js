@@ -191,6 +191,8 @@ const twoSum = (arr, target) => {
 
   i = 0;
   while (i < arr.length) {
+    const diff = target - arr[i];
+    if (cache[diff]) return [i, cache[diff]];
     i++;
   }
 };
