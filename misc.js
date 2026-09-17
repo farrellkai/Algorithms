@@ -148,6 +148,8 @@ const moveZeroes = (arr) => {
     }
     i++;
   }
+
+  return arr;
 };
 
 const arr = [0, 0, 1, 0, 2, 3, 4];
