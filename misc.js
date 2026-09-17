@@ -161,4 +161,6 @@ console.log(moveZeroes(arr));
 // An array contains distinct integers from 0 through n, with exactly one missing.
 // Find it.
 
-const missingNum = (arr) => {};
+const missingNum = (arr) => {
+  const set = new Set();
+};
