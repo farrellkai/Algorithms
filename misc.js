@@ -139,16 +139,17 @@ const moveZeroes = (arr) => {
 
   let i = 0;
   while (insertPointer < arr.length) {
-    if (arr[i] === undefined) {
-      console.log(arr[i]);
+    if (i === arr.length) {
       arr[insertPointer] = 0;
       insertPointer++;
     }
-    if (arr[i] !== 0) {
-      arr[insertPointer] = arr[i];
-      insertPointer++;
+    if (i < arr.length) {
+      if (arr[i] !== 0) {
+        arr[insertPointer] = arr[i];
+        insertPointer++;
+      }
+      i++;
     }
-    i++;
   }
 
   return arr;
