@@ -338,11 +338,13 @@ const balancedBrackets = (str) => {
 
   let i = 0;
   while (i < str.length) {
-    if (!pairs[str[i]]) stack.push(pairs[str[i]]);
+    if (!pairs[str[i]]) stack.push(str[i]);
     else {
-      if (stack.pop() !== str[i]) return false;
+      if (stack.pop() !== pairs[str[i]]) return false;
     }
     i++;
   }
   return stack.length ? false : true;
 };
+
+console.log(balancedBrackets('([)]'));
