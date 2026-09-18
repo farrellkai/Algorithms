@@ -339,6 +339,9 @@ const balancedBrackets = (str) => {
   let i = 0;
   while (i < str.length) {
     if (!pairs[str[i]]) stack.push(pairs[str[i]]);
+    else {
+      if (stack.pop() !== str[i]) return false;
+    }
     i++;
   }
 };
