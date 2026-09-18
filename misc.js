@@ -367,4 +367,6 @@ const longestIncreasingStreak = (arr) => {
 // Given an array and a positive integer k, return the largest sum of any k consecutive elements.
 // Assume k does not exceed the array’s length.
 
-const largestWindowSum = (arr, k) => {};
+const largestWindowSum = (arr, k) => {
+  let largestSum = 0;
+};
