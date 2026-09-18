@@ -347,4 +347,7 @@ const balancedBrackets = (str) => {
   return stack.length ? false : true;
 };
 
-console.log(balancedBrackets('([)]'));
+// Return the length of the longest contiguous sequence of strictly increasing numbers.
+// Return 0 for an empty array.
+
+const longestIncreasingStreak = (arr) => {};
