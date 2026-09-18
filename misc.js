@@ -370,4 +370,9 @@ const longestIncreasingStreak = (arr) => {
 const largestWindowSum = (arr, k) => {
   let largestSum = 0;
   let sum = 0;
+
+  let i = 0;
+  while (i < k) {
+    i++;
+  }
 };
