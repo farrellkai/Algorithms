@@ -356,6 +356,8 @@ const longestIncreasingStreak = (arr) => {
   let prev = -Infinity;
 
   for (let el of arr) {
+    if (el >= prev) {
+    }
   }
 };
 
