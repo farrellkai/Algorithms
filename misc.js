@@ -344,4 +344,5 @@ const balancedBrackets = (str) => {
     }
     i++;
   }
+  return stack.length ? false : true;
 };
