@@ -335,4 +335,9 @@ const balancedBrackets = (str) => {
     ']': '[',
     '}': '{',
   };
+
+  let i = 0;
+  while (i < str.length) {
+    i++;
+  }
 };
