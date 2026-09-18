@@ -350,4 +350,8 @@ const balancedBrackets = (str) => {
 // Return the length of the longest contiguous sequence of strictly increasing numbers.
 // Return 0 for an empty array.
 
-const longestIncreasingStreak = (arr) => {};
+const longestIncreasingStreak = (arr) => {
+  let highest = 0;
+};
+
+console.log(longestIncreasingStreak([1, 2, 3, 1, 2, 3, 4]));
