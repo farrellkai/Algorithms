@@ -368,7 +368,7 @@ const longestIncreasingStreak = (arr) => {
 // Assume k does not exceed the array’s length.
 
 const largestWindowSum = (arr, k) => {
-  let largestSum = 0;
+  let largestSum;
   let sum = 0;
 
   let i = 0;
