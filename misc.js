@@ -328,4 +328,6 @@ const binarySearch = (arr, target) => {
 // Determine whether every opening bracket has a matching closing bracket in the correct order.
 // Input contains only ()[]{}.
 
-const balancedBrackets = (str) => {};
+const balancedBrackets = (str) => {
+  const stack = [];
+};
