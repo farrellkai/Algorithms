@@ -330,4 +330,9 @@ const binarySearch = (arr, target) => {
 
 const balancedBrackets = (str) => {
   const stack = [];
+  const pairs = {
+    ')': '(',
+    ']': '[',
+    '}': '{',
+  };
 };
