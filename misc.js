@@ -359,6 +359,7 @@ const longestIncreasingStreak = (arr) => {
     if (el <= prev) streak = 0;
     prev = el;
     streak++;
+    if (streak > highest) highest = streak;
   }
 };
 
