@@ -381,5 +381,7 @@ const largestWindowSum = (arr, k) => {
 
   let left = 0;
   let right = k;
-  while (right < arr.length) {}
+  while (right < arr.length) {
+    sum = sum - arr[left] + arr[right];
+  }
 };
