@@ -354,6 +354,9 @@ const longestIncreasingStreak = (arr) => {
   let highest = 0;
   let streak = 0;
   let prev = -Infinity;
+
+  for (let el of arr) {
+  }
 };
 
 console.log(longestIncreasingStreak([1, 2, 3, 1, 2, 3, 4]));
