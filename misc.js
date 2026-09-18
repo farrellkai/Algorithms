@@ -325,4 +325,7 @@ const binarySearch = (arr, target) => {
   return -1;
 };
 
-console.log(binarySearch([1, 4, 7, 9, 12], 9));
+// Determine whether every opening bracket has a matching closing bracket in the correct order.
+// Input contains only ()[]{}.
+
+const balancedBrackets = (str) => {};
