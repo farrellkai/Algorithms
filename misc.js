@@ -376,4 +376,6 @@ const largestWindowSum = (arr, k) => {
     sum += arr[i];
     i++;
   }
+
+  largestSum = sum;
 };
