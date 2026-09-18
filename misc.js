@@ -358,6 +358,7 @@ const longestIncreasingStreak = (arr) => {
   for (let el of arr) {
     if (el <= prev) streak = 0;
     prev = el;
+    streak++;
   }
 };
 
