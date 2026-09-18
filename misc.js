@@ -373,6 +373,7 @@ const largestWindowSum = (arr, k) => {
 
   let i = 0;
   while (i < k) {
+    sum += arr[i];
     i++;
   }
 };
