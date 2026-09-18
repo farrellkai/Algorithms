@@ -389,3 +389,7 @@ const largestWindowSum = (arr, k) => {
   }
   return largestSum;
 };
+
+// Return the length of the longest substring containing no repeated characters.
+
+const longestSubString = (str) => {};
