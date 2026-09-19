@@ -396,4 +396,9 @@ const longestSubString = (str) => {
   let longest = 0;
   let streak = 0;
   let cur;
+
+  let i = 0;
+  while (i < str.length) {
+    i++;
+  }
 };
