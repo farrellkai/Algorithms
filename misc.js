@@ -428,9 +428,10 @@ const groupAnagrams = (arr) => {
     while (i < el.length) {
       const indexCode = el[i].charCodeAt(0) - 97;
       charCountArr[indexCode]++;
-      console.log(charCountArr);
       i++;
     }
+
+    i = 0;
   }
 };
 
