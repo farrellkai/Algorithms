@@ -408,4 +408,5 @@ const longestSubString = (str) => {
     if (streak > longest) longest = streak;
     i++;
   }
+  return longest;
 };
