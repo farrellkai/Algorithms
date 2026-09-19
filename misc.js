@@ -404,9 +404,12 @@ const longestSubString = (str) => {
       set.clear();
       streak = 0;
     }
+    set.add(str[i]);
     streak++;
     if (streak > longest) longest = streak;
     i++;
   }
   return longest;
 };
+
+console.log(longestSubString('abcabcbb'));
