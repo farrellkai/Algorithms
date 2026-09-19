@@ -444,5 +444,3 @@ const groupAnagrams = (arr) => {
 
   return Object.values(cache);
 };
-
-console.log(groupAnagrams(['strr']));
