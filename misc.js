@@ -420,5 +420,6 @@ const groupAnagrams = (arr) => {
 
   for (let el of arr) {
     const charCountArr = [];
+    let charCountStr = '';
   }
 };
