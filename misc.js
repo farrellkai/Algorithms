@@ -402,6 +402,7 @@ const longestSubString = (str) => {
   while (i < str.length) {
     if (set.has(str[i])) {
       set.clear();
+      streak = 0;
     }
     i++;
   }
