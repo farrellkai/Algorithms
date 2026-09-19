@@ -420,6 +420,10 @@ const groupAnagrams = (arr) => {
 
   for (let el of arr) {
     const charCountArr = [];
+    charCountArr.fill(0, 0, 27);
+    console.log(charCountArr);
     let charCountStr = '';
   }
 };
+
+console.log(groupAnagrams(['str']));
