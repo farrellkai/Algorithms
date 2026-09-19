@@ -394,4 +394,5 @@ const largestWindowSum = (arr, k) => {
 
 const longestSubString = (str) => {
   let longest = 0;
+  let streak = 0;
 };
