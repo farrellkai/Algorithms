@@ -404,6 +404,7 @@ const longestSubString = (str) => {
       set.clear();
       streak = 0;
     }
+    streak++;
     i++;
   }
 };
