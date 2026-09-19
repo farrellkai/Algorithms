@@ -393,9 +393,10 @@ const largestWindowSum = (arr, k) => {
 // Return the length of the longest substring containing no repeated characters.
 
 const longestSubString = (str) => {
+  const set = new Set();
+
   let longest = 0;
   let streak = 0;
-  let cur;
 
   let i = 0;
   while (i < str.length) {
