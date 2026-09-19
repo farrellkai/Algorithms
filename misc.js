@@ -400,7 +400,8 @@ const longestSubString = (str) => {
 
   let i = 0;
   while (i < str.length) {
-    if (!set.has(str[i])) {
+    if (set.has(str[i])) {
+      set.clear();
     }
     i++;
   }
