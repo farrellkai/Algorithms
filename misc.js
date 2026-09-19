@@ -427,10 +427,11 @@ const groupAnagrams = (arr) => {
     let i = 0;
     while (i < el.length) {
       const indexCode = el[i].charCodeAt(0) - 97;
+      charCountArr[indexCode]++;
       console.log(charCountArr);
       i++;
     }
   }
 };
 
-console.log(groupAnagrams(['str']));
+console.log(groupAnagrams(['strr']));
