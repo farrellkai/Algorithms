@@ -433,6 +433,7 @@ const groupAnagrams = (arr) => {
 
     i = 0;
     while (i < charCountArr.length) {
+      charCountStr += charCountArr[i] + ',';
       i++;
     }
   }
