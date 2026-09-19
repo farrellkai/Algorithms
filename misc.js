@@ -441,6 +441,8 @@ const groupAnagrams = (arr) => {
       ? cache[charCountStr].push(el)
       : (cache[charCountStr] = [el]);
   }
+
+  return Object.values(cache);
 };
 
 console.log(groupAnagrams(['strr']));
