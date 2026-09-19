@@ -419,10 +419,13 @@ const groupAnagrams = (arr) => {
   const cache = {};
 
   for (let el of arr) {
-    const charCountArr = [];
-    charCountArr.fill(0, 0, 27);
-    console.log(charCountArr);
+    const charCountArr = new Array(26).fill(0);
     let charCountStr = '';
+
+    let i = 0;
+    while (i < el.length) {
+      i++;
+    }
   }
 };
 
