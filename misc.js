@@ -436,6 +436,10 @@ const groupAnagrams = (arr) => {
       charCountStr += charCountArr[i] + ',';
       i++;
     }
+
+    cache[charCountStr]
+      ? cache[charCountStr].push(el)
+      : (cache[charCountStr] = [el]);
   }
 };
 
