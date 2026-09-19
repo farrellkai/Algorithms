@@ -412,4 +412,7 @@ const longestSubString = (str) => {
   return longest;
 };
 
-console.log(longestSubString('abcabcbb'));
+// Group words that are anagrams of each other.
+// Group order does not matter.
+
+const groupAnagrams = (arr) => {};
