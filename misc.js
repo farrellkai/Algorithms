@@ -415,6 +415,8 @@ const longestSubString = (str) => {
 // Group words that are anagrams of each other.
 // Group order does not matter.
 
+console.log('t'.charCodeAt(0) - 97);
+
 const groupAnagrams = (arr) => {
   const cache = {};
 
@@ -424,6 +426,8 @@ const groupAnagrams = (arr) => {
 
     let i = 0;
     while (i < el.length) {
+      const indexCode = el[i].charCodeAt(0) - 97;
+      console.log(charCountArr);
       i++;
     }
   }
