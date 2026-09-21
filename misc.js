@@ -444,3 +444,5 @@ const groupAnagrams = (arr) => {
 
   return Object.values(cache);
 };
+
+const snow = 'white';
