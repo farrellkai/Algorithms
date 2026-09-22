@@ -31,4 +31,7 @@ const maxSubArrSumSizeK = (arr, k) => {
 const maxSubarrayProductSizeK = (arr, k) => {
   let maxProduct = -Infinity;
   let product = 1;
+
+  let left = 0;
+  let right = 0;
 };
