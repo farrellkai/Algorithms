@@ -15,8 +15,12 @@ const maxSubArrSumSizeK = (arr, k) => {
       sum = sum - arr[left] + arr[right];
       left++;
     }
-    if (sum > maxSum) maxSum = sum;
+    if (right >= k) {
+      if (sum > maxSum) maxSum = sum;
+    }
     right++;
   }
   return maxSum;
 };
+
+console.log(maxSubArrSumSizeK([-4, -18, -2, -5, -9], 2));
