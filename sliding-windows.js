@@ -24,3 +24,10 @@ const maxSubArrSumSizeK = (arr, k) => {
 };
 
 console.log(maxSubArrSumSizeK([2, 1, 5, -4, 6], 3));
+
+// Write a function that takes in an array of numbers and a size k as arguments.
+// The function should return the maximum product of subarrays that contain exactly k elements.
+// You can assume that k is less than or equal to the length of the input array.
+// You can assume that numbers of the array are non-zero.
+
+const maxSubarrayProductSizeK = (arr, k) => {};
