@@ -41,5 +41,7 @@ const maxSubarrayProductSizeK = (arr, k) => {
     }
     product *= arr[right];
     right++;
+    if (right - left === k) {
+    }
   }
 };
