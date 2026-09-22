@@ -2,4 +2,7 @@
 // The function should return the maximum sum of subarrays that contain exactly k elements.
 // You can assume that k is less than or equal to the length of the input array.
 
-const maxSubArrSumSizeK = (arr, k) => {};
+const maxSubArrSumSizeK = (arr, k) => {
+  let maxSum = -Infinity;
+  let sum = 0;
+};
