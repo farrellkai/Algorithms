@@ -45,4 +45,5 @@ const maxSubarrayProductSizeK = (arr, k) => {
       if (product > maxProduct) maxProduct = product;
     }
   }
+  return maxProduct;
 };
