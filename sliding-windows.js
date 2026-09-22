@@ -36,6 +36,7 @@ const maxSubarrayProductSizeK = (arr, k) => {
   let right = 0;
   while (right < arr.length) {
     if (right >= k) {
+      product = product / arr[left];
     }
   }
 };
