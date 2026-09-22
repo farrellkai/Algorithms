@@ -39,5 +39,6 @@ const maxSubarrayProductSizeK = (arr, k) => {
       product = product / arr[left];
       left++;
     }
+    product *= arr[right];
   }
 };
