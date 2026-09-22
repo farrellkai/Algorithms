@@ -8,5 +8,13 @@ const maxSubArrSumSizeK = (arr, k) => {
 
   let left = 0;
   let right = 0;
-  while (right < arr.length) {}
+  while (right < arr.length) {
+    if (right < k) {
+      sum += arr[right];
+    } else {
+      sum = sum - arr[left] + arr[right];
+      left++;
+    }
+    right++;
+  }
 };
