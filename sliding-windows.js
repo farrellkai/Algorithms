@@ -5,4 +5,7 @@
 const maxSubArrSumSizeK = (arr, k) => {
   let maxSum = -Infinity;
   let sum = 0;
+
+  let left = 0;
+  let right = 0;
 };
