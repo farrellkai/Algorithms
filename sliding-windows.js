@@ -18,4 +18,5 @@ const maxSubArrSumSizeK = (arr, k) => {
     if (sum > maxSum) maxSum = sum;
     right++;
   }
+  return maxSum;
 };
