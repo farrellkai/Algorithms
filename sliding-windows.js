@@ -136,4 +136,7 @@ const countSubstringAnagrams = (str, anagram) => {
 
 const findSubarrySum = (arr, target) => {
   let sum = 0;
+
+  let left = 0;
+  let right = 0;
 }
