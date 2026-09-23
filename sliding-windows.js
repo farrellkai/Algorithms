@@ -76,4 +76,6 @@ const subarrayTargetSumSizeK = (arr, target, k) => {
 // You can assume that the anagram contains no duplicate characters.
 // You can assume that the anagram is not longer than the string.
 
-const hasSubstringAnagram = (str, anagram) => {};
+const hasSubstringAnagram = (str, anagram) => {
+  const anagramArr = new Array(26).fill(0);
+};
