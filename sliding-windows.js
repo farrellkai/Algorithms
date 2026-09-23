@@ -143,5 +143,7 @@ const findSubarrySum = (arr, target) => {
     if (sum < target) sum += arr[right];
     if (sum > target) sum -= arr[left];
     if (sum === target) return [left, right];
+    right++;
+    left++;
   }
 }
