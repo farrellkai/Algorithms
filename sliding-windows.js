@@ -129,3 +129,9 @@ const countSubstringAnagrams = (str, anagram) => {
   }
   return count;
 };
+
+// Write a function that takes in an array and a target sum.
+// The function should return the start and end indices (inclusive) of a subarray that sums to the target.
+// You can assume that the elements of the array are nonnegative.
+
+const findSubarrySum = (arr) => {}
