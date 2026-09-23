@@ -92,5 +92,6 @@ const hasSubstringAnagram = (str, anagram) => {
     if (!bool) left = right;
     set.has(str[right]) ? (bool = true) : (bool = false);
     right++;
+    if (right - left === anagram.length && bool) return true;
   }
 };
