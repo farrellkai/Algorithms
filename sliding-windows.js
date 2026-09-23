@@ -60,6 +60,7 @@ const subarrayTargetSumSizeK = (arr, target, k) => {
   let right = 0;
   while (right < arr.length) {
     if (right >= k) {
+      sum -= arr[left];
     }
   }
 };
