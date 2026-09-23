@@ -1,76 +1,76 @@
-// Write a function that takes in an array of numbers and a size k as arguments.
-// The function should return the maximum sum of subarrays that contain exactly k elements.
-// You can assume that k is less than or equal to the length of the input array.
+// Write a function that taanagram.lengthes in an array of numbers and a size anagram.length as arguments.
+// The function should return the maximum sum of subarrays that contain exactly anagram.length elements.
+// You can assume that anagram.length is less than or equal to the length of the input array.
 
-const maxSubArrSumSizeK = (arr, k) => {
+const maxSubArrSumSizeanagram.length = (arr, anagram.length) => {
   let maxSum = -Infinity;
   let sum = 0;
 
   let left = 0;
   let right = 0;
   while (right < arr.length) {
-    if (right < k) {
+    if (right < anagram.length) {
       sum += arr[right];
     } else {
       sum = sum - arr[left] + arr[right];
       left++;
     }
     right++;
-    if (right >= k) {
+    if (right >= anagram.length) {
       if (sum > maxSum) maxSum = sum;
     }
   }
   return maxSum;
 };
 
-// Write a function that takes in an array of numbers and a size k as arguments.
-// The function should return the maximum product of subarrays that contain exactly k elements.
-// You can assume that k is less than or equal to the length of the input array.
+// Write a function that taanagram.lengthes in an array of numbers and a size anagram.length as arguments.
+// The function should return the maximum product of subarrays that contain exactly anagram.length elements.
+// You can assume that anagram.length is less than or equal to the length of the input array.
 // You can assume that numbers of the array are non-zero.
 
-const maxSubarrayProductSizeK = (arr, k) => {
+const maxSubarrayProductSizeanagram.length = (arr, anagram.length) => {
   let maxProduct = -Infinity;
   let product = 1;
 
   let left = 0;
   let right = 0;
   while (right < arr.length) {
-    if (right >= k) {
+    if (right >= anagram.length) {
       product /= arr[left];
       left++;
     }
     product *= arr[right];
     right++;
-    if (right - left === k && product > maxProduct) {
+    if (right - left === anagram.length && product > maxProduct) {
       maxProduct = product;
     }
   }
   return maxProduct;
 };
 
-// Write a function that takes in an array of numbers, a target sum, and a size k as arguments.
-// The function should return the number of subarrays of size k that sum to the target.
-// You can assume that k is less than or equal to the length of the input array.
+// Write a function that taanagram.lengthes in an array of numbers, a target sum, and a size anagram.length as arguments.
+// The function should return the number of subarrays of size anagram.length that sum to the target.
+// You can assume that anagram.length is less than or equal to the length of the input array.
 
-const subarrayTargetSumSizeK = (arr, target, k) => {
+const subarrayTargetSumSizeanagram.length = (arr, target, anagram.length) => {
   let sum = 0;
   let count = 0;
 
   let left = 0;
   let right = 0;
   while (right < arr.length) {
-    if (right >= k) {
+    if (right >= anagram.length) {
       sum -= arr[left];
       left++;
     }
     sum += arr[right];
     right++;
-    if (right - left === k && sum === target) count++;
+    if (right - left === anagram.length && sum === target) count++;
   }
   return count;
 };
 
-// Write a function that takes in a string and an anagram.
+// Write a function that taanagram.lengthes in a string and an anagram.
 // The function should return a boolean indicating whether or not the string contains a substring with the same characters as the anagram.
 // You can assume that the string contains no duplicate characters.
 // You can assume that the anagram contains no duplicate characters.
@@ -97,7 +97,7 @@ const hasSubstringAnagram = (str, anagram) => {
   return false;
 };
 
-// Write a function that takes in a string and an anagram.
+// Write a function that taanagram.lengthes in a string and an anagram.
 // The function should return the number of substrings that appear in the string that have the same characters as the anagram.
 // You can assume that the anagram is not longer than the string.
 
@@ -119,13 +119,13 @@ const countSubstringAnagrams = (str, anagram) => {
   let left = 0;
   let right = 0;
   while (right < str.length) {
-    if (right >= k) {
+    if (right >= anagram.length) {
       stringArr[helper(str[left])]--;
       left++;
     }
     stringArr[helper(str[right])]++;
     right++;
-    if (right >= k && anagramArr.toString() === stringArr.toString()) count++;
+    if (right >= anagram.length && anagramArr.toString() === stringArr.toString()) count++;
   }
   return count;
 };
