@@ -106,4 +106,6 @@ const countSubstringAnagrams = (str, anagram) => {
     return char.charCodeAt(0) - 97;
   };
   let count = 0;
+
+  const anagramArr = new Array(26).fill(0);
 };
