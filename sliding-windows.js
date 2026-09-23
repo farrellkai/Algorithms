@@ -149,6 +149,7 @@ const findSubarraySum = (arr, target) => {
     if (sum > target) {
       sum -= arr[left];
       left++;
+      output[0] = left;
     }
     if (sum === target) return [left, right];
   }
