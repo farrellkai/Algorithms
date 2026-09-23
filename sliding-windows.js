@@ -94,4 +94,5 @@ const hasSubstringAnagram = (str, anagram) => {
     right++;
     if (right - left === anagram.length && bool) return true;
   }
+  return false;
 };
