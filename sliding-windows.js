@@ -69,3 +69,11 @@ const subarrayTargetSumSizeK = (arr, target, k) => {
   }
   return count;
 };
+
+// Write a function that takes in a string and an anagram.
+// The function should return a boolean indicating whether or not the string contains a substring with the same characters as the anagram.
+// You can assume that the string contains no duplicate characters.
+// You can assume that the anagram contains no duplicate characters.
+// You can assume that the anagram is not longer than the string.
+
+const hasSubstringAnagram = (str, anagram) => {};
