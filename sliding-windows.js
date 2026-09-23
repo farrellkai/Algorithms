@@ -67,4 +67,5 @@ const subarrayTargetSumSizeK = (arr, target, k) => {
     right++;
     if (right - left === k && sum === target) count++;
   }
+  return count;
 };
