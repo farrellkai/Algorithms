@@ -78,6 +78,7 @@ const subarrayTargetSumSizeK = (arr, target, k) => {
 
 const hasSubstringAnagram = (str, anagram) => {
   const set = new Set();
+  let bool = true;
 
   let i = 0;
   while (i < anagram.length) {
