@@ -104,5 +104,7 @@ const hasSubstringAnagram = (str, anagram) => {
 const countSubstringAnagrams = (str, anagram) => {
   const helper = (char) => {
     return char.charCodeAt(0) - 97;
+
+    let count = 0;
   };
 };
