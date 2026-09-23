@@ -2,14 +2,14 @@
 // The function should return the maximum sum of subarrays that contain exactly anagram.length elements.
 // You can assume that anagram.length is less than or equal to the length of the input array.
 
-const maxSubArrSumSizeanagram.length = (arr, anagram.length) => {
+const maxSubArrSumSizeK = (arr, k) => {
   let maxSum = -Infinity;
   let sum = 0;
 
   let left = 0;
   let right = 0;
   while (right < arr.length) {
-    if (right < anagram.length) {
+    if (right < k) {
       sum += arr[right];
     } else {
       sum = sum - arr[left] + arr[right];
@@ -28,20 +28,20 @@ const maxSubArrSumSizeanagram.length = (arr, anagram.length) => {
 // You can assume that anagram.length is less than or equal to the length of the input array.
 // You can assume that numbers of the array are non-zero.
 
-const maxSubarrayProductSizeanagram.length = (arr, anagram.length) => {
+const maxSubarrayProductSizeK = (arr, k) => {
   let maxProduct = -Infinity;
   let product = 1;
 
   let left = 0;
   let right = 0;
   while (right < arr.length) {
-    if (right >= anagram.length) {
+    if (right >= k) {
       product /= arr[left];
       left++;
     }
     product *= arr[right];
     right++;
-    if (right - left === anagram.length && product > maxProduct) {
+    if (right - left === k && product > maxProduct) {
       maxProduct = product;
     }
   }
@@ -52,20 +52,20 @@ const maxSubarrayProductSizeanagram.length = (arr, anagram.length) => {
 // The function should return the number of subarrays of size anagram.length that sum to the target.
 // You can assume that anagram.length is less than or equal to the length of the input array.
 
-const subarrayTargetSumSizeanagram.length = (arr, target, anagram.length) => {
+const subarrayTargetSumSizeK = (arr, target, k) => {
   let sum = 0;
   let count = 0;
 
   let left = 0;
   let right = 0;
   while (right < arr.length) {
-    if (right >= anagram.length) {
+    if (right >= k) {
       sum -= arr[left];
       left++;
     }
     sum += arr[right];
     right++;
-    if (right - left === anagram.length && sum === target) count++;
+    if (right - left === k && sum === target) count++;
   }
   return count;
 };
@@ -125,7 +125,11 @@ const countSubstringAnagrams = (str, anagram) => {
     }
     stringArr[helper(str[right])]++;
     right++;
-    if (right >= anagram.length && anagramArr.toString() === stringArr.toString()) count++;
+    if (
+      right >= anagram.length &&
+      anagramArr.toString() === stringArr.toString()
+    )
+      count++;
   }
   return count;
 };
@@ -136,7 +140,7 @@ const countSubstringAnagrams = (str, anagram) => {
 
 const findSubarraySum = (arr, target) => {
   let sum = 0;
-  const output = [0, 0]
+  const output = [0, 0];
 
   let left = 0;
   let right = 0;
@@ -154,4 +158,4 @@ const findSubarraySum = (arr, target) => {
     if (sum === target) return output;
   }
   return [];
-}
+};
