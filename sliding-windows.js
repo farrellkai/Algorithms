@@ -96,3 +96,9 @@ const hasSubstringAnagram = (str, anagram) => {
   }
   return false;
 };
+
+// Write a function that takes in a string and an anagram.
+// The function should return the number of substrings that appear in the string that have the same characters as the anagram.
+// You can assume that the anagram is not longer than the string.
+
+const countSubstringAnagrams = (str, anagram) => {};
