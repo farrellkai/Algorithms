@@ -47,3 +47,9 @@ const maxSubarrayProductSizeK = (arr, k) => {
   }
   return maxProduct;
 };
+
+// Write a function that takes in an array of numbers, a target sum, and a size k as arguments.
+// The function should return the number of subarrays of size k that sum to the target.
+// You can assume that k is less than or equal to the length of the input array.
+
+const subarrayTargetSumSizeK = (arr, target, k) => {};
