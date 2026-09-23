@@ -115,4 +115,7 @@ const countSubstringAnagrams = (str, anagram) => {
     anagramArr[anagram[i]]++;
     i++;
   }
+
+  let left = 0;
+  let right = 0;
 };
