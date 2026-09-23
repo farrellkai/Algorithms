@@ -55,4 +55,7 @@ const maxSubarrayProductSizeK = (arr, k) => {
 const subarrayTargetSumSizeK = (arr, target, k) => {
   let sum = 0;
   let count = 0;
+
+  let left = 0;
+  let right = 0;
 };
