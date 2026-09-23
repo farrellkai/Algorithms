@@ -78,4 +78,5 @@ const subarrayTargetSumSizeK = (arr, target, k) => {
 
 const hasSubstringAnagram = (str, anagram) => {
   const anagramArr = new Array(26).fill(0);
+  const stringArr = new Array(26).fill(0);
 };
