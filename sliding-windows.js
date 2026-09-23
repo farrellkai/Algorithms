@@ -121,6 +121,7 @@ const countSubstringAnagrams = (str, anagram) => {
   while (right < str.length) {
     if (right >= k) {
       stringArr[helper(str[left])]--;
+      left++;
     }
   }
 };
