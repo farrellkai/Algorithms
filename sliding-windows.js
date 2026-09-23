@@ -63,5 +63,6 @@ const subarrayTargetSumSizeK = (arr, target, k) => {
       sum -= arr[left];
       left++;
     }
+    sum += arr[right];
   }
 };
