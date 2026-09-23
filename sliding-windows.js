@@ -82,6 +82,7 @@ const hasSubstringAnagram = (str, anagram) => {
 
   let i = 0;
   while (i < anagram.length) {
+    set.add(anagram[i]);
     i++;
   }
 };
