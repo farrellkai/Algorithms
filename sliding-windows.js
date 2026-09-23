@@ -125,5 +125,6 @@ const countSubstringAnagrams = (str, anagram) => {
     }
     stringArr[helper(str[right])]++;
     right++;
+    if (right >= k && anagramArr.toString() === stringArr.toString()) count++;
   }
 };
