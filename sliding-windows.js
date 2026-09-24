@@ -205,6 +205,7 @@ const longestUniqueSubstring = (str) => {
   let right = 0;
   while (right < str.length) {
     if (!set.has(str[right])) {
+      set.add(str[right]);
     }
   }
 };
