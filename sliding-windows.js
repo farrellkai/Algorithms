@@ -182,5 +182,6 @@ const longestSubarraySum = (arr, target) => {
       left++;
       diff--;
     }
+    if (sum === target && diff > output) output = diff;
   }
 };
