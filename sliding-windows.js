@@ -167,7 +167,7 @@ const findSubarraySum = (arr, target) => {
 
 const longestSubarraySum = (arr, target) => {
   let output = -1;
-  let diff;
+  let diff = 0;
   let sum = 0;
 
   let left = 0;
