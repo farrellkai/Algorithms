@@ -208,6 +208,7 @@ const longestUniqueSubstring = (str) => {
       right++;
     } else {
       set.delete(str[left]);
+      left++;
     }
     if (set.size > max) max = set.size;
   }
