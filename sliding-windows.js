@@ -198,4 +198,5 @@ const longestSubarraySum = (arr, target) => {
 
 const longestUniqueSubstring = (str) => {
   const set = new Set();
+  let max = -Infinity;
 };
