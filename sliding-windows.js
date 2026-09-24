@@ -192,3 +192,8 @@ const longestSubarraySum = (arr, target) => {
   }
   return output;
 };
+
+// Write a function that takes in a string as an argument.
+// The function should return the length of the longest substring that consists of only unique characters.
+
+const longestUniqueSubstring = (str) => {};
