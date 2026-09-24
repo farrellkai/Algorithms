@@ -159,3 +159,10 @@ const findSubarraySum = (arr, target) => {
   }
   return [];
 };
+
+// Write a function that takes in an array and a target sum.
+// The function should return the length of the longest subarray that sums to the target.
+// You can assume that the elements of the array are nonnegative.
+// If there is no subarray that sums to the target, then return -1.
+
+const longestSubarraySum = (arr, target) => {};
