@@ -165,4 +165,6 @@ const findSubarraySum = (arr, target) => {
 // You can assume that the elements of the array are nonnegative.
 // If there is no subarray that sums to the target, then return -1.
 
-const longestSubarraySum = (arr, target) => {};
+const longestSubarraySum = (arr, target) => {
+  let output = -1;
+};
