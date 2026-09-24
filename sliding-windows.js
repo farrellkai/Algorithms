@@ -207,6 +207,7 @@ const longestUniqueSubstring = (str) => {
       set.add(str[right]);
       right++;
     } else {
+      set.delete(str[left]);
     }
   }
 };
