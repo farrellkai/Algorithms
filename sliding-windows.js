@@ -200,4 +200,7 @@ const longestUniqueSubstring = (str) => {
   const set = new Set();
   let max = -Infinity;
   let count = 0;
+
+  let left = 0;
+  let right = 0;
 };
