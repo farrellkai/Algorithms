@@ -211,4 +211,5 @@ const longestUniqueSubstring = (str) => {
     }
     if (set.size > max) max = set.size;
   }
+  return max;
 };
