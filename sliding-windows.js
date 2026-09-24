@@ -175,9 +175,10 @@ const longestSubarraySum = (arr, target) => {
   while (right < arr.length) {
     if (sum < target) {
       sum += arr[right];
-      diff++;
       right++;
+      diff++;
     } else if (sum > target) {
+      sum -= arr[left];
     }
   }
 };
