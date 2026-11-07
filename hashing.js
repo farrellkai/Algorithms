@@ -14,6 +14,7 @@ const anagrams = (str1, str2) => {
 
   i = 0;
   while (i < str2.length) {
+    if (!map.has(str2[i])) return false;
     i++;
   }
 };
