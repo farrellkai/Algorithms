@@ -39,6 +39,7 @@ const mostFrequentChar = (str) => {
     i++;
 
     for (let key in map) {
+      if (map.get(key) === most) return key;
     }
   }
 };
