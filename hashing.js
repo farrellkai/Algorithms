@@ -59,7 +59,8 @@ const pairSum = (arr, target) => {
 
   i = 0;
   while (i < arr.length) {
-    if (map.has(target - arr[i])) return [i, map.get(arr[i])];
+    const key = target - arr[i];
+    if (map.has(key)) return [i, map.get(key)];
     i++;
   }
 };
