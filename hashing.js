@@ -82,6 +82,7 @@ const pairProduct = (arr, target) => {
 // You may assume that each input array does not contain duplicate elements.
 const intersection = (arr1, arr2) => {
   const set = new Set();
+  const output = [];
 
   for (let el of arr1) {
     set.add(el);
