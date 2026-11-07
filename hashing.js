@@ -29,4 +29,5 @@ const anagrams = (str1, str2) => {
 // You can assume that the input string is non-empty.
 const mostFrequentChar = (str) => {
   const map = new Map();
+  let most = 0;
 };
