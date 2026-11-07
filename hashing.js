@@ -72,4 +72,9 @@ const pairSum = (arr, target) => {
 // There is guaranteed to be one such pair whose product is the target.
 const pairProduct = (arr, target) => {
   const map = new Map();
+
+  let i = 0;
+  while (i < arr.length) {
+    i++;
+  }
 };
