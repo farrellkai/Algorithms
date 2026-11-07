@@ -89,5 +89,6 @@ const intersection = (arr1, arr2) => {
   }
 
   for (let el of arr2) {
+    if (set.has(el)) output.push(el);
   }
 };
