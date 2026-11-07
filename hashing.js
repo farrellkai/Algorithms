@@ -30,4 +30,9 @@ const anagrams = (str1, str2) => {
 const mostFrequentChar = (str) => {
   const map = new Map();
   let most = 0;
+
+  let i = 0;
+  while (i < str.length) {
+    i++;
+  }
 };
