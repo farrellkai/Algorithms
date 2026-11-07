@@ -53,6 +53,7 @@ const pairSum = (arr, target) => {
 
   let i = 0;
   while (i < arr.length) {
+    if (!map.has(arr[i])) map.set(arr[i], i);
     i++;
   }
 };
