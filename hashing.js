@@ -103,4 +103,7 @@ const exclusiveItems = (arr1, arr2) => {
   for (let el of arr1) {
     set.add(el);
   }
+
+  for (let el of arr2) {
+  }
 };
