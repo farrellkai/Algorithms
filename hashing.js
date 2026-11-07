@@ -82,6 +82,7 @@ const pairProduct = (arr, target) => {
   i = 0;
   while (i < arr.length) {
     const key = target / arr[i];
+    if (map.has(key) && map.get(key) !== i) return [i, map.get(key)];
     i++;
   }
 };
