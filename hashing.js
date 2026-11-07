@@ -7,6 +7,7 @@ const anagrams = (str1, str2) => {
 
   let i = 0;
   while (i < str1.legnth) {
+    if (!map.has(str1[i])) map.set(str1[i], 1);
     i++;
   }
 };
