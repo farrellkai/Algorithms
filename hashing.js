@@ -107,4 +107,5 @@ const exclusiveItems = (arr1, arr2) => {
   for (let el of arr2) {
     set.has(el) ? set.delete(el) : set.add(el);
   }
+  return Array.from(set);
 };
