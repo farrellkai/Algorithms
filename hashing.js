@@ -70,4 +70,6 @@ const pairSum = (arr, target) => {
 // The indices returned must be unique.
 // Be sure to return the indices, not the elements themselves.
 // There is guaranteed to be one such pair whose product is the target.
-const pairProduct = (arr, target) => {};
+const pairProduct = (arr, target) => {
+  const map = new Map();
+};
