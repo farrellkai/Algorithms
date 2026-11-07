@@ -81,6 +81,7 @@ const pairProduct = (arr, target) => {
 
   i = 0;
   while (i < arr.length) {
+    const key = target / arr[i];
     i++;
   }
 };
