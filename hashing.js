@@ -99,4 +99,5 @@ const intersection = (arr1, arr2) => {
 // You may assume that each input array does not contain duplicate elements.
 const exclusiveItems = (arr1, arr2) => {
   const set = new Set();
+  const output = [];
 };
