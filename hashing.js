@@ -75,6 +75,7 @@ const pairProduct = (arr, target) => {
 
   let i = 0;
   while (i < arr.length) {
+    map.set(arr[i], i);
     i++;
   }
 };
