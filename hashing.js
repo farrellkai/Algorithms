@@ -50,4 +50,9 @@ const mostFrequentChar = (str) => {
 // There is guaranteed to be one such pair that sums to the target.
 const pairSum = (arr, target) => {
   const map = new Map();
+
+  let i = 0;
+  while (i < arr.length) {
+    i++;
+  }
 };
