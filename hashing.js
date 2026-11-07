@@ -37,5 +37,8 @@ const mostFrequentChar = (str) => {
     else map.set(str[i], map.get(str[i]) + 1);
     if (map.get(str[i]) > most) most = map.get(str[i]);
     i++;
+
+    for (let key in map) {
+    }
   }
 };
