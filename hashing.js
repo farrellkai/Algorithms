@@ -56,6 +56,7 @@ const pairSum = (arr, target) => {
     map.set(arr[i], i);
     i++;
   }
-  for (let num of arr) {
-  }
+
+  i = 0;
+  while (i < arr.length) {}
 };
