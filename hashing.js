@@ -27,4 +27,6 @@ const anagrams = (str1, str2) => {
 // The function should return the most frequent character of the string.
 // If there are ties, return the character that appears earlier in the string.
 // You can assume that the input string is non-empty.
-const mostFrequentChar = (str) => {};
+const mostFrequentChar = (str) => {
+  const map = new Map();
+};
