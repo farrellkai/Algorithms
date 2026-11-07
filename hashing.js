@@ -19,4 +19,5 @@ const anagrams = (str1, str2) => {
     else map.delete(str2[i]);
     i++;
   }
+  return true;
 };
