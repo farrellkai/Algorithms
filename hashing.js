@@ -48,4 +48,6 @@ const mostFrequentChar = (str) => {
 // The indices returned must be unique.
 // Be sure to return the indices, not the elements themselves.
 // There is guaranteed to be one such pair that sums to the target.
-const pairSum = (arr, target) => {};
+const pairSum = (arr, target) => {
+  const map = new Map();
+};
