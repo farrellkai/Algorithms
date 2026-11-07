@@ -53,14 +53,9 @@ const pairSum = (arr, target) => {
 
   let i = 0;
   while (i < arr.length) {
-    map.set(arr[i], i);
-    i++;
-  }
-
-  i = 0;
-  while (i < arr.length) {
     const key = target - arr[i];
-    if (map.has(key) && map.get(key) !== i) return [i, map.get(key)];
+    if (map.has(key)) return [map.get(key), i];
+    map.set(arr[i], i);
     i++;
   }
 };
@@ -75,14 +70,9 @@ const pairProduct = (arr, target) => {
 
   let i = 0;
   while (i < arr.length) {
-    map.set(arr[i], i);
-    i++;
-  }
-
-  i = 0;
-  while (i < arr.length) {
     const key = target / arr[i];
-    if (map.has(key) && map.get(key) !== i) return [i, map.get(key)];
+    if (map.has(key)) return [map.get(key), i];
+    map.set(arr[i], i);
     i++;
   }
 };
