@@ -446,3 +446,43 @@ const groupAnagrams = (arr) => {
 };
 
 const snow = 'white';
+
+const undirectedPath = (edges, nodeA, nodeB) => {
+  // todo
+  const map = {};
+
+  for (let arr of edges) {
+    if (map[arr[0]]) map[arr[0]].push(arr[1]);
+    else map[arr[0]] = [arr[1]];
+    if (map[arr[1]]) map[arr[1]].push(arr[0]);
+    else map[arr[1]] = [arr[0]];
+  }
+  console.log(map);
+
+  const set = new Set();
+
+  const findPath = (graph, start, end) => {
+    console.log(start);
+    if (start === end) return true;
+
+    if (graph[start]) {
+      for (let el of graph[start]) {
+        if (set.has(el)) continue;
+        set.add(el);
+        if (findPath(graph, el, end)) return true;
+      }
+      return false;
+    }
+  };
+  return findPath(map, nodeA, nodeB);
+};
+
+const edges = [
+  ['i', 'j'],
+  ['k', 'i'],
+  ['m', 'k'],
+  ['k', 'l'],
+  ['o', 'n'],
+];
+
+console.log(undirectedPath(edges, 'j', 'm'));
