@@ -321,6 +321,8 @@ const countSubstringExactlyKDistinct = (str, k) => {
       left++;
       right = left;
     } else {
+      if (set.size === k) {
+      }
     }
   }
 };
