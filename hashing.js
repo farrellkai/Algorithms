@@ -127,4 +127,6 @@ const allUnique = (arr) => {
 // The function should return a new array containing elements that are common to both input arrays.
 // The elements in the result should appear as many times as they occur in both input arrays.
 // You can return the result in any order.
-const intersectionWithDupes = (arr1, arr2) => {};
+const intersectionWithDupes = (arr1, arr2) => {
+  const set = new Set();
+};
