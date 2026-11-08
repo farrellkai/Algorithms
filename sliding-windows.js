@@ -219,4 +219,5 @@ const longestUniqueSubstring = (str) => {
 // The function should return the length of the longest substring that consists of 2 distinct characters
 const longestTwoCharSubstring = (str) => {
   const set = new Set();
+  let max = 0;
 };
