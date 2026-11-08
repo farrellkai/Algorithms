@@ -241,4 +241,5 @@ const longestTwoCharSubstring = (str) => {
 // The function should return the length of the longest consecutive streak of '1's possible if you are allowed to change at most one '0' into a '1'.
 const maxOnesWithSingleFlip = (str) => {
   let max = 0;
+  let flipped = false;
 };
