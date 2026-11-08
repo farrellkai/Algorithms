@@ -271,6 +271,7 @@ const countSubarrayProduct = (arr, target) => {
   let right = 0;
   while (left < arr.length) {
     if ((product *= arr[right] < target)) {
+      count++;
     }
   }
 };
