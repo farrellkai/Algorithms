@@ -303,4 +303,5 @@ const countSubstringAtMostKDistinct = (str, k) => {
       right = left;
     }
   }
+  return count;
 };
