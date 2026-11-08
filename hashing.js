@@ -135,13 +135,17 @@ const intersectionWithDupes = (arr1, arr2) => {
     if (map.has(el)) map.set(el, map.get(el) + 1);
     else map.set(el, 1);
   }
+  console.log(map);
 
   for (let el of arr2) {
     if (map.has(el)) {
       output.push(el);
       map.set(el, map.get(el) - 1);
-      if (map.get(el) === 0) delete map.get(el);
+      if (map.get(el) === 0) map.delete(el);
+      console.log(map);
     }
   }
   return output;
 };
+
+console.log(intersectionWithDupes(['r'], ['p', 'r', 'r', 'r']));
