@@ -325,4 +325,5 @@ const countSubstringExactlyKDistinct = (str, k) => {
       right++;
     }
   }
+  return count;
 };
