@@ -273,6 +273,7 @@ const countSubarrayProduct = (arr, target) => {
     if ((product *= arr[right] < target)) {
       count++;
       right++;
+    } else {
     }
   }
 };
