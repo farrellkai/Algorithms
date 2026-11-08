@@ -314,5 +314,7 @@ const countSubstringExactlyKDistinct = (str, k) => {
 
   let left = 0;
   let right = 0;
-  while (right - left < k) {}
+  while (right - left < k) {
+    if (!set.has(str[right])) set.add(str[right]);
+  }
 };
