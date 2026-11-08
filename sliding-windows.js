@@ -255,5 +255,6 @@ const maxOnesWithSingleFlip = (str) => {
       } else flipped = true;
     }
     right++;
+    const streak = right - left;
   }
 };
