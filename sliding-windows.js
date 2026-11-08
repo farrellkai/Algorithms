@@ -234,4 +234,5 @@ const longestTwoCharSubstring = (str) => {
       if (right - left > max) max = right - left;
     }
   }
+  return max;
 };
