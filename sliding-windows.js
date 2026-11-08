@@ -265,4 +265,5 @@ const maxOnesWithSingleFlip = (str) => {
 // The function should return the number of subarrays that have a total product strictly less than the target.
 const countSubarrayProduct = (arr, target) => {
   let count = 0;
+  let product = 1;
 };
