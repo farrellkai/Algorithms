@@ -242,4 +242,7 @@ const longestTwoCharSubstring = (str) => {
 const maxOnesWithSingleFlip = (str) => {
   let max = 0;
   let flipped = false;
+
+  let left = 0;
+  let right = 0;
 };
