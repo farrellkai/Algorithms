@@ -117,5 +117,6 @@ const allUnique = (arr) => {
 
   for (let el of arr) {
     if (set.has(el)) return false;
+    set.add(el);
   }
 };
