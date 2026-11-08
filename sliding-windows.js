@@ -266,4 +266,7 @@ const maxOnesWithSingleFlip = (str) => {
 const countSubarrayProduct = (arr, target) => {
   let count = 0;
   let product = 1;
+
+  let left = 0;
+  let right = 0;
 };
