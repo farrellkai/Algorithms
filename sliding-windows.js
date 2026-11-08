@@ -279,4 +279,5 @@ const countSubarrayProduct = (arr, target) => {
       right = left;
     }
   }
+  return count;
 };
