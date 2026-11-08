@@ -300,6 +300,7 @@ const countSubstringAtMostKDistinct = (str, k) => {
     } else {
       set.clear();
       left++;
+      right = left;
     }
   }
 };
