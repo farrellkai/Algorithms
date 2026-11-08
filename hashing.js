@@ -143,4 +143,5 @@ const intersectionWithDupes = (arr1, arr2) => {
       if (map.get(el) === 0) delete map.get(el);
     }
   }
+  return output;
 };
