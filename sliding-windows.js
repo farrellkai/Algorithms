@@ -253,5 +253,6 @@ const maxOnesWithSingleFlip = (str) => {
         flipped = false;
       } else flipped = true;
     }
+    right++;
   }
 };
