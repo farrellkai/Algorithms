@@ -138,6 +138,7 @@ const intersectionWithDupes = (arr1, arr2) => {
 
   for (let el of arr2) {
     if (map.has(el)) {
+      output.push(el);
     }
   }
 };
