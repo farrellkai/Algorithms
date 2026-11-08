@@ -276,6 +276,7 @@ const countSubarrayProduct = (arr, target) => {
     } else {
       product = 1;
       left++;
+      right = left;
     }
   }
 };
