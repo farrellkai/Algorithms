@@ -230,6 +230,7 @@ const longestTwoCharSubstring = (str) => {
       left++;
       right = left;
     } else {
+      right++;
     }
   }
 };
