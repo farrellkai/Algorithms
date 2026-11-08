@@ -286,4 +286,6 @@ const countSubarrayProduct = (arr, target) => {
 
 // Write a function that takes in a string and a number k.
 // The function should return the number of substrings that consist of at most k distinct characters.
-const countSubstringAtMostKDistinct = (str, k) => {};
+const countSubstringAtMostKDistinct = (str, k) => {
+  const set = new Set();
+};
