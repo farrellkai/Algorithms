@@ -248,6 +248,7 @@ const maxOnesWithSingleFlip = (str) => {
   while (right < str.length) {
     if (str[right] === '0') {
       if (!flipped) {
+        left++;
       }
     }
   }
