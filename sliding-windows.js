@@ -310,4 +310,5 @@ const countSubstringAtMostKDistinct = (str, k) => {
 // The function should return the number of substrings that consist of exactly k distinct characters.
 const countSubstringExactlyKDistinct = (str, k) => {
   const set = new Set();
+  let count = 0;
 };
