@@ -245,4 +245,5 @@ const maxOnesWithSingleFlip = (str) => {
 
   let left = 0;
   let right = 0;
+  while (left < str.length) {}
 };
