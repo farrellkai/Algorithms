@@ -292,5 +292,7 @@ const countSubstringAtMostKDistinct = (str, k) => {
 
   let left;
   let right;
-  while (left < str.length) {}
+  while (left < str.length) {
+    if (!set.has(str[right])) set.add(str[right]);
+  }
 };
