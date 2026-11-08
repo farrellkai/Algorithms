@@ -311,4 +311,7 @@ const countSubstringAtMostKDistinct = (str, k) => {
 const countSubstringExactlyKDistinct = (str, k) => {
   const set = new Set();
   let count = 0;
+
+  let left = 0;
+  let right = 0;
 };
