@@ -112,4 +112,6 @@ const exclusiveItems = (arr1, arr2) => {
 
 // Write a function, allUnique, that takes in an array.
 // The function should return a boolean indicating whether or not the array contains unique items.
-const allUnique = (arr) => {};
+const allUnique = (arr) => {
+  const set = new Set();
+};
