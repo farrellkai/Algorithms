@@ -227,6 +227,7 @@ const longestTwoCharSubstring = (str) => {
     if (!set.has(str[right])) set.add(str[right]);
     if (set.size > 2) {
       set.clear();
+      left++;
     }
   }
 };
