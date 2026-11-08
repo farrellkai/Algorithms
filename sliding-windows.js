@@ -258,4 +258,5 @@ const maxOnesWithSingleFlip = (str) => {
     const streak = right - left;
     if (streak > max) max = streak;
   }
+  return max;
 };
