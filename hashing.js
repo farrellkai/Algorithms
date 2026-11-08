@@ -132,5 +132,6 @@ const intersectionWithDupes = (arr1, arr2) => {
   const output = [];
 
   for (let el of arr1) {
+    set.add(el);
   }
 };
