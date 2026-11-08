@@ -220,4 +220,7 @@ const longestUniqueSubstring = (str) => {
 const longestTwoCharSubstring = (str) => {
   const set = new Set();
   let max = 0;
+
+  let left = 0;
+  let right = 0;
 };
