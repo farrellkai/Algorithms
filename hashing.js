@@ -119,4 +119,6 @@ const allUnique = (arr) => {
     if (set.has(el)) return false;
     set.add(el);
   }
+
+  return true;
 };
