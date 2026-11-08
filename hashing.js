@@ -133,5 +133,6 @@ const intersectionWithDupes = (arr1, arr2) => {
 
   for (let el of arr1) {
     if (map.has(el)) map.set(el, map.get(el) + 1);
+    else map.set(el, 1);
   }
 };
