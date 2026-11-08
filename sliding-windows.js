@@ -289,4 +289,7 @@ const countSubarrayProduct = (arr, target) => {
 const countSubstringAtMostKDistinct = (str, k) => {
   const set = new Set();
   let count = 0;
+
+  let left;
+  let right;
 };
