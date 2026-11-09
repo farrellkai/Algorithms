@@ -50,6 +50,6 @@ const compress = (str) => {
         left = right;
         num--;
       }
-    }
+    } else right++;
   }
 };
