@@ -16,6 +16,7 @@ const isPalindrome = (str) => {
 // The function should return an uncompressed version of the string where each 'char' of a group is repeated 'number' times consecutively.
 // You may assume that the input string is well-formed according to the previously mentioned pattern.
 const uncompress = (str) => {
+  let output = '';
   let left = 0;
   let right = 0;
 };
