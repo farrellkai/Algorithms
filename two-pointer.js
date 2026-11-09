@@ -28,6 +28,6 @@ const uncompress = (str) => {
       }
       right++;
       left = right;
-    }
+    } else right++;
   }
 };
