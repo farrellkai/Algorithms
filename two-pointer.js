@@ -47,6 +47,7 @@ const compress = (str) => {
       let num = right - left;
       while (num > 0) {
         output += str[left];
+        left = right;
       }
     }
   }
