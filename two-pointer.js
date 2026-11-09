@@ -52,4 +52,5 @@ const compress = (str) => {
       }
     } else right++;
   }
+  return output;
 };
