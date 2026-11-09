@@ -21,7 +21,7 @@ const uncompress = (str) => {
   let right = 0;
   while (right < str.length) {
     if (/^[a-zA-Z]$/.test(str[right])) {
-      const num = +str.slice(left, right);
+      let num = +str.slice(left, right);
       while (num > 0) {
         output += str[right];
         num--;
