@@ -24,6 +24,7 @@ const uncompress = (str) => {
       const num = +str.slice(left, right);
       while (num > 0) {
         output += str[right];
+        num--;
       }
     }
   }
