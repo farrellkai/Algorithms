@@ -37,4 +37,6 @@ const uncompress = (str) => {
 // The function should return a compressed version of the string where consecutive occurrences of the same characters are compressed into the number of occurrences followed by the character.
 // Single character occurrences should not be changed.
 // You can assume that the input only contains alphabetic characters.
-const compress = (str) => {};
+const compress = (str) => {
+  let output = '';
+};
