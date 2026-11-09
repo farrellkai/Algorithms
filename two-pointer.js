@@ -39,4 +39,7 @@ const uncompress = (str) => {
 // You can assume that the input only contains alphabetic characters.
 const compress = (str) => {
   let output = '';
+
+  let left = 0;
+  let right = 0;
 };
