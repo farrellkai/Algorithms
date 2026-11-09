@@ -30,4 +30,5 @@ const uncompress = (str) => {
       left = right;
     } else right++;
   }
+  return output;
 };
