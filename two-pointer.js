@@ -8,4 +8,5 @@ const isPalindrome = (str) => {
     left++;
     right--;
   }
+  return true;
 };
