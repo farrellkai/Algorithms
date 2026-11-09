@@ -6,5 +6,6 @@ const isPalindrome = (str) => {
   while (left < right) {
     if (str[left] !== str[right]) return false;
     left++;
+    right--;
   }
 };
