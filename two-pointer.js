@@ -26,6 +26,7 @@ const uncompress = (str) => {
         output += str[right];
         num--;
       }
+      right++;
     }
   }
 };
