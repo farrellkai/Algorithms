@@ -105,5 +105,8 @@ const reverseListRecursive = (head) => {
 const zipperLists = (head1, head2) => {
   const dummy = new Node(null);
   let tail = dummy;
+
+  let node1 = head1;
+  let node2 = head2;
   while (tail) {}
 };
