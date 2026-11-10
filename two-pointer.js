@@ -80,5 +80,6 @@ const isSubsequence = (str1, str2) => {
   let point2 = 0;
   while (point2 < str2.length) {
     if (!str1[point1]) return true;
+    if (str1[point1] === str2[point2]) point1++;
   }
 };
