@@ -126,6 +126,8 @@ const zipperLists = (head1, head2) => {
   return dummy.next;
 };
 
+const zipperListsRecursive = (head1, head2) => {};
+
 const mergeLists = (head1, head2) => {
   const dummy = new Node(null);
   let tail = dummy;
