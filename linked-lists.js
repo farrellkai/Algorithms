@@ -65,7 +65,7 @@ const getNodeValue = (head, index) => {
   let count = 0;
 
   let node = head;
-  while (node) {}
+  while (node && count <= index) {}
 
   return null;
 };
