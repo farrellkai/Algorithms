@@ -45,5 +45,7 @@ const sumListRecursive = (head) => {
 // The function should return a boolean indicating whether or not the linked list contains the target.
 const linkedListFind = (head, target) => {
   let node = head;
-  while (node) {}
+  while (node) {
+    if (node.val === target) return true;
+  }
 };
