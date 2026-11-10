@@ -38,4 +38,5 @@ const sumList = (head) => {
 
 const sumListRecursive = (head) => {
   if (!head) return 0;
+  return head.val + sumListRecursive(head.next);
 };
