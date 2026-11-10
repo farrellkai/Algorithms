@@ -52,4 +52,6 @@ const linkedListFind = (head, target) => {
   return false;
 };
 
-const linkedListFindRecursive = (head, target) => {};
+const linkedListFindRecursive = (head, target) => {
+  if (!head) return false;
+};
