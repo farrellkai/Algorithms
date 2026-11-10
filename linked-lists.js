@@ -113,6 +113,7 @@ const zipperLists = (head1, head2) => {
       tail.next = node1;
       tail = node1;
       node1 = node1.next;
+    } else {
     }
   }
 };
