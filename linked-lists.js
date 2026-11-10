@@ -29,4 +29,5 @@ const sumList = (head) => {
   let sum = 0;
 
   let node = head;
+  while (node) {}
 };
