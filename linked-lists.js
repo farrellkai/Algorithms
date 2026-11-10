@@ -74,4 +74,6 @@ const getNodeValue = (head, index) => {
   return null;
 };
 
-const getNodeValueRecursive = (head, index) => {};
+const getNodeValueRecursive = (head, index) => {
+  if (index === 0) return head.val;
+};
