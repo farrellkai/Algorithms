@@ -51,3 +51,5 @@ const linkedListFind = (head, target) => {
   }
   return false;
 };
+
+const linkedListFindRecursive = (head, target) => {};
