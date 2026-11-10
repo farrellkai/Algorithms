@@ -93,3 +93,5 @@ const reverseList = (head) => {
   }
   return prev;
 };
+
+const reverseListRecursive = (head) => {};
