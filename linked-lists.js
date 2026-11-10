@@ -13,4 +13,6 @@ const linkedListValues = (head) => {
   while (node) {}
   output.push(node.val);
   node = node.next;
+
+  return output;
 };
