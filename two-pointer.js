@@ -61,7 +61,9 @@ const fiveSort = (arr) => {
   let right = arr.length - 1;
   while (left < right) {
     if (arr[right] === 5) right--;
-    if (arr[left] === 5) arr[left] = arr[right];
-    left++;
+    else {
+      if (arr[left] === 5) arr[left] = arr[right];
+      left++;
+    }
   }
 };
