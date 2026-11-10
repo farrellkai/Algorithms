@@ -11,4 +11,5 @@ const linkedListValues = (head) => {
 
   let node = head;
   while (node) {}
+  output.push(node.val);
 };
