@@ -8,4 +8,6 @@ function Node(val) {
 // The function should return an array containing all values of the nodes in the linked list.
 const linkedListValues = (head) => {
   const output = [];
+
+  let node = head;
 };
