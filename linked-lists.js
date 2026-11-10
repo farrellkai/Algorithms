@@ -47,5 +47,6 @@ const linkedListFind = (head, target) => {
   let node = head;
   while (node) {
     if (node.val === target) return true;
+    node = node.next;
   }
 };
