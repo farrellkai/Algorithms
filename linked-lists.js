@@ -62,8 +62,10 @@ const linkedListFindRecursive = (head, target) => {
 // The function should return the value of the linked list at the specified index.
 // If there is no node at the given index, then return null.
 const getNodeValue = (head, index) => {
-  if (!head) return null;
   let count = 0;
 
   let node = head;
+  while (node) {}
+
+  return null;
 };
