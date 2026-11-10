@@ -78,4 +78,5 @@ const fiveSort = (arr) => {
 const isSubsequence = (str1, str2) => {
   let point1 = 0;
   let point2 = 0;
+  while (point2 < str2.length) {}
 };
