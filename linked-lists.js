@@ -91,4 +91,5 @@ const reverseList = (head) => {
     prev = cur;
     cur = next;
   }
+  return prev;
 };
