@@ -73,3 +73,5 @@ const getNodeValue = (head, index) => {
 
   return null;
 };
+
+const getNodeValueRecursive = (head, index) => {};
