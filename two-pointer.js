@@ -56,4 +56,7 @@ const compress = (str) => {
 // The function should rearrange elements of the array such that all 5s appear at the end.
 // Your function should perform this operation in-place by mutating the original array. The function should return the array.
 // Elements that are not 5 can appear in any order in the output, as long as all 5s are at the end of the array.
-const fiveSort = (arr) => {};
+const fiveSort = (arr) => {
+  let left = 0;
+  let right = arr.length - 1;
+};
