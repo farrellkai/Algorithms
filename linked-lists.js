@@ -27,4 +27,6 @@ const linkedListValuesRecursive = (head, output = []) => {
 // The function should return the total sum of all values in the linked list.
 const sumList = (head) => {
   let sum = 0;
+
+  let node = head;
 };
