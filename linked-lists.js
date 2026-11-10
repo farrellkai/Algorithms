@@ -154,4 +154,8 @@ const mergeLists = (head1, head2) => {
 
 const mergeListsRecursive = (head1, head2) => {
   if (!head1 && !head2) return null;
+  if (!head2) return head1;
+  if (!head1) return head2;
+  const next1 = head1.next;
+  const next2 = head2.next;
 };
