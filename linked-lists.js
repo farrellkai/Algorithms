@@ -36,4 +36,6 @@ const sumList = (head) => {
   return sum;
 };
 
-const sumListRecursive = (head) => {};
+const sumListRecursive = (head) => {
+  if (!head) return 0;
+};
