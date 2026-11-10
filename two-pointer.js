@@ -75,4 +75,7 @@ const fiveSort = (arr) => {
 // Write a function, isSubsequence, that takes in string1 and string2.
 // The function should return a boolean indicating whether or not string1 is a subsequence of string2.
 // A subsequence is a string that can be formed by deleting 0 or more characters from another string.
-const isSubsequence = (str1, str2) => {};
+const isSubsequence = (str1, str2) => {
+  let point1 = 0;
+  let point2 = 0;
+};
