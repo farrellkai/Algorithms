@@ -88,5 +88,6 @@ const reverseList = (head) => {
   while (cur) {
     const next = cur.next;
     cur.next = prev;
+    prev = cur;
   }
 };
