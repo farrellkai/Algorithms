@@ -66,4 +66,5 @@ const fiveSort = (arr) => {
       left++;
     }
   }
+  return arr;
 };
