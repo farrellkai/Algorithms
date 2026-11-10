@@ -59,5 +59,7 @@ const compress = (str) => {
 const fiveSort = (arr) => {
   let left = 0;
   let right = arr.length - 1;
-  while (left < right) {}
+  while (left < right) {
+    if (right === 5) right--;
+  }
 };
