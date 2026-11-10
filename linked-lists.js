@@ -119,4 +119,5 @@ const zipperLists = (head1, head2) => {
       node2 = node2.next;
     }
   }
+  return dummy.next;
 };
