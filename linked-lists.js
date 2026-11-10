@@ -112,6 +112,7 @@ const zipperLists = (head1, head2) => {
     if (node1.val < node2.val) {
       tail.next = node1;
       tail = node1;
+      node1 = node1.next;
     }
   }
 };
