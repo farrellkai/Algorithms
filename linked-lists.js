@@ -104,4 +104,5 @@ const reverseListRecursive = (head) => {
 // The function should return the head of the zippered linked list.
 const zipperLists = (head1, head2) => {
   const dummy = new Node(null);
+  let tail = dummy;
 };
