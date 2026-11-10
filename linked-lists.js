@@ -33,4 +33,5 @@ const sumList = (head) => {
     sum += node.val;
     node = node.next;
   }
+  return sum;
 };
