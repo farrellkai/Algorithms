@@ -108,5 +108,8 @@ const zipperLists = (head1, head2) => {
 
   let node1 = head1;
   let node2 = head2;
-  while (node1 || node2) {}
+  while (node1 && node2) {
+    if (node1.val < node2.val) {
+    }
+  }
 };
