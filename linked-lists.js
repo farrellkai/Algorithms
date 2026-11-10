@@ -128,6 +128,9 @@ const zipperLists = (head1, head2) => {
 
 const zipperListsRecursive = (head1, head2) => {};
 
+// Write a function, mergeLists, that takes in the head of two sorted linked lists as arguments.
+// The function should merge the two lists together into single sorted linked list.
+// The function should return the head of the merged linked list.
 const mergeLists = (head1, head2) => {
   const dummy = new Node(null);
   let tail = dummy;
@@ -137,13 +140,14 @@ const mergeLists = (head1, head2) => {
   while (node1 && node2) {
     if (node1.val < node2.val) {
       tail.next = node1;
-      tail = node1;
       node1 = node1.next;
     } else {
       tail.next = node2;
-      tail = node2;
       node2 = node2.next;
     }
+    if (tail.next) tail = tail.next;
   }
+  if (node1) tail.next = node1;
+  if (node2) tail.next = node2;
   return dummy.next;
 };
