@@ -64,4 +64,6 @@ const linkedListFindRecursive = (head, target) => {
 const getNodeValue = (head, index) => {
   if (!head) return null;
   let count = 0;
+
+  let node = head;
 };
