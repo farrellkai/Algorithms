@@ -85,4 +85,5 @@ const getNodeValueRecursive = (head, index) => {
 const reverseList = (head) => {
   let cur = head;
   let tail = head.next;
+  while (tail) {}
 };
