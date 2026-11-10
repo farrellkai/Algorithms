@@ -102,7 +102,29 @@ const reverseListRecursive = (head) => {
 // The function should zipper the two lists together into single linked list by alternating nodes.
 // If one of the linked lists is longer than the other, the resulting list should terminate with the remaining nodes.
 // The function should return the head of the zippered linked list.
-const zipperLists = (head1, head2) => {};
+const zipperLists = (head1, head2) => {
+  let status = true;
+
+  const dummy = new Node(null);
+  let tail = dummy;
+
+  let node1 = head1;
+  let node2 = head2;
+  while (node1 && node2) {
+    if (status) {
+      tail.next = node1;
+      node1 = node1.next;
+    } else {
+      tail.next = node2;
+      node2 = node2.next;
+    }
+    tail = tail.next;
+    status = !status;
+  }
+  if (node1) tail.next = node1;
+  if (node2) tail.next = node2;
+  return dummy.next;
+};
 
 const mergeLists = (head1, head2) => {
   const dummy = new Node(null);
