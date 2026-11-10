@@ -116,6 +116,7 @@ const zipperLists = (head1, head2) => {
     } else {
       tail.next = node2;
       tail = node2;
+      node2 = node2.next;
     }
   }
 };
