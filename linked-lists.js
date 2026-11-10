@@ -17,4 +17,6 @@ const linkedListValues = (head) => {
   return output;
 };
 
-const linkedListValuesRecursive = (head, output = []) => {};
+const linkedListValuesRecursive = (head, output = []) => {
+  if (!head) return output;
+};
