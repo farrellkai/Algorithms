@@ -19,5 +19,6 @@ const linkedListValues = (head) => {
 
 const linkedListValuesRecursive = (head, output = []) => {
   if (!head) return output;
+  output.push(head.val);
   return linkedListValuesRecursive(head.next, output);
 };
