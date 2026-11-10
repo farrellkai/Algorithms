@@ -158,4 +158,6 @@ const mergeListsRecursive = (head1, head2) => {
   if (!head1) return head2;
   const next1 = head1.next;
   const next2 = head2.next;
+  if (next1.val < next2.val) {
+  }
 };
