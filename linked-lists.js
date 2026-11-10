@@ -151,3 +151,5 @@ const mergeLists = (head1, head2) => {
   if (node2) tail.next = node2;
   return dummy.next;
 };
+
+const mergeListsRecursive = (head1, head2) => {};
