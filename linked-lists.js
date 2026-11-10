@@ -152,4 +152,6 @@ const mergeLists = (head1, head2) => {
   return dummy.next;
 };
 
-const mergeListsRecursive = (head1, head2) => {};
+const mergeListsRecursive = (head1, head2) => {
+  if (!head1 && !head2) return null;
+};
