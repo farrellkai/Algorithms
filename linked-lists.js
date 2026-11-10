@@ -54,4 +54,5 @@ const linkedListFind = (head, target) => {
 
 const linkedListFindRecursive = (head, target) => {
   if (!head) return false;
+  if (head.val === target) return true;
 };
