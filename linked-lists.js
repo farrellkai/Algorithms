@@ -84,4 +84,5 @@ const getNodeValueRecursive = (head, index) => {
 // The function should reverse the order of the nodes in the linked list in-place and return the new head of the reversed linked list.
 const reverseList = (head) => {
   let cur = head;
+  let tail = head.next;
 };
