@@ -31,5 +31,6 @@ const sumList = (head) => {
   let node = head;
   while (node) {
     sum += node.val;
+    node = node.next;
   }
 };
