@@ -205,3 +205,5 @@ const longestStreak = (head) => {
   }
   return max;
 };
+
+const longestStreakRecursive = (head) => {};
