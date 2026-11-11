@@ -56,5 +56,6 @@ const treeSumDepth = (root) => {
   while (stack[0]) {
     const node = stack.pop();
     sum += node.val;
+    if (node.right) stack.push(node.right);
   }
 };
