@@ -38,5 +38,7 @@ const breadthFirstValues = (root) => {
   if (!root) return [];
   const queue = [root];
   const output = [];
-  while (queue[0]) {}
+  while (queue[0]) {
+    const node = queue.shift();
+  }
 };
