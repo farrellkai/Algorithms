@@ -251,7 +251,7 @@ const insertNode = (head, value, index) => {
   let count = 0;
 
   let node = head;
-  while (node) {
+  while (count <= index) {
     if (count === index) {
       const newNode = new Node(value);
       tail.next = newNode;
@@ -260,6 +260,7 @@ const insertNode = (head, value, index) => {
     }
     count++;
     tail.next = node;
+    tail = node;
     node = node.next;
   }
 };
