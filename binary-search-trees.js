@@ -84,4 +84,5 @@ const treeSumR = (root) => {
 // The function should return a boolean indicating whether or not the value is contained in the tree.
 const treeIncludesDepth = (root, target) => {
   if (!root) return false;
+  const stack = [];
 };
