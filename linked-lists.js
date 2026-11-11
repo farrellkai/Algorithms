@@ -232,3 +232,5 @@ const removeNode = (head, target) => {
     node = node.next;
   }
 };
+
+const removeNodeRecursive = (head, target) => {};
