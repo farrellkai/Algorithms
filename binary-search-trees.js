@@ -19,4 +19,6 @@ const depthFirstValues = (root) => {
     stack.push(node.right);
     stack.push(node.left);
   }
+
+  return output;
 };
