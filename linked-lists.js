@@ -183,4 +183,5 @@ const isUnivalueList = (head) => {
 const isUnivalueListRecursive = (head, value = head.val) => {
   if (!head) return true;
   if (head.val !== value) return false;
+  return isUnivalueListRecursive(head.next, value);
 };
