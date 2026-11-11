@@ -118,4 +118,5 @@ const treeIncludesR = (root, target) => {
 // The function should return the minimum value within the tree.
 const treeMinValue = (root) => {
   if (!root) return Infinity;
+  if (!root.left && root.right) return root.val;
 };
