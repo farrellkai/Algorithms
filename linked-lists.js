@@ -220,4 +220,5 @@ const longestStreakRecursive = (head, value = null, count = 0, max = 0) => {
 // If the target appears multiple times in the linked list, only remove the first instance of the target in the list.
 const removeNode = (head, target) => {
   const dummy = new Node(null);
+  let tail = dummy;
 };
