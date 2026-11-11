@@ -38,4 +38,5 @@ const breadthFirstValues = (root) => {
   if (!root) return [];
   const queue = [root];
   const output = [];
+  while (queue[0]) {}
 };
