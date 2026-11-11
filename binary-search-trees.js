@@ -85,5 +85,7 @@ const treeSumR = (root) => {
 const treeIncludesDepth = (root, target) => {
   if (!root) return false;
   const stack = [root];
-  while (stack[0]) {}
+  while (stack[0]) {
+    if (root.val === target) return true;
+  }
 };
