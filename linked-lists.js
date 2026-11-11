@@ -191,4 +191,5 @@ const isUnivalueListRecursive = (head, value = head.val) => {
 const longestStreak = (head) => {
   let max = 0;
   let count = 0;
+  let value = null;
 };
