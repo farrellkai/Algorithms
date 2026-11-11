@@ -59,4 +59,5 @@ const treeSumDepth = (root) => {
     if (node.right) stack.push(node.right);
     if (node.left) stack.push(node.left);
   }
+  return sum;
 };
