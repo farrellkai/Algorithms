@@ -75,4 +75,6 @@ const treeSumBredth = (root) => {
   return sum;
 };
 
-const treeSumR = (root) => {};
+const treeSumR = (root) => {
+  if (!root) return 0;
+};
