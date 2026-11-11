@@ -270,4 +270,6 @@ const insertNodeRecursive = (head, value, index) => {
     newNode.next = head;
     return newNode;
   }
+  head.next = insertNodeRecursive(head.next, value, --index);
+  return head;
 };
