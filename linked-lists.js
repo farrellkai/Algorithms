@@ -206,4 +206,9 @@ const longestStreak = (head) => {
   return max;
 };
 
-const longestStreakRecursive = (head) => {};
+const longestStreakRecursive = (
+  head,
+  value = head.val,
+  count = 0,
+  max = 0,
+) => {};
