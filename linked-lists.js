@@ -225,6 +225,7 @@ const removeNode = (head, target) => {
   let node = head;
   while (node) {
     if (head.val === target) {
+      tail.next = head.next;
     }
   }
 };
