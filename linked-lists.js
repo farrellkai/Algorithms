@@ -209,4 +209,6 @@ const longestStreak = (head) => {
 const longestStreakRecursive = (head, value = head.val, count = 0, max = 0) => {
   if (!head) return max;
   if (count > max) max = count;
+  if (head.val !== value)
+    return longestStreakRecursive(head.next, head.val, 1, max);
 };
