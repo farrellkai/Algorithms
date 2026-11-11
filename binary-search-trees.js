@@ -44,4 +44,5 @@ const breadthFirstValues = (root) => {
     if (node.left) output.push(node.left);
     if (node.right) output.push(node.right);
   }
+  return output;
 };
