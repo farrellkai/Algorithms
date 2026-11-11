@@ -62,4 +62,6 @@ const treeSumDepth = (root) => {
   return sum;
 };
 
-const treeSumBredth = (root) => {};
+const treeSumBredth = (root) => {
+  if (!root) return 0;
+};
