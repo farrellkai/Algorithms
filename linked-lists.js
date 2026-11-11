@@ -244,4 +244,6 @@ const removeNodeRecursive = (head, target) => {
 // Write a function, insertNode, that takes in the head of a linked list, a value, and an index.
 // The function should insert a new node with the value into the list at the specified index.
 // Consider the head of the linked list as index 0. The function should return the head of the resulting linked list.
-const insertNode = (head, value, index) => {};
+const insertNode = (head, value, index) => {
+  let count = 0;
+};
