@@ -77,4 +77,5 @@ const treeSumBredth = (root) => {
 
 const treeSumR = (root) => {
   if (!root) return 0;
+  return root.val + treeSumR(root.left) + treeSumR(root.right);
 };
