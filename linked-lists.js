@@ -203,4 +203,5 @@ const longestStreak = (head) => {
     if (count > max) max = count;
     node = node.next;
   }
+  return max;
 };
