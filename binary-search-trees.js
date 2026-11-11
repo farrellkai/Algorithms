@@ -40,5 +40,6 @@ const breadthFirstValues = (root) => {
   const output = [];
   while (queue[0]) {
     const node = queue.shift();
+    output.push(node.val);
   }
 };
