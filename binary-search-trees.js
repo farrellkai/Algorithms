@@ -14,10 +14,11 @@ const depthFirstValues = (root) => {
   const output = [];
 
   while (stack[0]) {
+    //console.log(stack[0])
     const node = stack.pop();
     output.push(node.val);
-    stack.push(node.right);
-    stack.push(node.left);
+    if (node.right) stack.push(node.right);
+    if (node.left) stack.push(node.left);
   }
 
   return output;
