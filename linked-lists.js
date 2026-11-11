@@ -175,4 +175,5 @@ const isUnivalueList = (head) => {
     if (node.val !== head.val) return false;
     node = node.next;
   }
+  return true;
 };
