@@ -201,5 +201,6 @@ const longestStreak = (head) => {
       count = 1;
     }
     if (count > max) max = count;
+    node = node.next;
   }
 };
