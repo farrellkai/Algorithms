@@ -194,5 +194,7 @@ const longestStreak = (head) => {
   let value = null;
 
   let node = head;
-  while (node) {}
+  while (node) {
+    if (count > max) max = count;
+  }
 };
