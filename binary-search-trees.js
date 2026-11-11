@@ -113,3 +113,7 @@ const treeIncludesR = (root, target) => {
   const right = treeIncludesR(root.right, target);
   return left || right ? true : false;
 };
+
+// Write a function, treeMinValue, that takes in the root of a binary tree that contains number values.
+// The function should return the minimum value within the tree.
+const treeMinValue = (root) => {};
