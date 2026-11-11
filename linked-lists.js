@@ -190,4 +190,5 @@ const isUnivalueListRecursive = (head, value = head.val) => {
 // The function should return the length of the longest consecutive streak of the same value within the list.
 const longestStreak = (head) => {
   let max = 0;
+  let count = 0;
 };
