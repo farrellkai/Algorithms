@@ -72,4 +72,5 @@ const treeSumBredth = (root) => {
     if (root.left) queue.push(root.left);
     if (root.right) queue.push(root.right);
   }
+  return sum;
 };
