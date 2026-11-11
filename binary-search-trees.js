@@ -86,6 +86,7 @@ const treeIncludesDepth = (root, target) => {
   if (!root) return false;
   const stack = [root];
   while (stack[0]) {
-    if (root.val === target) return true;
+    const node = stack.pop();
+    if (node.val === target) return true;
   }
 };
