@@ -253,6 +253,7 @@ const insertNode = (head, value, index) => {
   let node = head;
   while (node) {
     if (count === index) {
+      const newNode = new Node(value);
     }
   }
 };
