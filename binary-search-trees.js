@@ -99,5 +99,6 @@ const treeIncludesBredth = (root, target) => {
   const queue = [root];
   while (queue[0]) {
     const node = queue.shift();
+    if (node.val === target) return true;
   }
 };
