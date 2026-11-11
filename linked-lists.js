@@ -251,5 +251,8 @@ const insertNode = (head, value, index) => {
   let count = 0;
 
   let node = head;
-  while (node) {}
+  while (node) {
+    if (count === index) {
+    }
+  }
 };
