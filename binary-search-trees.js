@@ -93,3 +93,5 @@ const treeIncludesDepth = (root, target) => {
   }
   return false;
 };
+
+const treeIncludesBredth = (root, target) => {};
