@@ -11,4 +11,5 @@ class Node {
 // The function should return an array containing all values of the tree in depth-first order.
 const depthFirstValues = (root) => {
   const stack = [root];
+  const output = [];
 };
