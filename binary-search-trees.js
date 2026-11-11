@@ -52,4 +52,5 @@ const breadthFirstValues = (root) => {
 const treeSumDepth = (root) => {
   if (!root) return 0;
   let sum = 0;
+  const stack = [root];
 };
