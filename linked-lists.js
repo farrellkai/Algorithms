@@ -173,5 +173,6 @@ const isUnivalueList = (head) => {
   let node = head;
   while (node) {
     if (node.val !== head.val) return false;
+    node = node.next;
   }
 };
