@@ -22,3 +22,5 @@ const depthFirstValues = (root) => {
 
   return output;
 };
+
+const depthFirstValuesR = (root) => {};
