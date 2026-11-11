@@ -23,4 +23,7 @@ const depthFirstValues = (root) => {
   return output;
 };
 
-const depthFirstValuesR = (root, output = []) => {};
+const depthFirstValuesR = (root, output = []) => {
+  if (!root) return output;
+  output.push(root.val);
+};
