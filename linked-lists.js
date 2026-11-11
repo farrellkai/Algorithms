@@ -260,5 +260,6 @@ const insertNode = (head, value, index) => {
     }
     count++;
     tail.next = node;
+    node = node.next;
   }
 };
