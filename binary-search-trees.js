@@ -12,4 +12,6 @@ class Node {
 const depthFirstValues = (root) => {
   const stack = [root];
   const output = [];
+
+  while (stack[0]) {}
 };
