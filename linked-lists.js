@@ -223,4 +223,5 @@ const removeNode = (head, target) => {
   let tail = dummy;
 
   let node = head;
+  while (node) {}
 };
