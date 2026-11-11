@@ -111,4 +111,5 @@ const treeIncludesR = (root, target) => {
   if (root.val === target) return true;
   const left = treeIncludesR(root.left, target);
   const right = treeIncludesR(root.right, target);
+  return left || right ? true : false;
 };
