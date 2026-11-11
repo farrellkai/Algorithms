@@ -66,5 +66,7 @@ const treeSumBredth = (root) => {
   if (!root) return 0;
   let sum = 0;
   const queue = [root];
-  while (queue[0]) {}
+  while (queue[0]) {
+    const node = queue.shift();
+  }
 };
