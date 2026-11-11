@@ -26,4 +26,6 @@ const depthFirstValues = (root) => {
 const depthFirstValuesR = (root, output = []) => {
   if (!root) return output;
   output.push(root.val);
+  depthFirstValuesR(root.left, output);
+  depthFirstValuesR(root.right, output);
 };
