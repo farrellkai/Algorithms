@@ -255,6 +255,7 @@ const insertNode = (head, value, index) => {
     if (count === index) {
       const newNode = new Node(value);
       tail.next = newNode;
+      newNode.next = node;
     }
   }
 };
