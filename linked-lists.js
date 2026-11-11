@@ -264,4 +264,7 @@ const insertNode = (head, value, index) => {
   }
 };
 
-const insertNodeRecursive = (head, value, index) => {};
+const insertNodeRecursive = (head, value, index) => {
+  if (index === 0) {
+  }
+};
