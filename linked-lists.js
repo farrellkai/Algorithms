@@ -180,4 +180,6 @@ const isUnivalueList = (head) => {
   return true;
 };
 
-const isUnivalueListRecursive = (head) => {};
+const isUnivalueListRecursive = (head) => {
+  if (!head) return true;
+};
