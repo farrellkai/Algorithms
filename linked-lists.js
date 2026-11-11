@@ -246,6 +246,7 @@ const removeNodeRecursive = (head, target) => {
 // Consider the head of the linked list as index 0. The function should return the head of the resulting linked list.
 const insertNode = (head, value, index) => {
   let dummy = new Node(null);
+  let tail = dummy;
 
   let count = 0;
 };
