@@ -221,4 +221,6 @@ const longestStreakRecursive = (head, value = null, count = 0, max = 0) => {
 const removeNode = (head, target) => {
   const dummy = new Node(null);
   let tail = dummy;
+
+  let node = head;
 };
