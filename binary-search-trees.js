@@ -108,4 +108,5 @@ const treeIncludesBredth = (root, target) => {
 
 const treeIncludesR = (root, target) => {
   if (!root) return false;
+  if (root.val === target) return true;
 };
