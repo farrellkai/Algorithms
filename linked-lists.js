@@ -1,3 +1,5 @@
+const { headers } = require('next/headers');
+
 //Node generator
 function Node(val) {
   this.val = val;
@@ -177,3 +179,5 @@ const isUnivalueList = (head) => {
   }
   return true;
 };
+
+const isUnivalueListRecursive = (head) => {};
