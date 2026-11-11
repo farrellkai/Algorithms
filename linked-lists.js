@@ -229,5 +229,6 @@ const removeNode = (head, target) => {
       return dummy.next;
     }
     tail = node;
+    node = node.next;
   }
 };
