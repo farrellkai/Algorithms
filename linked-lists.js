@@ -171,4 +171,5 @@ const mergeListsRecursive = (head1, head2) => {
 // The function should return a boolean indicating whether or not the linked list contains exactly one unique value.
 const isUnivalueList = (head) => {
   const value = head.val;
+  let node = head;
 };
