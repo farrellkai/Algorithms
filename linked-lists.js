@@ -237,4 +237,5 @@ const removeNodeRecursive = (head, target) => {
   const dummy = new Node(null);
   if (head.val === target) return head.next;
   head.next = removeNodeRecursive(head.next, target);
+  return head;
 };
