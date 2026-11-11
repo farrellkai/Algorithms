@@ -172,4 +172,5 @@ const mergeListsRecursive = (head1, head2) => {
 const isUnivalueList = (head) => {
   const value = head.val;
   let node = head;
+  while (node) {}
 };
