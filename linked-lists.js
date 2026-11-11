@@ -256,6 +256,7 @@ const insertNode = (head, value, index) => {
       const newNode = new Node(value);
       tail.next = newNode;
       newNode.next = node;
+      return dummy.next;
     }
   }
 };
