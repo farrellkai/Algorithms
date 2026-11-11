@@ -266,5 +266,6 @@ const insertNode = (head, value, index) => {
 
 const insertNodeRecursive = (head, value, index) => {
   if (index === 0) {
+    const newNode = new Node(value);
   }
 };
