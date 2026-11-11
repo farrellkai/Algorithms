@@ -249,4 +249,6 @@ const insertNode = (head, value, index) => {
   let tail = dummy;
 
   let count = 0;
+
+  let node = head;
 };
