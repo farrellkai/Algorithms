@@ -128,4 +128,5 @@ const treeMinValue = (root) => {
 // The function should return the maximum sum of any root to leaf path within the tree.
 const maxPathSum = (root) => {
   if (!root) return -Infinity;
+  if (!root.left && !root.right) return root.val;
 };
