@@ -126,4 +126,6 @@ const treeMinValue = (root) => {
 
 // Write a function, maxPathSum, that takes in the root of a binary tree that contains number values.
 // The function should return the maximum sum of any root to leaf path within the tree.
-const maxPathSum = (root) => {};
+const maxPathSum = (root) => {
+  if (!root) return -Infinity;
+};
