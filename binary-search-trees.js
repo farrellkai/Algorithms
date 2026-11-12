@@ -121,4 +121,5 @@ const treeMinValue = (root) => {
   if (!root.left && root.right) return root.val;
   const left = treeMinValue(root.left);
   const right = treeMinValue(root.right);
+  return left < right ? left : right;
 };
