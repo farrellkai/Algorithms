@@ -130,4 +130,5 @@ const maxPathSum = (root) => {
   if (!root) return -Infinity;
   if (!root.left && !root.right) return root.val;
   const left = root.val + maxPathSum(root.left);
+  const right = root.val + maxPathSum(root.right);
 };
