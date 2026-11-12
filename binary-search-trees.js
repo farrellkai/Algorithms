@@ -144,4 +144,5 @@ const pathFinder = (root, target) => {
   const right = pathFinder(root.right, target);
   if (left) left.unshift(root.val);
   if (right) right.unshift(root.val);
+  return left.concat(right);
 };
