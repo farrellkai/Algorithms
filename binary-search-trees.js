@@ -131,4 +131,5 @@ const maxPathSum = (root) => {
   if (!root.left && !root.right) return root.val;
   const left = root.val + maxPathSum(root.left);
   const right = root.val + maxPathSum(root.right);
+  return left > right ? left : right;
 };
