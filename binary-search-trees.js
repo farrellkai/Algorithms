@@ -140,4 +140,5 @@ const maxPathSum = (root) => {
 const pathFinder = (root, target) => {
   if (!root) return null;
   if (root.val === target) return [root.val];
+  const left = pathFinder(root.left, target);
 };
