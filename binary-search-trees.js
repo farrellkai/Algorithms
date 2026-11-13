@@ -170,7 +170,9 @@ const treeValueCountDepth = (root, target) => {
 const treeValueCountBredth = (root, target) => {
   let count = 0;
   const queue = [root];
-  while (queue[0]) {}
+  while (queue[0]) {
+    const node = queue.shift();
+  }
 };
 
 const treeValueCountR = (root, target) => {
