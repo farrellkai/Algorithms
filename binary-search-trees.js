@@ -1,3 +1,5 @@
+const { rootTaskDispose } = require('next/dist/build/swc/generated-native');
+
 //node generator
 class Node {
   constructor(val) {
@@ -153,10 +155,12 @@ const pathFinder = (root, target) => {
 
 // Write a function, treeValueCount, that takes in the root of a binary tree and a target value.
 // The function should return the number of times that the target occurs in the tree.
-const treeValueCount = (root, target) => {
+const treeValueCountDepth = (root, target) => {};
+
+const treeValueCountR = (root, target) => {
   if (!root) return 0;
-  const left = treeValueCount(root.left, target);
-  const right = treeValueCount(root.right, target);
+  const left = treeValueCountR(root.left, target);
+  const right = treeValueCountR(root.right, target);
   const sum = left + right;
   return root.val === target ? 1 + sum : sum;
 };
