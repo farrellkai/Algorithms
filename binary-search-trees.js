@@ -139,8 +139,6 @@ const maxPathSum = (root) => {
 // Write a function, pathFinder, that takes in the root of a binary tree and a target value.
 // The function should return an array representing a path to the target value.
 // If the target value is not found in the tree, then return null.
-
-//NOT FINISHED!!!!!
 const pathFinder = (root, target) => {
   if (!root) return null;
   if (root.val === target) return [root.val];
@@ -154,6 +152,7 @@ const pathFinder = (root, target) => {
     right.unshift(root.val);
     return right;
   }
+  return null;
 };
 
 // Write a function, treeValueCount, that takes in the root of a binary tree and a target value.
