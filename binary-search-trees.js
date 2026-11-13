@@ -167,7 +167,9 @@ const treeValueCountDepth = (root, target) => {
   return count;
 };
 
-const treeValueCountBredth = (root, target) => {};
+const treeValueCountBredth = (root, target) => {
+  let count = 0;
+};
 
 const treeValueCountR = (root, target) => {
   if (!root) return 0;
