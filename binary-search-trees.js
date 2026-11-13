@@ -196,4 +196,5 @@ const howHigh = (root) => {
   if (!root.left && !root.right) return 1;
   const left = howHigh(root.left);
   const right = howHigh(root.right);
+  return left > right ? 1 + left : 1 + right;
 };
