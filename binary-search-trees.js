@@ -146,5 +146,11 @@ const pathFinder = (root, target) => {
   const right = pathFinder(root.right, target);
   if (left) left.unshift(root.val);
   if (right) right.unshift(root.val);
-  return left.concat(right);
+  if (left && right) return left.concat(right);
+  if (!left && right) return right;
+  if (left && right) return left;
 };
+
+// Write a function, treeValueCount, that takes in the root of a binary tree and a target value.
+// The function should return the number of times that the target occurs in the tree.
+const treeValueCount = (root, target) => {};
