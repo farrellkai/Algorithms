@@ -158,6 +158,7 @@ const pathFinder = (root, target) => {
 const treeValueCountDepth = (root, target) => {
   let count = 0;
   const stack = [root];
+  while (stack[0]) {}
 };
 
 const treeValueCountR = (root, target) => {
