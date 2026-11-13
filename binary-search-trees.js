@@ -198,3 +198,7 @@ const howHigh = (root) => {
   const right = howHigh(root.right);
   return left > right ? 1 + left : 1 + right;
 };
+
+// Write a function, bottomRightValue, that takes in the root of a binary tree.
+// The function should return the right-most value in the bottom-most level of the tree.
+const bottomRightValue = (root) => {};
