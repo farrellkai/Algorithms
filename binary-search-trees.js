@@ -193,7 +193,7 @@ const treeValueCountR = (root, target) => {
 // If the tree is empty, return -1.
 const howHigh = (root) => {
   if (!root) return -1;
-  if (!root.left && !root.right) return 1;
+  if (!root.left && !root.right) return 0;
   const left = howHigh(root.left);
   const right = howHigh(root.right);
   return left > right ? 1 + left : 1 + right;
