@@ -203,4 +203,5 @@ const howHigh = (root) => {
 // The function should return the right-most value in the bottom-most level of the tree.
 const bottomRightValue = (root) => {
   let value;
+  const queue = [root];
 };
