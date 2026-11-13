@@ -208,5 +208,6 @@ const bottomRightValue = (root) => {
     const node = queue.shift();
     if (!node.left && !node.right) value = node.val;
     if (node.left) queue.push(node.left);
+    if (node.right) queue.push(node.right);
   }
 };
