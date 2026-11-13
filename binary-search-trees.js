@@ -157,7 +157,5 @@ const treeValueCount = (root, target) => {
   if (!root) return 0;
   const left = treeValueCount(root.left, target);
   const right = treeValueCount(root.right, target);
-  const greater = left > right ? left : right;
-  if (root.val === target) {
-  }
+  const sum = left + right;
 };
