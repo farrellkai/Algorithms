@@ -204,5 +204,7 @@ const howHigh = (root) => {
 const bottomRightValue = (root) => {
   let value;
   const queue = [root];
-  while (queue[0]) {}
+  while (queue[0]) {
+    const node = queue.shift();
+  }
 };
