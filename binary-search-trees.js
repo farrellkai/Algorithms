@@ -144,6 +144,8 @@ const maxPathSum = (root) => {
 const pathFinder = (root, target) => {
   if (!root) return null;
   if (root.val === target) return [root.val];
+  const left = pathFinder(root.left, target);
+  const right = pathFinder(root.right, target);
 };
 
 // Write a function, treeValueCount, that takes in the root of a binary tree and a target value.
