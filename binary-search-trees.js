@@ -161,6 +161,7 @@ const treeValueCountDepth = (root, target) => {
   while (stack[0]) {
     const node = stack.pop();
     if (node.val === target) count++;
+    if (node.right) stack.push(node.right);
   }
 };
 
