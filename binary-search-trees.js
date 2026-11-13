@@ -201,4 +201,6 @@ const howHigh = (root) => {
 
 // Write a function, bottomRightValue, that takes in the root of a binary tree.
 // The function should return the right-most value in the bottom-most level of the tree.
-const bottomRightValue = (root) => {};
+const bottomRightValue = (root) => {
+  let value;
+};
