@@ -148,6 +148,7 @@ const pathFinder = (root, target) => {
   const right = pathFinder(root.right, target);
   if (left) {
     left.unshift(root.val);
+    return left;
   }
 };
 
