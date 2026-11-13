@@ -169,6 +169,7 @@ const treeValueCountDepth = (root, target) => {
 
 const treeValueCountBredth = (root, target) => {
   let count = 0;
+  const queue = [root];
 };
 
 const treeValueCountR = (root, target) => {
