@@ -144,13 +144,6 @@ const maxPathSum = (root) => {
 const pathFinder = (root, target) => {
   if (!root) return null;
   if (root.val === target) return [root.val];
-  const left = pathFinder(root.left, target);
-  const right = pathFinder(root.right, target);
-  if (left) left.unshift(root.val);
-  if (right) right.unshift(root.val);
-  if (left && right) return left.concat(right);
-  if (!left && right) return right;
-  if (left && right) return left;
 };
 
 // Write a function, treeValueCount, that takes in the root of a binary tree and a target value.
@@ -223,4 +216,6 @@ const allTreePaths = (root) => {
 
 // Write a function, treeLevels, that takes in the root of a binary tree.
 // The function should return a 2-Dimensional array where each subarray represents a level of the tree.
-const treeLevels = (root) => {};
+const treeLevels = (root, lvl = 0) => {
+  if (!root) return [];
+};
