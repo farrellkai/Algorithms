@@ -157,6 +157,7 @@ const pathFinder = (root, target) => {
 // The function should return the number of times that the target occurs in the tree.
 const treeValueCountDepth = (root, target) => {
   let count = 0;
+  const stack = [root];
 };
 
 const treeValueCountR = (root, target) => {
