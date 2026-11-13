@@ -150,6 +150,10 @@ const pathFinder = (root, target) => {
     left.unshift(root.val);
     return left;
   }
+  if (right) {
+    right.unshift(root.val);
+    return right;
+  }
 };
 
 // Write a function, treeValueCount, that takes in the root of a binary tree and a target value.
