@@ -155,4 +155,5 @@ const pathFinder = (root, target) => {
 // The function should return the number of times that the target occurs in the tree.
 const treeValueCount = (root, target) => {
   if (!root) return 0;
+  if (root.left) treeValueCount(root.left, target);
 };
