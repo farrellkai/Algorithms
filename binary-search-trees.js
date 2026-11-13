@@ -174,6 +174,7 @@ const treeValueCountBredth = (root, target) => {
     const node = queue.shift();
     if (node.val === target) count++;
     if (node.left) queue.push(node.left);
+    if (node.right) queue.push(node.right);
   }
 };
 
