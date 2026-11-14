@@ -225,6 +225,8 @@ const allTreePaths = (root, arr = []) => {
   const left = allTreePaths(root.left, arr);
   const right = allTreePaths(root.right, arr);
   if (left || right) {
+    for (subArr of arr) {
+    }
   }
 };
 
