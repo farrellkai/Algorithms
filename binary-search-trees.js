@@ -250,6 +250,7 @@ const levelAverages = (root) => {
     lvl++;
     helper(root.left, lvl, output);
     helper(root.right, lvl, output);
+    return output;
   };
   const output = helper(root);
 };
