@@ -218,18 +218,16 @@ const bottomRightValue = (root) => {
 // Write a function, allTreePaths, that takes in the root of a binary tree.
 // The function should return a 2-Dimensional array where each subarray represents a root-to-leaf path in the tree.
 // The order within an individual path must start at the root and end at the leaf, but the relative order among paths in the outer array does not matter.
-// NOT FINISHED!!!
-const allTreePaths = (root, arr = []) => {
-  if (!root) return null;
-  if (!root.left && !root.right) arr.push([root.val]);
-  const left = allTreePaths(root.left, arr);
-  const right = allTreePaths(root.right, arr);
-  if (left || right) {
-    for (subArr of arr) {
-      subArr.push(root.val);
-    }
+const allTreePaths = (root) => {
+  if (!root) return [];
+  if (!root.left && !root.right) return [[root.val]];
+  const left = allTreePaths(root.left);
+  const right = allTreePaths(root.right);
+  const merged = left.concat(right);
+  for (arr of merged) {
+    arr.unshift(root.val);
   }
-  return arr;
+  return merged;
 };
 
 // Write a function, treeLevels, that takes in the root of a binary tree.
