@@ -247,6 +247,7 @@ const levelAverages = (root) => {
   const helper = (root, lvl = 0, output = []) => {
     if (!root) return [];
     output[lvl] ? (output[lvl] += root.val) : (output[lvl] = root.val);
+    lvl++;
   };
   const output = helper(root);
 };
