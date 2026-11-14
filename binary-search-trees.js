@@ -236,4 +236,6 @@ const treeLevels = (root, lvl = 0, output = []) => {
   if (!root) return [];
   output[lvl] ? output[lvl].push(root.val) : (output[lvl] = [root.val]);
   lvl++;
+  treeLevels(root.left, lvl, output);
+  treeLevels(root.righ, lvl, output);
 };
