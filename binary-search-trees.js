@@ -275,4 +275,5 @@ const leafListBreadth = (root) => {
   if (!root) return [];
   const output = [];
   const queue = [root];
+  while (queue[0]) {}
 };
