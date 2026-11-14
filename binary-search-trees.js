@@ -238,4 +238,5 @@ const treeLevels = (root, lvl = 0, output = []) => {
   lvl++;
   treeLevels(root.left, lvl, output);
   treeLevels(root.righ, lvl, output);
+  return output;
 };
