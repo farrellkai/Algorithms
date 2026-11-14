@@ -259,4 +259,5 @@ const levelAverages = (root) => {
     output[i] /= i + 1;
     i++;
   }
+  return output;
 };
