@@ -277,5 +277,6 @@ const leafListBreadth = (root) => {
   const queue = [root];
   while (queue[0]) {
     const node = queue.shift();
+    if (!node.left && !node.right) output.push(node.val);
   }
 };
