@@ -245,4 +245,5 @@ const treeLevels = (root, lvl = 0, output = []) => {
 // The function should return an array containing the average value of each level.
 const levelAverages = (root) => {
   const output = [];
+  const helper = (root) => {};
 };
