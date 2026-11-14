@@ -284,4 +284,6 @@ const leafListDepth = (root) => {
   return output;
 };
 
-const leafListR = (root) => {};
+const leafListR = (root) => {
+  if (!root) return [];
+};
