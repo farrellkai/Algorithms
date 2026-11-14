@@ -253,4 +253,9 @@ const levelAverages = (root) => {
     return arr;
   };
   const output = helper(root, 0, []);
+
+  let i = 0;
+  while (i < output.length) {
+    i++;
+  }
 };
