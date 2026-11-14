@@ -283,3 +283,5 @@ const leafListDepth = (root) => {
   }
   return output;
 };
+
+const leafListR = (root) => {};
