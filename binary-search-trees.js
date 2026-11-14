@@ -234,7 +234,6 @@ const allTreePaths = (root) => {
 // The function should return a 2-Dimensional array where each subarray represents a level of the tree.
 const treeLevels = (root, lvl = 0, output = []) => {
   if (!root) return [];
-  if (!root.left && !root.right) {
-    output[lvl] ? output[lvl].push(root.val) : (output[lvl] = [root.val]);
-  }
+  output[lvl] ? output[lvl].push(root.val) : (output[lvl] = [root.val]);
+  lvl++;
 };
