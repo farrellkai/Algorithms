@@ -229,6 +229,7 @@ const allTreePaths = (root, arr = []) => {
       subArr.push(root.val);
     }
   }
+  return arr;
 };
 
 // Write a function, treeLevels, that takes in the root of a binary tree.
