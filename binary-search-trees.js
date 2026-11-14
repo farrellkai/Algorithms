@@ -289,4 +289,5 @@ const leafListR = (root) => {
   if (!root.left && !root.right) return [root.val];
   const left = leafListR(root.left);
   const right = leafListR(root.right);
+  return left.concat(right);
 };
