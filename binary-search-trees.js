@@ -244,9 +244,16 @@ const treeLevels = (root, lvl = 0, output = []) => {
 // Write a function, levelAverages, that takes in the root of a binary tree that contains number values.
 // The function should return an array containing the average value of each level.
 const levelAverages = (root) => {
+  const cache = {};
   const helper = (root, lvl, arr) => {
     if (!root) return [];
-    arr[lvl] ? (arr[lvl] += root.val) : (arr[lvl] = root.val);
+    if (arr[lvl]) {
+      arr[lvl] += root.val;
+      cache[lvl]++;
+    } else {
+      arr[lvl] = root.val;
+      cache[lvl] = 1;
+    }
     lvl++;
     helper(root.left, lvl, arr);
     helper(root.right, lvl, arr);
@@ -256,7 +263,7 @@ const levelAverages = (root) => {
 
   let i = 0;
   while (i < output.length) {
-    output[i] /= i + 1;
+    output[i] /= cache[i];
     i++;
   }
   return output;
