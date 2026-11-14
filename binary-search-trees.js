@@ -271,4 +271,6 @@ const levelAverages = (root) => {
 
 // Write a function, leafList, that takes in the root of a binary tree.
 // It will return an array containing the values of all leaf nodes in left-to-right order.
-const leafList = (root) => {};
+const leafListBreadth = (root) => {
+  if (!root) return [];
+};
