@@ -224,6 +224,8 @@ const allTreePaths = (root, arr = []) => {
   if (!root.left && !root.right) arr.push([root.val]);
   const left = allTreePaths(root.left, arr);
   const right = allTreePaths(root.right, arr);
+  if (left || right) {
+  }
 };
 
 // Write a function, treeLevels, that takes in the root of a binary tree.
