@@ -87,4 +87,5 @@ const findRightmostIndex = (arr, target) => {
 const countInSortedArray = (arr, target) => {
   const left = findLeftmostIndex(arr, target);
   const right = findRightmostIndex(arr, target);
+  return right - left + 1;
 };
