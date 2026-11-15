@@ -96,9 +96,10 @@ const countInSortedArray = (arr, target) => {
 const minInRotatedSortedArray = (nums) => {
   let left = 0;
   let right = nums.length - 1;
-  let lowest = Math.min(left, right);
+  let lowest = Math.min(nums[left], nums[right]);
   while (left <= right) {
     const mid = Math.floor((left + right) / 2);
+    if (nums[mid] < lowest) lowest = nums[mid];
     if (nums[left] < nums[mid] < nums[right]) right = mid - 1;
     if (nums[left] > nums[mid] > nums[right]) left = mid + 1;
   }
