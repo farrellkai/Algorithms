@@ -93,4 +93,10 @@ const countInSortedArray = (arr, target) => {
 // Write a function that takes in an array of sorted numbers that has been rotated a number of times.
 // The function should return the minimum element of the array.
 // You can assume that the numbers of the input array are unique.
-const minInRotatedSortedArray = (nums) => {};
+const minInRotatedSortedArray = (nums) => {
+  let left = 0;
+  let right = nums.length - 1;
+  while (left <= right) {
+    const mid = Math.floor((left + right) / 2);
+  }
+};
