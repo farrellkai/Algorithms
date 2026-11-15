@@ -3,4 +3,7 @@
 // If the target is not found in the array, then return -1.
 // You may assume that the input array contains unique numbers sorted in increasing order.
 // Your function must implement the binary search algorithm.
-const binarySearch = (arr, target) => {};
+const binarySearch = (arr, target) => {
+  let left = 0;
+  let right = arr.length - 1;
+};
