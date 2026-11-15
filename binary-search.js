@@ -39,4 +39,5 @@ const binarySearchIndex = (arr, target) => {
 const squareRoot = (n) => {
   let left = 0;
   let right = n;
+  while (left <= right) {}
 };
