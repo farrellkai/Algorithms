@@ -43,5 +43,6 @@ const squareRoot = (n) => {
     const mid = Math.floor((left + right) / 2);
     if (Math.floor(n / mid) === mid) return mid;
     if (Math.floor(n / mid) < mid) left = mid + 1;
+    if (Math.floor(n / mid) > mid) right = mid - 1;
   }
 };
