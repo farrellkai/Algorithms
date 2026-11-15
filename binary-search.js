@@ -60,5 +60,6 @@ const findLeftmostIndex = (arr, target) => {
       right = mid;
       left++;
     }
+    if (arr[mid] < target) left = mid + 1;
   }
 };
