@@ -71,6 +71,8 @@ const findLeftmostIndex = (arr, target) => {
 const countInSortedArray = (arr, target) => {
   let left = 0;
   let right = arr.length - 1;
+  let closest = left;
+  let furthest = right;
   while (left <= right) {
     const mid = Math.floor(left + right) / 2;
     if (arr[mid] < target) left = mid + 1;
