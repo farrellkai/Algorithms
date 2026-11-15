@@ -84,16 +84,4 @@ const findRightmostIndex = (arr, target) => {
 
 // Write a function that takes in a sorted array of numbers and a target as arguments.
 // The function should return the number of times the target element appears in the array.
-const countInSortedArray = (arr, target) => {
-  let left = 0;
-  let right = arr.length - 1;
-  let closest = left;
-  let furthest = right;
-  while (left <= right) {
-    const mid = Math.floor(left + right) / 2;
-    if (arr[mid] < target) left = mid + 1;
-    if (arr[mid] > target) right = mid - 1;
-    if (arr[mid] === target) {
-    }
-  }
-};
+const countInSortedArray = (arr, target) => {};
