@@ -103,4 +103,5 @@ const minInRotatedSortedArray = (nums) => {
     if (nums[left] < nums[mid] < nums[right]) right = mid - 1;
     if (nums[left] > nums[mid] > nums[right]) left = mid + 1;
   }
+  return lowest;
 };
