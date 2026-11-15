@@ -89,3 +89,8 @@ const countInSortedArray = (arr, target) => {
   const right = findRightmostIndex(arr, target);
   return right - left + 1;
 };
+
+// Write a function that takes in an array of sorted numbers that has been rotated a number of times.
+// The function should return the minimum element of the array.
+// You can assume that the numbers of the input array are unique.
+const minInRotatedSortedArray = (nums) => {};
