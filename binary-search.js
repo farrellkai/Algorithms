@@ -53,5 +53,7 @@ const squareRoot = (n) => {
 const findLeftmostIndex = (arr, target) => {
   let left = 0;
   let right = arr.length - 1;
-  while (left <= right) {}
+  while (left <= right) {
+    const mid = Math.floor((left + right) / 2);
+  }
 };
