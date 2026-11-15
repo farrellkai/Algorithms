@@ -46,3 +46,8 @@ const squareRoot = (n) => {
     if (Math.floor(n / mid) < mid) right = mid - 1;
   }
 };
+
+// Write a function that takes in a sorted array of numbers and a target as arguments.
+// The function should return the leftmost index where the target can be found in the array.
+// If the target does not exist in the array, then return -1.
+const findLeftmostIndex = (arr, target) => {};
