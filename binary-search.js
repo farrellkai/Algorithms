@@ -56,5 +56,7 @@ const findLeftmostIndex = (arr, target) => {
   while (left <= right) {
     if (arr[left] === target) return left;
     const mid = Math.floor((left + right) / 2);
+    if (arr[mid] === target) {
+    }
   }
 };
