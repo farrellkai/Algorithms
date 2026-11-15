@@ -36,4 +36,7 @@ const binarySearchIndex = (arr, target) => {
 // Write a function that takes in a nonnegative integer n as input.
 // The function should return the square root of n rounded down to the nearest integer.
 // You may not use built-in methods like or that trivialize this problem.
-const squareRoot = (n) => {};
+const squareRoot = (n) => {
+  let left = 0;
+  let right = n;
+};
