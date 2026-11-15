@@ -77,5 +77,7 @@ const countInSortedArray = (arr, target) => {
     const mid = Math.floor(left + right) / 2;
     if (arr[mid] < target) left = mid + 1;
     if (arr[mid] > target) right = mid - 1;
+    if (arr[mid] === target) {
+    }
   }
 };
