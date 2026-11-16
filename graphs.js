@@ -12,6 +12,7 @@ const hasPath = (graph, src, dst) => {
 const buildGraph = (edges) => {
   const graph = {};
   for (path of edges) {
+    const [vert1, vert2] = path;
   }
 };
 
