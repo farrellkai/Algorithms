@@ -180,7 +180,8 @@ const searchSortedGrid = (grid, target) => {
   const row = findRow(grid, target);
   while (left <= right) {
     const mid = Math.floor((left + right) / 2);
-    if (mid === target) return true;
-    if (mid < target) left = mid + 1;
+    if (row[mid] === target) return true;
+    if (row[mid] < target) left = mid + 1;
+    if (row[mid] > target) right = mid - 1;
   }
 };
