@@ -101,6 +101,7 @@ const minInRotatedSortedArray = (nums) => {
     const mid = Math.floor((left + right) / 2);
     const newLow = Math.min(nums[left], nums[mid], nums[right]);
     if (newLow < lowest) lowest = newLow;
+    if (nums[mid] > nums[right]) left = mid + 1;
   }
   return lowest;
 };
