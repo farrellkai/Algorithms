@@ -29,13 +29,15 @@ const undirectedPath = (edges, nodeA, nodeB) => {
     if (nodeA === nodeB) return true;
     if (!set.has(nodeA)) {
       set.add(nodeA);
-      return helper(graph(nodeA, nodeB));
+      for (node of graph[nodeA]) {
+        if (helper(node, nodeB)) return true;
+      }
     }
   };
 
   for (vert of graph[nodeA]) {
     if (!set.has(vert)) {
-      if (helper(graph, vert, nodeB)) return true;
+      if (helper(vert, nodeB)) return true;
     }
   }
   return false;
