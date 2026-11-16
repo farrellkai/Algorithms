@@ -16,6 +16,7 @@ const buildGraph = (edges) => {
     graph[vert1] ? graph[vert1].push(vert2) : (graph[vert1] = [vert2]);
     graph[vert2] ? graph[vert2].push(vert1) : (graph[vert2] = [vert1]);
   }
+  return graph;
 };
 
 // Write a function, undirectedPath, that takes in an array of edges for an undirected graph and two nodes (nodeA, nodeB).
