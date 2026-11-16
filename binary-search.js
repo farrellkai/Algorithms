@@ -147,6 +147,8 @@ const findInRotatedSortedArray = (arr, target) => {
 const findPeak = (arr) => {
   let left = 0;
   let right = arr.length - 1;
+  if (arr[left] > arr[left + 1]) return arr[left];
+  if (arr[right] > arr[right - 1]) return arr[right];
   while (left <= right) {
     const mid = Math.floor((left + right) / 2);
   }
