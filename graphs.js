@@ -35,7 +35,7 @@ const undirectedPath = (edges, nodeA, nodeB) => {
 
   for (vert of graph[nodeA]) {
     if (!set.has(vert)) {
-      if (hasPath(graph, vert, nodeB)) return true;
+      if (helper(graph, vert, nodeB)) return true;
     }
   }
   return false;
