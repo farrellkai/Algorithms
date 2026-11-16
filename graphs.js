@@ -24,7 +24,9 @@ const buildGraph = (edges) => {
 const undirectedPath = (edges, nodeA, nodeB) => {
   const graph = buildGraph(edges);
   const set = new Set();
-  set.add(nodeA);
+
+  const helper = (nodeA, nodeB) => {};
+
   for (vert of graph[nodeA]) {
     if (!set.has(vert)) {
       if (hasPath(graph, vert, nodeB)) return true;
