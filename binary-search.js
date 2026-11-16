@@ -129,9 +129,10 @@ const findInRotatedSortedArray = (arr, target) => {
   let right = arr.length - 1;
   const minIndex = minInRotatedSortedArrayIndex(arr);
   if (arr[left] > target) left = minIndex;
-  if (arr[right] < target) right = minIndex;
+  if (arr[right] < target) right = minIndex - 1;
   while (left <= right) {
     const mid = Math.floor((left + right) / 2);
+    if (arr[mid] === target) return mid;
   }
   return -1;
 };
