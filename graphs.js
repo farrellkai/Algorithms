@@ -23,4 +23,5 @@ const buildGraph = (edges) => {
 // The function should return a boolean indicating whether or not there exists a path between nodeA and nodeB.
 const undirectedPath = (edges, nodeA, nodeB) => {
   const graph = buildGraph(edges);
+  const set = new Set();
 };
