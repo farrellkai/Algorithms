@@ -168,6 +168,7 @@ const findRow = (grid, target) => {
   let right = grid.length - 1;
   while (left <= right) {
     const mid = Math.floor((left + right) / 2);
+    if (grid[mid][0] < target < grid[mid][mid.length - 1]) return grid[mid];
   }
 };
 
