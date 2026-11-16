@@ -184,4 +184,5 @@ const searchSortedGrid = (grid, target) => {
     if (row[mid] < target) left = mid + 1;
     if (row[mid] > target) right = mid - 1;
   }
+  return false;
 };
