@@ -168,7 +168,8 @@ const findRow = (grid, target) => {
   let right = grid.length - 1;
   while (left <= right) {
     const mid = Math.floor((left + right) / 2);
-    if (grid[mid][0] <= target <= grid[mid][mid.length - 1]) return grid[mid];
+    if (grid[mid][0] <= target <= grid[mid][grid[mid].length - 1])
+      return grid[mid];
     if (grid[mid][0] > target) right = mid - 1;
     if (grid[mid][mid.length - 1] < target) left = mid + 1;
   }
@@ -178,6 +179,7 @@ const searchSortedGrid = (grid, target) => {
   let left = 0;
   let right = grid.length - 1;
   const row = findRow(grid, target);
+  console.log(row);
   while (left <= right) {
     const mid = Math.floor((left + right) / 2);
     if (row[mid] === target) return true;
