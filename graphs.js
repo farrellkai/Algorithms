@@ -25,4 +25,6 @@ const undirectedPath = (edges, nodeA, nodeB) => {
   const graph = buildGraph(edges);
   const set = new Set();
   set.add(nodeA);
+  for (path of graph[nodeA]) {
+  }
 };
