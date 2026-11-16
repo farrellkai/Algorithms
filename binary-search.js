@@ -96,16 +96,15 @@ const countInSortedArray = (arr, target) => {
 const minInRotatedSortedArray = (nums) => {
   let left = 0;
   let right = nums.length - 1;
-  let lowest = Infinity;
   while (left <= right) {
     const mid = Math.floor((left + right) / 2);
-    const newLow = Math.min(nums[left], nums[mid], nums[right]);
-    if (newLow < lowest) lowest = newLow;
+    // const newLow = Math.min(nums[left], nums[mid], nums[right]);
+    // if (newLow < lowest) lowest = newLow;
+    if (nums[left] <= nums[right]) return nums[left];
     if (nums[left] > nums[right]) {
       nums[mid] > nums[right] ? (left = mid + 1) : (right = mid);
     }
   }
-  return lowest;
 };
 
 // Write a function that takes in an array of sorted numbers that has been rotated a number of times, as well as a target element.
