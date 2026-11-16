@@ -163,4 +163,6 @@ const findPeak = (arr) => {
 // The first element of each row is greater than the last element of the previous row.
 // You can assume that the grid is rectangular with m rows and n columns.
 // Your solution should have a time complexity of O(log(m*n)), where m is the number of rows and n is the number of columns in the grid.
+const findRow = (grid, target) => {};
+
 const searchSortedGrid = (grid, target) => {};
