@@ -34,11 +34,7 @@ const undirectedPath = (edges, nodeA, nodeB) => {
       }
     }
   };
+  if (helper(nodeA, nodeB)) return true;
 
-  for (vert of graph[nodeA]) {
-    if (!set.has(vert)) {
-      if (helper(vert, nodeB)) return true;
-    }
-  }
   return false;
 };
