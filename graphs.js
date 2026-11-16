@@ -10,6 +10,7 @@ const hasPath = (graph, src, dst) => {
 
 // buildGraph helper function.
 const buildGraph = (edges) => {
+  const graph = {};
   for (path of edges) {
   }
 };
