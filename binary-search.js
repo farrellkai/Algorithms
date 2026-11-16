@@ -177,6 +177,7 @@ const findRow = (grid, target) => {
 const searchSortedGrid = (grid, target) => {
   let left = 0;
   let right = grid.length - 1;
+  const row = findRow(grid, target);
   while (left <= right) {
     const mid = Math.floor((left + right) / 2);
   }
