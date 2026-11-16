@@ -30,4 +30,5 @@ const undirectedPath = (edges, nodeA, nodeB) => {
       if (hasPath(graph, vert, nodeB)) return true;
     }
   }
+  return false;
 };
