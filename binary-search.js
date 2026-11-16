@@ -113,3 +113,8 @@ const minInRotatedSortedArray = (nums) => {
   }
   return lowest;
 };
+
+// Write a function that takes in an array of sorted numbers that has been rotated a number of times, as well as a target element.
+// The function should return the index of the target in the array. If the target is not found in the array, then return -1.
+// You can assume that the input array contains unique elements.
+const findInRotatedSortedArray = (arr, target) => {};
