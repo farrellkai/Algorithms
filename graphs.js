@@ -14,6 +14,7 @@ const buildGraph = (edges) => {
   for (path of edges) {
     const [vert1, vert2] = path;
     graph[vert1] ? graph[vert1].push(vert2) : (graph[vert1] = [vert2]);
+    graph[vert2] ? graph[vert2].push(vert1) : (graph[vert2] = [vert1]);
   }
 };
 
