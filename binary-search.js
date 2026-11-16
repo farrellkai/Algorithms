@@ -125,5 +125,7 @@ const findInRotatedSortedArray = (arr, target) => {
     if (target > arr[right]) {
       target > arr[mid] ? (left = mid + 1) : (right = mid - 1);
     }
+    if (target > arr[left]) {
+    }
   }
 };
