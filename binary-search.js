@@ -156,3 +156,11 @@ const findPeak = (arr) => {
     if (arr[mid - 1] > arr[mid] > arr[mid + 1]) right = mid - 1;
   }
 };
+
+// Write a function that takes in a grid of numbers and a target element as input.
+// The function should return a boolean indicating whether or not the target is present in the grid.
+// Each row of the grid is sorted in increasing order.
+// The first element of each row is greater than the last element of the previous row.
+// You can assume that the grid is rectangular with m rows and n columns.
+// Your solution should have a time complexity of O(log(m*n)), where m is the number of rows and n is the number of columns in the grid.
+const searchSortedGrid = (grid, target) => {};
