@@ -151,5 +151,6 @@ const findPeak = (arr) => {
   if (arr[right] > arr[right - 1]) return arr[right];
   while (left <= right) {
     const mid = Math.floor((left + right) / 2);
+    if (arr[mid - 1] < arr[mid] > arr[mid + 1]) return arr[mid];
   }
 };
