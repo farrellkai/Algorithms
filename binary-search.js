@@ -170,6 +170,7 @@ const findRow = (grid, target) => {
     const mid = Math.floor((left + right) / 2);
     if (grid[mid][0] <= target <= grid[mid][mid.length - 1]) return grid[mid];
     if (grid[mid][0] > target) right = mid - 1;
+    if (grid[mid][mid.length - 1] < target) left = mid + 1;
   }
 };
 
