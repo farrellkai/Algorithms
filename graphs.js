@@ -27,7 +27,10 @@ const undirectedPath = (edges, nodeA, nodeB) => {
 
   const helper = (nodeA, nodeB) => {
     if (nodeA === nodeB) return true;
-    set.add(nodeA);
+    if (!set.has(nodeA)) {
+      set.add(nodeA);
+      return helper(graph(nodeA, nodeB));
+    }
   };
 
   for (vert of graph[nodeA]) {
