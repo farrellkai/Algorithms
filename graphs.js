@@ -2,4 +2,8 @@
 // The function should return a boolean indicating whether or not there exists a directed path between the source and destination nodes.
 const hasPath = (graph, src, dst) => {
   if (src === dst) return true;
+  for (node of graph[src]) {
+    if (hasPath(graph, node, dst)) return true;
+  }
+  return false;
 };
