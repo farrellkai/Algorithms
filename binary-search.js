@@ -120,6 +120,7 @@ const minInRotatedSortedArray = (nums) => {
 const findInRotatedSortedArray = (arr, target) => {
   let left = 0;
   let right = arr.length - 1;
+  const min = minInRotatedSortedArray(arr);
   while (left <= right) {
     const mid = Math.floor((left + right) / 2);
   }
