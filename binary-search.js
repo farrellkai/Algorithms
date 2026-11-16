@@ -138,3 +138,10 @@ const findInRotatedSortedArray = (arr, target) => {
   }
   return -1;
 };
+
+// Write a function that takes in an array of numbers. The function should return the index of a "peak" element.
+// A "peak" is an element that is greater than both of its adjacent neighbors.
+// If there are multiple peaks, you may return the index of any one of them.
+// Note that the first and last elements of the array only need to be greater than their single neighbor to be considered a "peak".
+// You can assume that adjacent numbers of the list are not equal.
+const findPeak = (arr) => {};
