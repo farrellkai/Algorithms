@@ -59,4 +59,5 @@ const traverseComponents = (graph, node, set) => {
       traverseComponents(graph, point, set);
     }
   }
+  return 1;
 };
