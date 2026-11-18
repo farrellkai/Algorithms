@@ -117,5 +117,7 @@ const shortestPath = (edges, nodeA, nodeB) => {
 const islandCount = (grid) => {
   const set = new Set();
   let rowIndex = 0;
-  while (rowIndex < grid.length) {}
+  while (rowIndex < grid.length) {
+    let collumnIndex = 0;
+  }
 };
