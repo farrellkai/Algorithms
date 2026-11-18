@@ -136,5 +136,8 @@ const islandTraverse = (grid, rowIndex, collumnIndex, set) => {
   if (grid[rowIndex][collumnIndex] === 'W') return;
   if (!set.has('' + rowIndex + collumnIndex)) {
     set.add('' + rowIndex + collumnIndex);
+    if (rowIndex > 0) islandTraverse(grid, rowIndex - 1, collumnIndex, set);
+    if (rowIndex < grid.length - 1)
+      islandTraverse(grid, rowIndex + 1, collumnIndex, set);
   }
 };
