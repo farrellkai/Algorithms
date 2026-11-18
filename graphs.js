@@ -191,4 +191,5 @@ const islandSize = (grid, rowI, collumnI, set) => {
 // If there is no possible path to a carrot, then return -1.
 const closestCarrot = (grid, startRow, startCollumn) => {
   const set = new Set();
+  const queue = [[startRow, startCollumn, 0]];
 };
