@@ -166,3 +166,5 @@ const minimumIsland = (grid) => {
     }
   }
 };
+
+const islandSize = (grid, rowI, collumnI, set) => {};
