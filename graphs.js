@@ -80,6 +80,7 @@ const componentSizeCount = (graph, node, set) => {
     set.add(+node);
     let count = 1;
     for (vert of graph[node]) {
+      count += componentSizeCount(graph, vert, set);
     }
   }
 };
