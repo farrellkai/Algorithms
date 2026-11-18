@@ -203,6 +203,10 @@ const closestCarrot = (grid, startRow, startCollumn) => {
       const west = collumnI > 0 ? [rowI, collumnI - 1, lvl + 1] : null;
       const east =
         collumnI < grid[row].length - 1 ? [rowI, collumnI + 1, lvl + 1] : null;
+      if (north) queue.push(north);
+      if (south) queue.push(south);
+      if (west) queue.push(west);
+      if (east) queue.push(east);
     }
   }
 };
