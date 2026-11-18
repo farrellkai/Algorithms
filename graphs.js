@@ -69,5 +69,7 @@ const largestComponent = (graph) => {
   let max = 0;
   const set = new Set();
   for (node in graph) {
+    if (!set.has(node)) {
+    }
   }
 };
