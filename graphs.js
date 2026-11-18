@@ -165,6 +165,7 @@ const minimumIsland = (grid) => {
       }
       collumnI++;
     }
+    rowI++;
   }
 };
 
