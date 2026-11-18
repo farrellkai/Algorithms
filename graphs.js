@@ -119,6 +119,9 @@ const islandCount = (grid) => {
   let rowIndex = 0;
   while (rowIndex < grid.length) {
     let collumnIndex = 0;
-    while (collumnIndex < grid[rowIndex].length) {}
+    while (collumnIndex < grid[rowIndex].length) {
+      if (!set.has('' + rowIndex + collumnIndex)) {
+      }
+    }
   }
 };
