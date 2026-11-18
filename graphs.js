@@ -189,4 +189,6 @@ const islandSize = (grid, rowI, collumnI, set) => {
 // The function should return a number representing the length of the shortest path from the starting position to a carrot.
 // You may move up, down, left, or right, but cannot pass through walls (X).
 // If there is no possible path to a carrot, then return -1.
-const closestCarrot = (grid, startRow, startCollumn) => {};
+const closestCarrot = (grid, startRow, startCollumn) => {
+  const set = new Set();
+};
