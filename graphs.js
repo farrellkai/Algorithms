@@ -98,4 +98,5 @@ const shortestPath = (edges, nodeA, nodeB) => {
   const set = new Set();
 
   const queue = [[nodeA, 0]];
+  while (queue[0]) {}
 };
