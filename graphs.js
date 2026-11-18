@@ -67,6 +67,7 @@ const traverseComponents = (graph, node, set) => {
 // The function should return the size of the largest connected component in the graph.
 const largestComponent = (graph) => {
   let max = 0;
+  const set = new Set();
   for (node in graph) {
   }
 };
