@@ -84,4 +84,5 @@ const componentSizeCount = (graph, node, set) => {
     }
     return count;
   }
+  return 0;
 };
