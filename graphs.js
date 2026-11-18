@@ -130,6 +130,7 @@ const islandCount = (grid) => {
       }
       collumnIndex++;
     }
+    rowIndex++;
   }
 };
 
