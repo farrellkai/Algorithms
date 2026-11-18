@@ -160,6 +160,7 @@ const minimumIsland = (grid) => {
     let collumnI = 0;
     while (collumnI < grid[rowI].length) {
       if (!set.has('' + rowI + collumnI)) {
+        const size = islandSize(grid, rowI, collumnI, set);
       }
     }
   }
