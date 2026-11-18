@@ -101,8 +101,9 @@ const shortestPath = (edges, nodeA, nodeB) => {
   while (queue[0]) {
     const [node, lvl] = queue.shift();
     if (node === nodeB) return lvl;
-    if (!set.has(node)) {
-      for (el of graph[node]) {
+    for (el of graph[node]) {
+      if (!set.has(el)) {
+        set.add(el);
       }
     }
   }
