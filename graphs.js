@@ -209,4 +209,5 @@ const closestCarrot = (grid, startRow, startCollumn) => {
       if (east) queue.push(east);
     }
   }
+  return -1;
 };
