@@ -78,5 +78,6 @@ const largestComponent = (graph) => {
 const componentSizeCount = (graph, node, set, count) => {
   if (!set.has(+node)) {
     set.add(+node);
+    count++;
   }
 };
