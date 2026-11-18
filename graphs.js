@@ -116,6 +116,7 @@ const shortestPath = (edges, nodeA, nodeB) => {
 // An island is a vertically or horizontally connected region of land.
 const islandCount = (grid) => {
   const set = new Set();
+  let count = 0;
   let rowIndex = 0;
   while (rowIndex < grid.length) {
     let collumnIndex = 0;
