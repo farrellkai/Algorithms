@@ -115,6 +115,7 @@ const shortestPath = (edges, nodeA, nodeB) => {
 // The function should return the number of islands on the grid.
 // An island is a vertically or horizontally connected region of land.
 const islandCount = (grid) => {
+  const set = new Set();
   let rowIndex = 0;
   while (rowIndex < grid.length) {}
 };
