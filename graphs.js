@@ -52,4 +52,8 @@ const connectedComponentsCount = (graph) => {
   }
 };
 
-const traverseComponents = (graph, node, set) => {};
+const traverseComponents = (graph, node, set) => {
+  if (!set.has(node)) {
+    set.add(node);
+  }
+};
