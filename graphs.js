@@ -201,6 +201,8 @@ const closestCarrot = (grid, startRow, startCollumn) => {
       const south =
         rowI < grid.length - 1 ? [rowI + 1, collumnI, lvl + 1] : null;
       const west = collumnI > 0 ? [rowI, collumnI - 1, lvl + 1] : null;
+      const east =
+        collumnI < grid[row].length - 1 ? [rowI, collumnI + 1, lvl + 1] : null;
     }
   }
 };
