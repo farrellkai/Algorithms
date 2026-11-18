@@ -47,6 +47,7 @@ const connectedComponentsCount = (graph) => {
   let count = 0;
   for (vert in graph) {
     if (!set.has(vert)) {
+      count += traverseComponents(graph, vert, set);
     }
   }
 };
