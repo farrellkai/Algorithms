@@ -123,6 +123,7 @@ const islandCount = (grid) => {
     while (collumnIndex < grid[rowIndex].length) {
       if (!set.has('' + rowIndex + collumnIndex)) {
         islandTraverse(grid, rowIndex, collumnIndex);
+        count++;
       }
     }
   }
