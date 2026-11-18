@@ -153,4 +153,5 @@ const islandTraverse = (grid, rowIndex, collumnIndex, set) => {
 // You may assume that the grid contains at least one island.
 const minimumIsland = (grid) => {
   const set = new Set();
+  const min = Infinity;
 };
