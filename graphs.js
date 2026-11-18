@@ -62,3 +62,9 @@ const traverseComponents = (graph, node, set) => {
   }
   return 1;
 };
+
+// Write a function, largestComponent, that takes in the adjacency list of an undirected graph.
+// The function should return the size of the largest connected component in the graph.
+const largestComponent = (graph) => {
+  let max = 0;
+};
