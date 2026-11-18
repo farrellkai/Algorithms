@@ -134,4 +134,6 @@ const islandCount = (grid) => {
 
 const islandTraverse = (grid, rowIndex, collumnIndex, set) => {
   if (grid[rowIndex][collumnIndex] === 'W') return;
+  if (!set.has('' + rowIndex + collumnIndex)) {
+  }
 };
