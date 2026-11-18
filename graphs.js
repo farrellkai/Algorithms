@@ -51,3 +51,5 @@ const connectedComponentsCount = (graph) => {
     }
   }
 };
+
+const traverseComponents = (graph, node, set) => {};
