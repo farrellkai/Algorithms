@@ -95,4 +95,5 @@ const componentSizeCount = (graph, node, set) => {
 // If there is no path between A and B, then return -1. You can assume that A and B exist as nodes in the graph.
 const shortestPath = (edges, nodeA, nodeB) => {
   const graph = buildGraph(edges);
+  const set = new Set();
 };
