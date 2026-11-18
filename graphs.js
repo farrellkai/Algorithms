@@ -108,4 +108,5 @@ const shortestPath = (edges, nodeA, nodeB) => {
       }
     }
   }
+  return -1;
 };
