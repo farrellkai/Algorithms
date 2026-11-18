@@ -195,9 +195,10 @@ const closestCarrot = (grid, startRow, startCollumn) => {
   while (queue[0]) {
     const [rowI, collumnI, lvl] = queue.shift();
     if (grid[rowI][collumnI] === 'C') return lvl;
-    if (!set.has('' + rowI + collumnI)) {
+    if (!set.has('' + rowI + collumnI) && grid[rowI][collumnI] !== 'X') {
       set.add('' + rowI + collumnI);
-      const north = rowI > 0 ? grid[rowI - 1][collumnI] : null;
+      const north = 
+      const south = 
     }
   }
 };
