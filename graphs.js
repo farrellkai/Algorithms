@@ -197,6 +197,7 @@ const closestCarrot = (grid, startRow, startCollumn) => {
     if (grid[rowI][collumnI] === 'C') return lvl;
     if (!set.has('' + rowI + collumnI)) {
       set.add('' + rowI + collumnI);
+      const north = rowI > 0 ? grid[rowI - 1][collumnI] : null;
     }
   }
 };
