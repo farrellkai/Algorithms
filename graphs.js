@@ -46,7 +46,7 @@ const connectedComponentsCount = (graph) => {
   const set = new Set();
   let count = 0;
   for (vert in graph) {
-    if (!set.has(vert)) {
+    if (!set.has(+vert)) {
       count += traverseComponents(graph, vert, set);
     }
   }
@@ -54,8 +54,8 @@ const connectedComponentsCount = (graph) => {
 };
 
 const traverseComponents = (graph, node, set) => {
-  if (!set.has(node)) {
-    set.add(node);
+  if (!set.has(+node)) {
+    set.add(+node);
     for (point of graph[node]) {
       traverseComponents(graph, point, set);
     }
