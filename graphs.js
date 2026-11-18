@@ -192,5 +192,7 @@ const islandSize = (grid, rowI, collumnI, set) => {
 const closestCarrot = (grid, startRow, startCollumn) => {
   const set = new Set();
   const queue = [[startRow, startCollumn, 0]];
-  while (queue[0]) {}
+  while (queue[0]) {
+    const [rowI, collumnI, lvl] = queue.shift();
+  }
 };
