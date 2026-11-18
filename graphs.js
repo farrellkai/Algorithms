@@ -167,4 +167,6 @@ const minimumIsland = (grid) => {
   }
 };
 
-const islandSize = (grid, rowI, collumnI, set) => {};
+const islandSize = (grid, rowI, collumnI, set) => {
+  if (set.has('' + rowI + collumnI) || grid[rowI][collumnI] === 'W') return 0;
+};
