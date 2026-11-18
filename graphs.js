@@ -45,5 +45,7 @@ const undirectedPath = (edges, nodeA, nodeB) => {
 const connectedComponentsCount = (graph) => {
   const set = new Set();
   for (vert in graph) {
+    if (!set.has(vert)) {
+    }
   }
 };
