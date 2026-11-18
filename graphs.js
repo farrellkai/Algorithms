@@ -56,6 +56,7 @@ const traverseComponents = (graph, node, set) => {
   if (!set.has(node)) {
     set.add(node);
     for (point of graph[node]) {
+      traverseComponents(graph, point, set);
     }
   }
 };
