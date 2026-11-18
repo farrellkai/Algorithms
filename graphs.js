@@ -156,4 +156,5 @@ const minimumIsland = (grid) => {
   let min = Infinity;
 
   let rowI = 0;
+  while (rowI < grid.length) {}
 };
