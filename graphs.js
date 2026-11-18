@@ -140,5 +140,7 @@ const islandTraverse = (grid, rowIndex, collumnIndex, set) => {
     if (rowIndex < grid.length - 1)
       islandTraverse(grid, rowIndex + 1, collumnIndex, set);
     if (collumnIndex > 0) islandTraverse(grid, rowIndex, collumnIndex - 1, set);
+    if (collumnIndex < grid[rowIndex].length - 1)
+      islandTraverse(grid, rowIndex, collumnIndex + 1, set);
   }
 };
