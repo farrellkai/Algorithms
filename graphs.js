@@ -44,6 +44,7 @@ const undirectedPath = (edges, nodeA, nodeB) => {
 // The function should return the number of connected components within the graph.
 const connectedComponentsCount = (graph) => {
   const set = new Set();
+  let count = 0;
   for (vert in graph) {
     if (!set.has(vert)) {
     }
