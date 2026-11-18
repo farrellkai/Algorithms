@@ -121,7 +121,10 @@ const islandCount = (grid) => {
   while (rowIndex < grid.length) {
     let collumnIndex = 0;
     while (collumnIndex < grid[rowIndex].length) {
-      if (!set.has('' + rowIndex + collumnIndex)) {
+      if (
+        !set.has('' + rowIndex + collumnIndex) &&
+        grid[rowIndex][collumnIndex] === 'L'
+      ) {
         islandTraverse(grid, rowIndex, collumnIndex, set);
         count++;
       }
