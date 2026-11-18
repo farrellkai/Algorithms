@@ -96,4 +96,6 @@ const componentSizeCount = (graph, node, set) => {
 const shortestPath = (edges, nodeA, nodeB) => {
   const graph = buildGraph(edges);
   const set = new Set();
+
+  const queue = [[nodeA, 0]];
 };
