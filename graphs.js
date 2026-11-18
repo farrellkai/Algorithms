@@ -128,6 +128,7 @@ const islandCount = (grid) => {
         islandTraverse(grid, rowIndex, collumnIndex, set);
         count++;
       }
+      collumnIndex++;
     }
   }
 };
