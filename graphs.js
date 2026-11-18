@@ -178,4 +178,5 @@ const islandSize = (grid, rowI, collumnI, set) => {
     collumnI < grid[rowI].length - 1
       ? islandSize(grid, rowI, collumnI + 1, set)
       : 0;
+  return 1 + north + south + west + east;
 };
