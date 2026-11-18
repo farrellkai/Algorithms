@@ -194,5 +194,6 @@ const closestCarrot = (grid, startRow, startCollumn) => {
   const queue = [[startRow, startCollumn, 0]];
   while (queue[0]) {
     const [rowI, collumnI, lvl] = queue.shift();
+    if (grid[rowI][collumnI] === 'C') return lvl;
   }
 };
