@@ -100,5 +100,6 @@ const shortestPath = (edges, nodeA, nodeB) => {
   const queue = [[nodeA, 0]];
   while (queue[0]) {
     const [node, lvl] = queue.shift();
+    if (node === nodeB) return lvl;
   }
 };
