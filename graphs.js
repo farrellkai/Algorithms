@@ -170,4 +170,12 @@ const minimumIsland = (grid) => {
 const islandSize = (grid, rowI, collumnI, set) => {
   if (set.has('' + rowI + collumnI) || grid[rowI][collumnI] === 'W') return 0;
   set.add('' + rowI + collumnI);
+  const north = rowI > 0 ? islandSize(grid, rowI - 1, collumnI, set) : 0;
+  const south =
+    rowI < grid.length - 1 ? islandSize(grid, rowI + 1, collumnI, set) : 0;
+  const west = collumnI > 0 ? islandSize(grid, rowI, collumnI - 1, set) : 0;
+  const east =
+    collumnI < grid[rowI].length - 1
+      ? islandSize(grid, rowI, collumnI + 1, set)
+      : 0;
 };
