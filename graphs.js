@@ -284,10 +284,11 @@ const mapIsland = (grid, rowI, collumnI, set) => {
 // Write a function, hasCycle, that takes in an object representing the adjacency list of a directed graph.
 // The function should return a boolean indicating whether or not the graph contains a cycle.
 const hasCycle = (graph) => {
-  const set = new Set();
   for (key in graph) {
-    if (traverse(graph, key)) return true;
+    if (traverse(graph, key, new Set())) return true;
   }
 };
 
-const traverse = (graph, list) => {};
+const traverse = (graph, node, set) => {
+  if (set.has(node)) return true;
+};
