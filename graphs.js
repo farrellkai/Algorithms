@@ -34,7 +34,7 @@ const findPath = (graph, nodeA, nodeB, set) => {
   if (!set.has(nodeA)) {
     set.add(nodeA);
     for (node of graph[nodeA]) {
-      findPath(graph, node, nodeB, set);
+      if (findPath(graph, node, nodeB, set)) return true;
     }
   }
 };
