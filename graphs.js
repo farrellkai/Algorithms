@@ -291,9 +291,10 @@ const hasCycle = (graph) => {
 };
 
 const traverse = (graph, node, set) => {
-  if (set.has(+node)) return true;
-  set.add(+node);
+  if (set.has(node)) return true;
+  set.add(node);
   for (child of graph[node]) {
     if (traverse(graph, child, set)) return true;
   }
+  set.delete(node);
 };
