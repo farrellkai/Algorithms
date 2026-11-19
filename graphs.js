@@ -222,6 +222,8 @@ const bestBridge = (grid) => {
   while (rowI < grid.length) {
     let collumnI = 0;
     while (collumnI < grid[rowI].length) {
+      if (grid[rowI][collumnI] === 'W' && island1.size === 0)
+        mapIsland(grid, rowI, collumnI, island1);
       collumnI++;
     }
     rowI++;
