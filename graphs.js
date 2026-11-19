@@ -256,9 +256,11 @@ const countBridge = (grid, startRowI, startCollumnI, visited, island2) => {
   const queue = [[startRowI, startCollumnI, 0]];
   while (queue[0]) {
     const [rowI, collumnI, lvl] = queue.shift();
+    console.log(rowI, collumnI, lvl);
     const coordinate = '' + rowI + collumnI;
     if (island2.has(coordinate)) return lvl - 1;
-    if (!visited.has(coordinate) && grid[rowI][collumnI] === 'W') {
+    if (!visited.has(coordinate)) {
+      visited.add(coordinate);
       if (rowI > 0) queue.push([rowI - 1, collumnI, lvl + 1]);
       if (rowI < grid.length - 1) queue.push([rowI + 1, collumnI, lvl + 1]);
       if (collumnI > 0) queue.push([rowI, collumnI - 1, lvl + 1]);
