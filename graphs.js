@@ -217,6 +217,8 @@ const closestCarrot = (grid, startRow, startCollumn) => {
 const bestBridge = (grid) => {
   const island1 = new Set();
   const island2 = new Set();
+
+  let rowI = 0;
 };
 
 const mapIsland = (grid, rowI, collumnI, set) => {
