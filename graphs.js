@@ -259,6 +259,7 @@ const countBridge = (
   island2,
 ) => {
   const queue = [[startCoordinate, startRowI, startCollumnI, 0]];
+  while (queue[0]) {}
 };
 
 const mapIsland = (grid, rowI, collumnI, set) => {
