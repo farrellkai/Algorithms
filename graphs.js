@@ -242,7 +242,7 @@ const bestBridge = (grid) => {
       const coordinate = '' + rowI + collumnI;
       const visited = new Set();
       if (island1.has(coordinate)) {
-        countBridge();
+        const size = countBridge(grid, rowI, collumnI, visited, island2);
       }
       collumnI++;
     }
