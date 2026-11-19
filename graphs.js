@@ -253,7 +253,25 @@ const bestBridge = (grid) => {
 const countBridge = (grid, coordinate, rowI, collumnI, visited, island2) => {
   if (visited.has(coordinate) || island2.has(coordinate)) return 0;
   visited.add(coordinate);
-  if (grid[(rowI, collumnI)] === 'W') {
+  if (grid[rowI][collumnI] === 'W') {
+    const north =
+      rowI > 0
+        ? 1 +
+          countBridge(grid, coordinate, rowI - 1, collumnI, visited, island2)
+        : 0;
+    const south =
+      rowI < grid.length - 1
+        ? 1 +
+          countBridge(grid, coordinate, rowI + 1, collumnI, visited, island2)
+        : 0;
+    const west =
+      collumnI > 0
+        ? 1 + countBridge(grid, rowI, collumnI - 1, visited, island2)
+        : 0;
+    const east =
+      collumnI < grid[rowI].length - 1
+        ? 1 + countBridge(grid, rowI, collumnI + 1, visited, island2)
+        : 0;
   }
 };
 
