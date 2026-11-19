@@ -261,6 +261,7 @@ const countBridge = (
   const queue = [[startCoordinate, startRowI, startCollumnI, 0]];
   while (queue[0]) {
     const [coordinate, rowI, collumnI, lvl] = queue.shift();
+    if (island2.has(coordinate)) return lvl - 1;
   }
 };
 
