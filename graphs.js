@@ -291,4 +291,6 @@ const hasCycle = (graph) => {
 
 const traverse = (graph, node, set) => {
   if (set.has(node)) return true;
+  for (child of graph[node]) {
+  }
 };
