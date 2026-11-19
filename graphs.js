@@ -239,6 +239,7 @@ const bestBridge = (grid) => {
   while (rowI < grid.length) {
     let collumnI = 0;
     while (collumnI < grid[rowI].length) {
+      const coordinate = '' + rowI + collumnI;
       collumnI++;
     }
     rowI++;
