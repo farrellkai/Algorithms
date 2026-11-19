@@ -219,7 +219,13 @@ const bestBridge = (grid) => {
   const island2 = new Set();
 
   let rowI = 0;
-  while (rowI < grid.length) {}
+  while (rowI < grid.length) {
+    let collumnI = 0;
+    while (collumnI < grid[rowI].length) {
+      collumnI++;
+    }
+    rowI++;
+  }
 };
 
 const mapIsland = (grid, rowI, collumnI, set) => {
