@@ -219,4 +219,6 @@ const bestBridge = (grid) => {
   const island2 = new Set();
 };
 
-const mapIsland = (grid, rowI, collumnI, set) => {};
+const mapIsland = (grid, rowI, collumnI, set) => {
+  if (grid[rowI][collumnI] === 'W') return;
+};
