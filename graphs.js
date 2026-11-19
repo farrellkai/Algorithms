@@ -223,4 +223,9 @@ const mapIsland = (grid, rowI, collumnI, set) => {
   const coordinate = '' + rowI + collumnI;
   if (grid[rowI][collumnI] === 'W' || set.has(coordinate)) return;
   set.add(coordinate);
+  if (rowI > 0) mapIsland(grid, rowI - 1, collumnI, set);
+  if (rowI < grid.length - 1) mapIsland(grid, rowI + 1, collumnI, set);
+  if (collumnI > 0) mapIsland(grid, rowI, collumnI - 1, set);
+  if (collumnI < grid[rowI].length - 1)
+    mapIsland(grid, rowI, collumnI + 1, set);
 };
