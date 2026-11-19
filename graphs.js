@@ -236,6 +236,9 @@ const bestBridge = (grid) => {
   }
 
   rowI = 0;
+  while (rowI < grid.length) {
+    rowI++;
+  }
 };
 
 const mapIsland = (grid, rowI, collumnI, set) => {
