@@ -242,12 +242,15 @@ const bestBridge = (grid) => {
       const coordinate = '' + rowI + collumnI;
       const visited = new Set();
       if (island1.has(coordinate)) {
+        countBridge();
       }
       collumnI++;
     }
     rowI++;
   }
 };
+
+const countBridge = (grid, rowI, visited, island2) => {};
 
 const mapIsland = (grid, rowI, collumnI, set) => {
   const coordinate = '' + rowI + collumnI;
