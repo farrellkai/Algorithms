@@ -250,7 +250,9 @@ const bestBridge = (grid) => {
   }
 };
 
-const countBridge = (grid, rowI, visited, island2) => {};
+const countBridge = (grid, coordinate, rowI, visited, island2) => {
+  if (visited.has(coordinate)) return 0;
+};
 
 const mapIsland = (grid, rowI, collumnI, set) => {
   const coordinate = '' + rowI + collumnI;
