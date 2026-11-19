@@ -250,7 +250,16 @@ const bestBridge = (grid) => {
   }
 };
 
-const countBridge = (grid, coordinate, rowI, collumnI, visited, island2) => {};
+const countBridge = (
+  grid,
+  startCoordinate,
+  startRowI,
+  startCollumnI,
+  visited,
+  island2,
+) => {
+  const queue = [[startCoordinate, startRowI, startCollumnI, 0]];
+};
 
 const mapIsland = (grid, rowI, collumnI, set) => {
   const coordinate = '' + rowI + collumnI;
