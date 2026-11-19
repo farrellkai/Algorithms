@@ -218,6 +218,8 @@ const bestBridge = (grid) => {
   const island1 = new Set();
   const island2 = new Set();
 
+  let max = Infinity;
+
   let rowI = 0;
   while (rowI < grid.length) {
     let collumnI = 0;
