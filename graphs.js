@@ -222,4 +222,5 @@ const bestBridge = (grid) => {
 const mapIsland = (grid, rowI, collumnI, set) => {
   const coordinate = '' + rowI + collumnI;
   if (grid[rowI][collumnI] === 'W' || set.has(coordinate)) return;
+  set.add(coordinate);
 };
