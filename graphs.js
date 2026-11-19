@@ -250,19 +250,18 @@ const bestBridge = (grid) => {
   }
 };
 
-const countBridge = (
-  grid,
-  startCoordinate,
-  startRowI,
-  startCollumnI,
-  visited,
-  island2,
-) => {
-  const queue = [[startCoordinate, startRowI, startCollumnI, 0]];
+const countBridge = (grid, startRowI, startCollumnI, visited, island2) => {
+  const queue = [[startRowI, startCollumnI, 0]];
   while (queue[0]) {
-    const [coordinate, rowI, collumnI, lvl] = queue.shift();
+    const [rowI, collumnI, lvl] = queue.shift();
+    const coordinate = '' + rowI + collumnI;
     if (island2.has(coordinate)) return lvl - 1;
     if (!visited.has(coordinate) && grid[rowI][collumnI] === 'W') {
+      if (rowI > 0) queue.push([rowI - 1, collumnI, lvl + 1]);
+      if (rowI < grid.length - 1) queue.push([rowI + 1, collumnI, lvl + 1]);
+      if (collumnI > 0) queue.push([rowI, collumnI - 1, lvl + 1]);
+      if (collumnI < grid[rowI].length - 1)
+        queue.push([rowI, collumnI + 1, lvl + 1]);
     }
   }
 };
