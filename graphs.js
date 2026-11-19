@@ -25,20 +25,9 @@ const buildGraph = (edges) => {
 const undirectedPath = (edges, nodeA, nodeB) => {
   const graph = buildGraph(edges);
   const set = new Set();
-
-  const helper = (nodeA, nodeB) => {
-    if (nodeA === nodeB) return true;
-    if (!set.has(nodeA)) {
-      set.add(nodeA);
-      for (node of graph[nodeA]) {
-        if (helper(node, nodeB)) return true;
-      }
-    }
-  };
-  if (helper(nodeA, nodeB)) return true;
-
-  return false;
 };
+
+const findPath = (graph, nodeA, nodeB) => {};
 
 // Write a function, connectedComponentsCount, that takes in the adjacency list of an undirected graph.
 // The function should return the number of connected components within the graph.
