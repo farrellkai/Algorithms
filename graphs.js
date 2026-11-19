@@ -253,6 +253,8 @@ const bestBridge = (grid) => {
 const countBridge = (grid, coordinate, rowI, collumnI, visited, island2) => {
   if (visited.has(coordinate) || island2.has(coordinate)) return 0;
   visited.add(coordinate);
+  if (grid[(rowI, collumnI)] === 'W') {
+  }
 };
 
 const mapIsland = (grid, rowI, collumnI, set) => {
