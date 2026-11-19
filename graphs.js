@@ -272,6 +272,7 @@ const countBridge = (grid, coordinate, rowI, collumnI, visited, island2) => {
       collumnI < grid[rowI].length - 1
         ? 1 + countBridge(grid, rowI, collumnI + 1, visited, island2)
         : 0;
+    return north + south + west + east;
   }
 };
 
