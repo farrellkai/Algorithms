@@ -218,7 +218,7 @@ const bestBridge = (grid) => {
   const island1 = new Set();
   const island2 = new Set();
 
-  let max = Infinity;
+  let min = Infinity;
 
   let rowI = 0;
   while (rowI < grid.length) {
@@ -243,11 +243,13 @@ const bestBridge = (grid) => {
       const visited = new Set();
       if (island1.has(coordinate)) {
         const size = countBridge(grid, rowI, collumnI, visited, island2);
+        if (size < min) min = size;
       }
       collumnI++;
     }
     rowI++;
   }
+  return min;
 };
 
 const countBridge = (grid, startRowI, startCollumnI, visited, island2) => {
