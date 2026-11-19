@@ -286,5 +286,6 @@ const mapIsland = (grid, rowI, collumnI, set) => {
 const hasCycle = (graph) => {
   const set = new Set();
   for (key in graph) {
+    if (traverse(graph, key)) return true;
   }
 };
