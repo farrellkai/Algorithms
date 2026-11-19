@@ -240,6 +240,7 @@ const bestBridge = (grid) => {
     let collumnI = 0;
     while (collumnI < grid[rowI].length) {
       const coordinate = '' + rowI + collumnI;
+      const visited = new Set();
       if (island1.has(coordinate)) {
       }
       collumnI++;
