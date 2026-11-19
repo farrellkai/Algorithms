@@ -251,7 +251,7 @@ const bestBridge = (grid) => {
 };
 
 const countBridge = (grid, coordinate, rowI, collumnI, visited, island2) => {
-  if (visited.has(coordinate)) return 0;
+  if (visited.has(coordinate) || island2.has(coordinate)) return 0;
   visited.add(coordinate);
 };
 
