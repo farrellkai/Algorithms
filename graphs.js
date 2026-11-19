@@ -287,6 +287,7 @@ const hasCycle = (graph) => {
   for (key in graph) {
     if (traverse(graph, key, new Set())) return true;
   }
+  return false;
 };
 
 const traverse = (graph, node, set) => {
