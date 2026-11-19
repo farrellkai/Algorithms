@@ -285,4 +285,6 @@ const mapIsland = (grid, rowI, collumnI, set) => {
 // The function should return a boolean indicating whether or not the graph contains a cycle.
 const hasCycle = (graph) => {
   const set = new Set();
+  for (key in graph) {
+  }
 };
