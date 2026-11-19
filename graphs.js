@@ -25,6 +25,8 @@ const buildGraph = (edges) => {
 const undirectedPath = (edges, nodeA, nodeB) => {
   const graph = buildGraph(edges);
   const set = new Set();
+  if (findPath(graph, nodeA, nodeB, set)) return true;
+  return false;
 };
 
 const findPath = (graph, nodeA, nodeB, set) => {
