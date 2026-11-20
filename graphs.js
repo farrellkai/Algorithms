@@ -306,6 +306,9 @@ const prereqsPossible = (num, prereqs) => {
   const hasPrereqs = new Set();
   const courses = new Set();
   const graph = buildGraphIndentifyPrereqs(prereqs, hasPrereqs);
+
+  for (node in graph) {
+  }
 };
 
 const buildGraphIndentifyPrereqs = (edges, set) => {
