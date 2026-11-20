@@ -318,8 +318,8 @@ const prereqsPossible = (num, prereqs) => {
 
 const takeCourses = (graph, node, set) => {
   for (course of graph[node]) {
-    if (!set.has(+course)) {
-      set.add(+course);
+    if (set.has(+course)) {
+      set.delete(+course);
       takeCourses(graph, course, set);
     }
   }
