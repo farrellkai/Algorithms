@@ -304,7 +304,7 @@ const traverse = (graph, node, set) => {
 // The function should return a boolean indicating whether or not it is possible to complete all courses.
 const prereqsPossible = (num, prereqs) => {};
 
-const buildGraphIndentifyPrereqs = (edges) => {
+const buildGraphIndentifyPrereqs = (edges, set) => {
   const graph = {};
   for (path of edges) {
     const [vert1, vert2] = path;
