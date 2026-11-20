@@ -311,10 +311,9 @@ const prereqsPossible = (num, prereqs) => {
     if (!hasPrereqs.has(+node)) {
       if (!courses.has(+node)) courses.add(+node);
       takeCourses(graph, node, hasPrereqs);
-      if (courses.size === num) return true;
     }
   }
-  return false;
+  return courses.size === num;
 };
 
 const takeCourses = (graph, node, set) => {
