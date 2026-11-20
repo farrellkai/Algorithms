@@ -310,6 +310,7 @@ const prereqsPossible = (num, prereqs) => {
     const courses = new Set();
     if (!hasPrereqs.has(node)) {
       takeCourses(graph, node, courses);
+      if (courses.size === num) return true;
     }
   }
 };
