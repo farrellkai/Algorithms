@@ -308,6 +308,7 @@ const buildGraphIndentifyPrereqs = (edges, set) => {
   const graph = {};
   for (path of edges) {
     const [vert1, vert2] = path;
+    if (!set.has(vert2)) set.add(vert2);
     graph[vert1] ? graph[vert1].push(vert2) : (graph[vert1] = [vert2]);
     graph[vert2] ? graph[vert2].push(vert1) : (graph[vert2] = [vert1]);
   }
