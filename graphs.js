@@ -313,6 +313,7 @@ const prereqsPossible = (num, prereqs) => {
       if (courses.size === num) return true;
     }
   }
+  return false;
 };
 
 const takeCourses = (graph, node, set) => {
