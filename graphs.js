@@ -305,11 +305,12 @@ const traverse = (graph, node, set) => {
 const prereqsPossible = (num, prereqs) => {
   const hasPrereqs = new Set();
   const graph = buildGraphIndentifyPrereqs(prereqs, hasPrereqs);
+  const courses = new Set();
 
   for (node in graph) {
-    const courses = new Set();
     if (!hasPrereqs.has(+node)) {
-      takeCourses(graph, node, courses);
+      if (!courses.has(+node)) courses.add(+node);
+      takeCourses(graph, node, hasPrereqs);
       if (courses.size === num) return true;
     }
   }
