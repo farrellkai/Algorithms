@@ -308,11 +308,11 @@ const prereqsPossible = (num, prereqs) => {
 
   for (node in graph) {
     const courses = new Set();
-    takeCourses(graph, node, courses);
+    takeCourses(graph, node, courses, hasPrereqs);
   }
 };
 
-const takeCourses = (graph, node, set) => {};
+const takeCourses = (graph, node, set1, set2) => {};
 
 const buildGraphIndentifyPrereqs = (edges, set) => {
   const graph = {};
