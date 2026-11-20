@@ -310,16 +310,17 @@ const prereqsPossible = (num, prereqs) => {
   for (node in graph) {
     if (!hasPrereqs.has(+node)) {
       if (!courses.has(+node)) courses.add(+node);
-      takeCourses(graph, node, hasPrereqs);
+      takeCourses(graph, node, courses);
     }
   }
-  return courses.size === num;
+  console.log(courses);
+  return courses.size === Object.keys(graph).length;
 };
 
 const takeCourses = (graph, node, set) => {
   for (course of graph[node]) {
-    if (set.has(+course)) {
-      set.delete(+course);
+    if (!set.has(+course)) {
+      set.add(+course);
       takeCourses(graph, course, set);
     }
   }
