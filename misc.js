@@ -415,8 +415,6 @@ const longestSubString = (str) => {
 // Group words that are anagrams of each other.
 // Group order does not matter.
 
-console.log('t'.charCodeAt(0) - 97);
-
 const groupAnagrams = (arr) => {
   const cache = {};
 
@@ -485,4 +483,11 @@ const edges = [
   ['o', 'n'],
 ];
 
-console.log(undirectedPath(edges, 'j', 'm'));
+// Write a function that accepts an array and returns a new array containing only unique values.
+const removeDuplicatesAgain = (arr) => {
+  const set = new Set();
+  const output = [];
+
+  for (el of arr) {
+  }
+};
