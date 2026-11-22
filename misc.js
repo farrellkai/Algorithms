@@ -510,3 +510,12 @@ const characterFrequency = (str) => {
   }
   return map;
 };
+
+const findLargestNum = (arr) => {
+  let max = -Infinity;
+
+  for (el of arr) {
+    if (el > max) max = el;
+  }
+  return max;
+};
