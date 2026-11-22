@@ -496,3 +496,17 @@ const removeDuplicatesAgain = (arr) => {
   }
   return output;
 };
+
+// Write a function that counts how many times each character appears in a string.
+const characterFrequency = (str) => {
+  const map = new Map();
+
+  let i = 0;
+  while (i < str.length) {
+    !map.has(str[i])
+      ? map.set(str[i], 1)
+      : map.set(str[i], map.get(str[i]) + 1);
+    i++;
+  }
+  return map;
+};
