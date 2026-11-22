@@ -490,6 +490,9 @@ const removeDuplicatesAgain = (arr) => {
 
   for (el of arr) {
     if (!set.has(el)) {
+      set.add(el);
+      output.push(el);
     }
   }
+  return output;
 };
