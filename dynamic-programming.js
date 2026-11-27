@@ -20,4 +20,5 @@ const trib = (n, memo = {}) => {
   if (n === 2) return 1;
   if (!memo[n])
     memo[n] = trib(n - 3, memo) + trib(n - 2, memo) + trib(n - 1, memo);
+  return memo[n];
 };
