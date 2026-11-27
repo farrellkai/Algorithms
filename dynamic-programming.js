@@ -17,4 +17,5 @@ const fib = (n, memo = {}) => {
 // Solve this recursively.
 const trib = (n, memo = {}) => {
   if (n === 0 || n === 1) return 0;
+  if (n === 2) return 1;
 };
