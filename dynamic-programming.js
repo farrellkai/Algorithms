@@ -15,4 +15,6 @@ const fib = (n, memo = {}) => {
 // The 2-nd number of the sequence is 1.
 // To generate further numbers of the sequence, calculate the sum of previous three numbers.
 // Solve this recursively.
-const trib = (n, memo = {}) => {};
+const trib = (n, memo = {}) => {
+  if (n === 0 || n === 1) return 0;
+};
