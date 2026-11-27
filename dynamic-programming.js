@@ -3,7 +3,7 @@
 // The 1-st number of the sequence is 1.
 // To generate further numbers of the sequence, calculate the sum of previous two numbers.
 // Solve this recursively.
-const fib = (n) => {
+const fib = (n, memo = {}) => {
   if (n === 0) return 0;
   if (n === 1) return 1;
 };
